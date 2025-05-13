@@ -59,7 +59,7 @@ You’ll find value here.
 
 ## 📌 How to Use It
 
-- Start from the first post 👉 [Start Here →](/statistics/2025/01/01/types-of-statistics.html)
+- Start from the first post 👉 [Start Here →](/posts/descriptive-vs-inferential/)
 - Read them in order — each builds on the last
 - Use the diagrams, examples, and code
 - Practice with the problem-solving posts
