@@ -1,101 +1,86 @@
 ---
-# the default layout is 'page'
+layout: page
+title: "About"
+permalink: /about/
 icon: fas fa-info-circle
 order: 4
 ---
 
+> 🎉 **New for 2025**: Quizzes added to every learning post!
 
-<h1 align="center" style ="color:blue">Hi 👋, I'm Hoda Osama</h1> 
+**👋 Hey there, I’m Hoda Osama — and welcome to my learning lab!**
 
-I am a highly skilled Senior Software Engineer with extensive experience in software development, API support, and platform architecture. My expertise spans across Microsoft Graph API, .NET technologies, cloud-based solutions, and automation. Throughout my career, I have successfully designed, developed, and maintained scalable applications, ensuring high performance and seamless user experiences.
-- 📫 How to reach me **[Linked In](https://www.linkedin.com/in/hodaosama/)**
-
-<h1 align="center" style ="color:blue">Work Experience</h1> 
-### **Senior Support Engineer | Microsoft Graph API**  
-**Microsoft · Full-time (Nov 2022 - Nov 2024)**  
-- Provided technical support for Microsoft Graph API, assisting clients with code investigations and troubleshooting complex issues.
-- Joined client meetings to offer hands-on solutions and resolve critical problems.
-- Successfully closed a high volume of support tickets, consistently achieving top results.
-- Contributed to a 36% increase in client satisfaction surveys, showcasing the quality and effectiveness of support provided.
-
-### **Senior Software Engineer | eCapital Corp.**  
-**Full-time (Jan 2022 - Dec 2022) | Remote, Toronto, Canada**  
-- Led the development and maintenance of a high-performance microloan provisioning platform, processing millions of transactions daily.
-- Successfully delivered a project from scratch within a tight deadline while maintaining high-quality standards.
-- Designed, developed, and maintained web applications using modern .NET technologies.
-- Authored technical documentation, including architecture diagrams and software requirement specifications.
-- Implemented secure build and deploy solutions, enhancing CI/CD pipelines with Jenkins, Bitbucket, and GitHub.
-
-### **Senior Software Engineer | Johnson Controls**  
-**Full-time (Oct 2020 - Mar 2022) | Remote, Saudi Arabia**  
-- Developed an e-commerce platform for york.com/sa, driving sales through targeted campaigns and promotional strategies.
-- Integrated secure payment solutions to enhance the checkout experience and increase conversion rates.
-- Created "Cach," a promo code system for employees, improving internal engagement and tracking promotional performance.
-- Built scalable solutions using Angular, C#, and SQL Server, significantly increasing sales volume.
-
-### **Senior Dotnet Developer | Bcare**  
-**Full-time (Jul 2017 - Oct 2020) | Remote, Riyadh, Saudi Arabia**  
-- Engineered medical and vehicle insurance solutions for bcare.com.sa, improving operational efficiency.
-- Designed scalable backend systems using .NET, streamlining policy issuance and claims processing.
-- Integrated APIs to automate workflows, reducing manual efforts and improving response times.
-- Ensured system stability, performance, and security by leveraging C# and SQL Server.
-
-<h1 align="center" style ="color:blue"> Skills & Expertise </h1>
-- **Programming Languages:** C#, .NET Core, SQL, Angular
-- **Technologies & Tools:** Microsoft Graph API, Azure, Jenkins, Bitbucket, GitHub
-- **Software Development:** API Development, CI/CD, System Architecture, Technical Documentation
-- **E-Commerce & Financial Solutions:** Microloan Platforms, Insurance Systems, Payment Integrations
-
-<h1 align="center" style ="color:blue"> Education</h1>
-
-### Arab Academy for Science, Technology and Maritime Transport
-**Master’s Degree, Computer Science**  
-2013 - 2016  
-**Grade:** 3.4 GPA  
-Studied various advanced computer science courses in the pre-master phase. The thesis focused on novel techniques for sorting algorithms, with research papers published in IEEE Conference and Journal.
+This blog is your guided roadmap to **mastering machine learning** by learning the *right things* in the *right order* — no fluff, just clarity.
 
 ---
 
-### Information Technology Institute (ITI)
-**Associate's Degree, Computer Science**  
-2007 - 2008  
-**Grade:** Excellent  
+## 🎯 Why This Blog Exists
 
-Completed a 9-month diploma program covering various computer science disciplines and Microsoft courses.
+When I started learning machine learning, I ran into two problems:
 
----
+- Too many tutorials skipped the **fundamentals**  
+- And those that taught the theory often made it harder than it had to be
 
-### Faculty of Computer and Information
-**Bachelor's Degree, Computer Science**  
-2003 - 2007  
-**Grade:** Very Good  
-
-Studied at the Computer Science Department, focusing on fundamental and advanced computing concepts.
-
-
+So I created this space — not to teach *everything*, but to teach **only what matters**, in a way that sticks.
 
 ---
 
-<h1 align="center" style ="color:blue"> Publications </h1>
+## 📚 What You’ll Find Here
 
-### Double Hashing Sorting Algorithm  
-**Publication:** Computing in Science and Engineering (IEEE)  
-**Impact Factor:** 1.7  
-**Date:** July 1, 2016  
+This blog is a structured roadmap through the essential building blocks of machine learning.  
+We focus on **clarity**, **visuals**, and **practical examples**.
 
-📄 <a href="https://ieeexplore.ieee.org/document/7878956">Read the paper</a>
+### 🔹 1. Prerequisites — but only the parts that matter
+- **Statistics** (descriptive, inferential, probability)
+- **Linear Algebra** (vectors, matrices, transformations)
+- **Calculus for ML** (derivatives, gradients, optimization)
 
-A double hashing methodology first collects statistics about element distribution and then maps between elements of the array and indexes based on the knowledge collected during the first hashing.
+### 🔹 2. Machine Learning Explained
+- From basic models to CNNs and neural networks
+- Step-by-step, with purpose and intuition
+
+### 🔹 3. Problem Solving & Practice
+- Real problems with guided solutions
+- A learning method that builds confidence
+- Problem-solving *roadmaps* to help you apply what you learn
 
 ---
 
-### Mapping Sorting Algorithm  
-**Conference:** SAI Computing Conference 2016, London, U.K  
-**Date:** July 1, 2016  
+## 🧠 Who This Blog Is For
 
-📄 <a href="https://ieeexplore.ieee.org/document/7556025">Read the paper</a>
+Whether you're:
+- A beginner in machine learning
+- Someone who wants to understand the *why*, not just run code
+- Looking to build a solid base before jumping into deep learning
 
-The mapping will be between elements of an array and indexes without using any comparisons and swapping. The paper analyzes the time complexity of the proposed algorithm mathematically and empirically. The complexity of the proposed algorithm is O(xlogm) + O(n), where n represents the number of sorted elements and m, x << n. Results show that the performance of the mapping sorting algorithm is better than or almost equal to quick sorting.
+You’ll find value here.
 
+---
 
+## 📌 How to Use It
 
+- Start from the first post 👉 [Start Here →](/statistics/2025/01/01/types-of-statistics.html)
+- Read them in order — each builds on the last
+- Use the diagrams, examples, and code
+- Practice with the problem-solving posts
+
+### 🧠 New! Interactive Quizzes in Every Post
+
+At the end of each concept post, you’ll now find a short **quiz or challenge**.  
+It’s designed to help you check your understanding — no grades, just clarity.
+
+📌 *Try it before peeking at the answer!*  
+You’ll learn better by thinking, even for 30 seconds.
+
+You don’t need a math degree — just curiosity and consistency.
+
+---
+
+## 📬 Stay Connected
+
+This blog is evolving constantly.  
+More posts. More visualizations. More problems.
+
+Feel free to follow, share, or reach out with questions and ideas.
+
+Let’s learn ML the way it should be learned — **from first principles to practical power**
