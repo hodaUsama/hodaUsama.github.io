@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Bringing It All Together: A Real-World Stats Example"
-date: 2025-01-09
+date: 2025-05-09
 categories: [statistics, beginner]
 tags: [summary, z-score, mean, median, boxplot, variability]
 math: true
@@ -115,6 +115,24 @@ z = \frac{90 - 59.3}{17.0} \approx 1.8
 
 ---
 {% include quiz/case-study.html %}
+
+---
+
+<details class="border rounded p-3 bg-light my-4">
+  <summary class="fw-bold text-primary">🧠 Level Up: Interpreting Outliers and Variability in Real Data</summary>
+  <div class="mt-2">
+    <p>This example highlights important concepts in real-world data analysis:</p>
+    <ul>
+      <li>📉 <strong>Outliers</strong> can dramatically affect the mean but have less influence on the median and IQR.</li>
+      <li>📦 <strong>Box plots</strong> visually summarize both center and spread, making it easy to spot unusual values.</li>
+      <li>🧮 <strong>Z-scores</strong> quantify how far points deviate from the mean, helping identify exceptional cases objectively.</li>
+      <li>🔎 Combining these tools provides a holistic understanding of data distribution, crucial for accurate analysis and decision making.</li>
+    </ul>
+    <p>Mastering these interpretations will improve your data intuition and prepare you for advanced statistical techniques.</p>
+  </div>
+</details>
+
+---
 
 ## 🧠 <span style="color:#20B2AA;">Summary Interpretation</span>
 

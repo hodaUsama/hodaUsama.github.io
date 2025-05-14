@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Descriptive vs Inferential Statistics – A Simple Start"
-date: 2025-01-01
+date: 2025-05-01
 categories: [statistics, beginner]
 tags: [descriptive, inferential, machine-learning, foundation]
 ---
@@ -80,7 +80,23 @@ Machine learning uses <span style="color:#FFA500;"><strong>both</strong></span> 
 Even if you haven’t learned ML yet — this is your <strong>foundation</strong>.
 
 ---
+<details class="border rounded p-3 bg-light my-4">
+  <summary class="fw-bold text-primary">🧠 Level Up: Why Inferential Statistics Matter in Machine Learning</summary>
+  <div class="mt-2">
+    <p>While <strong>descriptive statistics</strong> summarize the data you have, <strong>inferential statistics</strong> let you:</p>
+    <ul>
+      <li>🔮 Make predictions or decisions based on sample data</li>
+      <li>📊 Test hypotheses to understand if patterns are meaningful</li>
+      <li>🔍 Estimate properties of a larger population from limited observations</li>
+      <li>🤖 Form the mathematical foundation behind many machine learning algorithms</li>
+    </ul>
+    <p>Understanding the difference helps you know when you’re just describing versus when you’re generalizing — a critical skill in data science and ML.</p>
+  </div>
+</details>
+
+---
 {% include quiz/types-of-statistics.html %}
+
 ---
 
 ## ✅ Summary

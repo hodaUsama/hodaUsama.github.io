@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Conditional vs. Marginal Proportions: What’s the Difference?"
-date: 2025-01-11
+date: 2025-05-11
 categories: [statistics, beginner,concepts]
 tags: [proportions, conditional, marginal, contingency-table, categorical]
 math: true

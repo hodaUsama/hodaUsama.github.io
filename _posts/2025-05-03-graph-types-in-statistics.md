@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Choosing the Right Graph: How to Visualize Your Data in Statistics"
-date: 2025-01-03
+date: 2025-05-03
 categories: [statistics, beginner]
 tags: [graphs, data-types, histogram, pie-chart, bar-chart]
 ---
@@ -94,6 +94,24 @@ Histograms don’t just show data — their <strong>shapes</strong> tell a story
 ![Histogram Shapes](assets/images/histogram_shapes.png)
 
 ---
+
+<details class="border rounded p-3 bg-light my-4">
+  <summary class="fw-bold text-primary">🧠 Level Up: Why Choosing the Right Graph Matters in Data Science</summary>
+  <div class="mt-2">
+    <p>Effective data visualization is more than just making charts look nice — it’s about choosing the right tool to reveal insights clearly and accurately:</p>
+    <ul>
+      <li>📊 <strong>Bar charts and pie charts</strong> work best for <em>categorical</em> data, helping compare groups or parts of a whole.</li>
+      <li>📈 <strong>Histograms</strong> are ideal for <em>quantitative</em> data, showing distribution shapes like normal, skewed, or bimodal.</li>
+      <li>🔍 The shape of a histogram can hint at underlying processes, identify outliers, and guide statistical modeling decisions.</li>
+      <li>🎯 Choosing the wrong graph can mislead viewers or hide important patterns — so the choice of graph is a vital skill.</li>
+    </ul>
+    <p>Mastering graph selection will make your analyses clearer and your communication more impactful.</p>
+  </div>
+</details>
+
+
+---
+
 {% include quiz/graph-types.html %}
 
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to Build Frequency Tables in Python (With Charts)"
-date: 2025-01-04
+date: 2025-05-04
 categories: [statistics, beginner]
 tags: [frequency-table, python, bar-chart, histogram]
 ---
@@ -144,7 +144,25 @@ Unlike bar charts, <strong>histograms</strong> have connected bars — they’re
 They’re also a first step toward more advanced tools: descriptive statistics, histograms, boxplots, and beyond.
 
 ---
+
+<details class="border rounded p-3 bg-light my-4">
+  <summary class="fw-bold text-primary">🧠 Level Up: Leveraging Frequency Tables for Deeper Data Insights</summary>
+  <div class="mt-2">
+    <p>Frequency tables are more than simple counts — they’re powerful tools for exploring and preparing data:</p>
+    <ul>
+      <li>🔢 For <strong>categorical data</strong>, frequency tables reveal the distribution and highlight dominant categories.</li>
+      <li>📊 For <strong>numerical data</strong>, grouping values into intervals in frequency tables helps uncover patterns and anomalies.</li>
+      <li>🧑‍💻 Building frequency tables programmatically (e.g., with Python’s <code>pandas</code>) enables scalable and reproducible analysis.</li>
+      <li>🎨 Visualizing frequency tables with bar charts or histograms bridges raw numbers to intuitive understanding.</li>
+    </ul>
+    <p>Mastering frequency tables will improve your data wrangling and make your visualizations more meaningful.</p>
+  </div>
+</details>
+
+---
+
 {% include quiz/frequency-tables.html %}
+
 ---
 ## ✅ Summary
 

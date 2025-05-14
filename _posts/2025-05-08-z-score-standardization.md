@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Z-Score: Comparing Values Using Standardization"
-date: 2025-01-08
+date: 2025-05-08
 categories: [statistics, beginner]
 tags: [z-score, standardization, variability, distribution, outliers]
 math: true
@@ -39,6 +39,12 @@ It answers:
 \\[
 z = \frac{x - \bar{x}}{\sigma}
 \\]
+
+This formula transforms a raw score \( x \) into a standardized score:
+
+- The numerator \( x - \bar{x} \) tells us how far the value is from the mean  
+- The denominator \( \sigma \) scales this difference using standard deviation  
+- The result is a unit-free number (z-score) showing its relative position
 
 Where:
 - \\( x \\): the observation  
@@ -112,6 +118,44 @@ That’s because the deviations above and below the mean **cancel out**.
 
 ---
 
+## 🧪 <span style="color:#F06500;">Multiple Z-Scores from a Dataset</span>
+
+Let’s say we have a dataset of exam scores:  
+{70, 80, 90}
+
+**Step 1** — Find the mean and standard deviation:  
+- Mean = \\( \bar{x} = 80 \\)  
+- Standard deviation =  
+  \\[
+  \sigma = \sqrt{\frac{(70-80)^2 + (80-80)^2 + (90-80)^2}{3}} = \sqrt{66.67} \approx 8.16
+  \\]
+
+**Step 2** — Compute z-scores for each value:
+
+\\[
+z_{70} = \frac{70 - 80}{8.16} \approx -1.22
+\\]
+
+\\[
+z_{80} = \frac{80 - 80}{8.16} = 0
+\\]
+
+\\[
+z_{90} = \frac{90 - 80}{8.16} \approx 1.22
+\\]
+
+
+
+
+These scores tell us:
+- 70 is below average  
+- 80 is exactly the average  
+- 90 is above average
+
+✅ The sum of these z-scores ≈ 0, confirming the rule.
+
+---
+
 ## ⚖️ <span style="color:#1E90FF;">Comparing Across Distributions</span>
 
 Let’s say we have two distributions:
@@ -146,8 +190,23 @@ It lets us:
 
 ---
 
+<details class="border rounded p-3 bg-light my-4">
+  <summary class="fw-bold text-primary">🧠 Level Up: How Z-Scores Power Real Analysis</summary>
+  <div class="mt-2">
+    <p>Z-scores are more than just a tool for comparing test scores. They're the foundation for some of the most powerful techniques in statistics and machine learning:</p>
+    <ul>
+      <li>🎯 <strong>Probability:</strong> Z-scores help us estimate how likely a value is in a normal distribution — using z-tables</li>
+      <li>📏 <strong>Confidence Intervals:</strong> Z-scores define the range of values we expect sample means to fall within</li>
+      <li>🚨 <strong>Outlier Detection:</strong> Observations with <code>|z| > 2</code> or <code>|z| > 3</code> are often flagged as potential outliers</li>
+      <li>🔄 <strong>Standardization:</strong> Machine learning models often require data to be normalized using z-scores</li>
+    </ul>
+    <p class="mb-0">You’ll see these ideas come to life as we explore probability and inference in upcoming posts.</p>
+  </div>
+</details>
+---
 {% include quiz/zscore.html %}
 
+---
 
 ## 🧠 Summary
 

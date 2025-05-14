@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Correlation Between Variables: Contingency Tables and Scatter Plots"
-date: 2025-01-10
+date: 2025-05-10
 categories: [statistics, beginner]
 tags: [correlation, contingency-table, scatter-plot, categorical, quantitative]
 math: true
@@ -124,9 +124,25 @@ You’ll notice: the more hours students study, the higher their scores.
 This is a **strong positive relationship**.
 
 ---
+<details class="border rounded p-3 bg-light my-4">
+  <summary class="fw-bold text-primary">🧠 Level Up: Choosing the Right Correlation Approach Based on Data Types</summary>
+  <div class="mt-2">
+    <p>Correlation analysis isn’t one-size-fits-all — the type of variables determines the best method:</p>
+    <ul>
+      <li>📊 For two <strong>quantitative variables</strong>, measures like <em>Pearson's r</em> capture linear relationships.</li>
+      <li>📋 For two <strong>categorical variables</strong>, <em>contingency tables</em> and tests like <em>Chi-square</em> help assess association.</li>
+      <li>🔄 For mixed variable types, specialized methods like <em>point-biserial correlation</em> or <em>ANOVA</em> are used.</li>
+    </ul>
+    <p>Understanding your data types ensures you pick the most powerful and appropriate analysis technique.</p>
+  </div>
+</details>
+
+
+---
 
 {% include quiz/case-study.html %}
 
+---
 ## ✅ Conclusion
 
 | Type of Data        | Tool to Use          | Example                     |
