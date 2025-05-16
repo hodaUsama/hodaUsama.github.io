@@ -40,10 +40,10 @@ It answers:
 z = \frac{x - \bar{x}}{\sigma}
 \\]
 
-This formula transforms a raw score \( x \) into a standardized score:
+This formula transforms a raw score \\( x \\) into a standardized score:
 
-- The numerator \( x - \bar{x} \) tells us how far the value is from the mean  
-- The denominator \( \sigma \) scales this difference using standard deviation  
+- The numerator \\( x - \bar{x} \\) tells us how far the value is from the mean  
+- The denominator \\( \sigma \\) scales this difference using standard deviation  
 - The result is a unit-free number (z-score) showing its relative position
 
 Where:
