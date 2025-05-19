@@ -16,7 +16,7 @@ Welcome to the world of **randomness** — where short-term surprises often give
 <div class="series-nav">
   <p>📚 <strong>This post is part of the "Intro to Statistics" series</strong></p>
   <p>🔙 <strong>Previously:</strong> <a href="/posts/Regression/">Regression: Predicting Relationships Between Variables with the Best Fit Line</a></p>
-  <p>🔜 <strong>Next:</strong> <a href="/posts/probability-rules/">Probability Rules</a></p>
+  <p>🔜 <strong>Next:</strong> <a href="/posts/Regression/">Probability Rules</a></p>
 </div>
 
 ---
