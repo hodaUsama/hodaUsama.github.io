@@ -16,7 +16,7 @@ But how we analyze that relationship depends on the type of data we’re working
 <div class="series-nav">
   <p>📚 <strong>This post is part of the "Intro to Statistics" series</strong></p>
   <p>🔙 <strong>Previously:</strong> <a href="/posts/full-case-study/">A Real-World Statistics Example</a></p>
-  <p>🔜 <strong>Next:</strong> <a href="/posts/full-case-study/">Understanding Pearson's R</a></p>
+  <p>🔜 <strong>Next:</strong> <a href="/posts/PearsonsR/">Understanding Pearson's R</a></p>
 </div>
 
 ---

@@ -11,6 +11,14 @@ In our last post, we explored **Pearson’s r**, which measures the strength and
 
 ---
 
+<div class="series-nav">
+  <p>📚 <strong>This post is part of the "Intro to Statistics" series</strong></p>
+  <p>🔙 <strong>Previously:</strong> <a href="/posts/PearsonsR/">Pearson’s r It quantifies the strength and direction of a linear relationship</a></p>
+  <p>🔜 <strong>Next:</strong> <a href="/posts/Randomness/">Mastering Randomness</a></p>
+</div>
+
+---
+
 ## 🎯 <span style="color:#1E90FF;"> A Creative Case Study: Predicting Exam Scores from Study Hours</span>
 
 Imagine you collect data on students’ **hours studied** and their corresponding **exam scores**. You plot these points on a scatter plot and calculate Pearson’s r:
@@ -118,6 +126,14 @@ R^2 = r^2
 - \\( R^2 \\) tells **how much better the regression line predicts \\( y \\) compared to simply using the mean of \\( y \\)**.
 
 - \\( R^2 \\) also represents **the proportion of variance in \\( y \\) explained by \\( x \\)**.
+
+---
+
+
+
+  ![Comparison of High vs Low R-squared]( /assets/images/regression-r-squared-comparison.svg )
+  <p style="font-size:0.9em;">*Comparing high and low \( R^2 \) values: High \( R^2 \) shows a good fit, Low \( R^2 \) shows a poor fit*</p>
+
 
 ---
 

@@ -17,6 +17,11 @@
 .series-nav a:hover {
   text-decoration: underline;
 }
+#post-list .card .card-body .card-title {
+ color: #1E90FF !important; /* Blue color for title */
+  font-weight: 700;
+}
+
 
 /* Dark mode override */
 html[data-mode="dark"] .series-nav {
@@ -26,4 +31,18 @@ html[data-mode="dark"] .series-nav {
 
 html[data-mode="dark"] .series-nav a {
   color: #66ccff;
+}
+
+html[data-mode="dark"] .card-body-header {
+    background-color: #2b2f33 !important;
+}
+
+html[data-mode="dark"] .header-title {
+    color: white;
+}
+/* Optional: Dark Theme */
+@media (data-mode="dark") {
+  #post-list .card .card-body .card-title{
+    color: #87CEFA !important; /* Lighter blue color for dark mode */
+  }
 }

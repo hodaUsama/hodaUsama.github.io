@@ -14,6 +14,13 @@ This is where **Pearson’s r** comes in. It quantifies the strength and directi
 
 ---
 
+<div class="series-nav">
+  <p>📚 <strong>This post is part of the "Intro to Statistics" series</strong></p>
+  <p>🔙 <strong>Previously:</strong> <a href="/posts/correlation-contingency-scatter/">Correlation Between Variables: Contingency Tables and Scatter Plots</a></p>
+  <p>🔜 <strong>Next:</strong> <a href="/posts/Regression/">Regression: Predicting Relationships Between Variables</a></p>
+</div>
+
+---
 ## 🎯 **Types of Correlation**
 
 There are four main types of correlation you may encounter in data:
