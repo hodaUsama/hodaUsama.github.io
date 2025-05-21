@@ -15,8 +15,8 @@ This post unpacks these ideas — and ends with a walkthrough of **Bayes’ Rule
 
 <div class="series-nav">
   <p>📚 <strong>This post is part of the "Intro to Statistics" series</strong></p>
-  <p>🔙 <strong>Previously:</strong> <a href="/posts/union-joint-conditional/">Making Sense of Union, Tables, and Conditional Thinking</a></p>
-  <p>🔜 <strong>Next:</strong> <a href="/posts/probability-distributions/">Probability Distributions & Cumulative Thinking</a></p>
+  <p>🔙 <strong>Previously:</strong> <a href="/posts/union-conditional/">Making Sense of Union, Tables, and Conditional Thinking</a></p>
+  <p>🔜 <strong>Next:</strong> <a href="/posts/union-conditional/">Probability Distributions & Cumulative Thinking</a></p>
 </div>
 
 ---

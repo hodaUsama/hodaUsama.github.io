@@ -15,8 +15,8 @@ Let’s break it all down — and build toward smarter probability thinking.
 
 <div class="series-nav">
   <p>📚 <strong>This post is part of the "Intro to Statistics" series</strong></p>
-  <p>🔙 <strong>Previously:</strong> <a href="/posts/randomness-and-probability/">Understanding Randomness and Probability</a></p>
-  <p>🔜 <strong>Next:</strong> <a href="/posts/probability-inference/">Probability in Statistical Inference</a></p>
+  <p>🔙 <strong>Previously:</strong><a href="/posts/Randomness/">How Random Is Random? Understanding Probability and Events</a> </p>
+  <p>🔜 <strong>Next:</strong> <a href="/posts/Bayes-_Rule/">Understanding Bayez-Rule</a><</p>
 </div>
 
 ---
