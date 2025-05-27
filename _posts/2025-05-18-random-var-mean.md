@@ -16,7 +16,7 @@ This post explains the **mean**, **variance**, and **standard deviation** for bo
 <div class="series-nav">
   <p>📚 <strong>This post is part of the "Intro to Statistics" series</strong></p>
   <p>🔙 <strong>Previously:</strong> <a href="/posts/Probabilities/">What Are Random Variables and How Do We Visualize Their Distributions?</a></p>
-  <p>🔜 <strong>Next:</strong> <a href="/posts/Probabilities/">Introduction to the Normal Distribution</a></p>
+  <p>🔜 <strong>Next:</strong> <a href="/posts/normal-distr/">Introduction to the Normal Distribution</a></p>
 </div>
 
 ---
@@ -27,7 +27,7 @@ The **mean** (or expected value) of a random variable \( X \) is its **probabili
 
 ---
 
-### 🧮 Mean of a Discrete Random Variable
+### 🧮 <span style="color:#FFA500;"> Mean of a Discrete Random Variable </span>
 
 \\[
 \\mu_X = E(X) = \\sum_i x_i P(x_i)
