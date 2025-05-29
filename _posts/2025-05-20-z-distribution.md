@@ -21,7 +21,7 @@ It is used to standardize different normal distributions to a common scale.
 <div class="series-nav">
   <p>📚 <strong>This post is part of the "Intro to Statistics" series</strong></p>
   <p>🔙 <strong>Previously:</strong> <a href="/posts/normal-distr/" style="color:#FF6F61;">Understanding Normal Distribution</a></p>
-  <p>🔜 <strong>Next:</strong> <a href="/posts/normal-distr/" style="color:#1E90FF;">Introduction to the Normal Distribution</a></p>
+  <p>🔜 <strong>Next:</strong> <a href="/posts/binomial-distribution/" style="color:#1E90FF;">Understanding Binomial Distribution</a></p>
 </div>
 
 ---
