@@ -19,7 +19,7 @@ The **Binomial Distribution** is a **discrete probability distribution** used to
 <div class="series-nav">
   <p>📚 <strong>This post is part of the "Intro to Statistics" series</strong></p>
   <p>🔙 <strong>Previously:</strong> <a href="/posts/z-distribution/" style="color:#FF6F61;">Understanding Z-Distribution and Using the Z-Table</a></p>
-  <p>🔜 <strong>Next:</strong> <a href="/posts/normal-distr/" style="color:#1E90FF;">Introduction to the Normal Distribution</a></p>
+  <p>🔜 <strong>Next:</strong> <a href="/posts/samples-distribution/" style="color:#1E90FF;">From Sample to Population: Basics of Sampling in Statistics</a></p>
 </div>
 
 ---
