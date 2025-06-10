@@ -119,7 +119,7 @@ comments:
     category: Announcements
     category_id: DIC_kwDON1ghcs4CrUHx
     mapping: pathname
-    strict: 0
+    strict: 1
     input_position: bottom
     theme: light
     lang: en

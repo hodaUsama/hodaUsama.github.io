@@ -4,6 +4,7 @@ title: "Descriptive vs Inferential Statistics – A Simple Start"
 date: 2025-05-01
 categories: [statistics, beginner]
 tags: [descriptive, inferential, machine-learning, foundation]
+comments: true
 ---
 
 Before we teach a computer how to “learn,” we first need to understand our data.  
