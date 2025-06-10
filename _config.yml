@@ -116,7 +116,7 @@ comments:
   giscus:
     repo: hodaUsama/hodaUsama.github.io
     repo_id: 928522610
-    category: Announcements
+    category: Announcement
     category_id: DIC_kwDON1ghcs4CrUHx
     mapping: pathname
     strict: 0
