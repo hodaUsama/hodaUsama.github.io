@@ -32,6 +32,25 @@ Imagine you have a list of exam scores for a class of students. Descriptive stat
 
 🟠 <span style="color:#FF6347;">Think of it as a summary card for your data.</span>
 
+**Practical Example: Calculating Descriptive Statistics in Python**
+
+```python
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+scores = [75,nt("Mean:", np.mean(scores))
+print("Standard Deviation:", np.std(scores))
+print("Minimum:", np.min(scores))
+print("Maximum:", np.max(scores))
+
+plt.hist(scores, bins=5, color='skyblue', edgecolor='black')
+plt.title('Exam Score Distribution')
+plt.xlabel('Score')
+plt.ylabel('Frequency')
+plt.show()
+
+```
 ---
 
 ## <span style="color:#228B22;">2️⃣ Inferential Statistics</span>: <em>"What can I guess about others?"</em>
@@ -54,9 +73,24 @@ That’s what <strong>inferential statistics</strong> does — it helps us make 
 
 ---
 
+## 🗺️ When to Use Each?
+
+- Use **descriptive statistics** when you want to **summarize or explore** the data you have.
+- Use **inferential statistics** when you want to **make predictions or generalizations** about a larger group based on a sample.
+
+---
+
+## ⚠️ Common Mistakes
+
+> **Don’t use inferential statistics if you already have data for the whole population—just describe it!**
+>
+> **Be careful:** Inferential statistics require that your sample is random and representative of the population.
+
+---
+
 ## 👀 Visual Summary
 
-![Descriptive vs Inferential](assets/images/descriptive_vs_inferential.gif)
+![Descriptive vs Inferential](assets/images/descriptive_vs_inferential.gif "Descriptive vs Inferential Statistics: Tasting the whole soup (descriptive) vs. tasting a spoon and guessing (inferential)")
 
 Imagine you're tasting soup:
 
@@ -80,6 +114,7 @@ Machine learning uses <span style="color:#FFA500;"><strong>both</strong></span> 
 Even if you haven’t learned ML yet — this is your <strong>foundation</strong>.
 
 ---
+
 <details class="border rounded p-3 bg-light my-4">
   <summary class="fw-bold text-primary">🧠 Level Up: Why Inferential Statistics Matter in Machine Learning</summary>
   <div class="mt-2">
@@ -95,7 +130,28 @@ Even if you haven’t learned ML yet — this is your <strong>foundation</strong
 </details>
 
 ---
+
+## 🏆 Real-World Mini Case Study: Predicting Voter Preferences
+
+Suppose you want to know who will win an election. You can’t ask every voter, so you survey a random sample of 1,000 people.  
+- **Descriptive statistics:** Summarize the survey results (e.g., 48% prefer Candidate A).
+- **Inferential statistics:** Estimate the true support for Candidate A in the whole country, and calculate a margin of error.
+
+This is the same logic used when evaluating how well a machine learning model will perform on unseen data!
+
+---
+
 {% include quiz/types-of-statistics.html %}
+
+---
+
+## 📚 Quick Glossary
+
+- **Mean:** The average value.
+- **Standard Deviation:** A measure of how spread out the numbers are.
+- **Sample:** A subset of data from a larger group.
+- **Population:** The entire group you care about.
+- **Prediction:** Using data to guess about something unknown.
 
 ---
 
@@ -114,5 +170,7 @@ Even if you haven’t learned ML yet — this is your <strong>foundation</strong
 In the next post, we’ll explore two tools that help us work with data:
 - <strong>Data Matrix</strong>: a simple way to organize information
 - <strong>Frequency Tables</strong>: to see how often things appear
+
+**Have questions or want to share your own examples? Drop a comment below or suggest a topic you’d like to see next!**
 
 Stay tuned!

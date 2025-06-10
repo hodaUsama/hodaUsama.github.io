@@ -21,7 +21,7 @@ Why? Because studying the whole population is often too expensive or impractical
 <div class="series-nav">
   <p>📚 <strong>This post is part of the "Intro to Statistics" series</strong></p>
   <p>🔙 <strong>Previously:</strong> <a href="/posts/binomial-distribution/" style="color:#FF6F61;">Understanding Binomial Distribution</a></p>
-  <p>🔜 <strong>Next:</strong> <a href="/posts/binomial-distribution/" style="color:#1E90FF;">Next</a></p>
+  <p>🔜 <strong>Next:</strong> <a href="/posts/central-limit-theorem/" style="color:#1E90FF;">Understanding the Sampling Distribution of the Sample Mean and the Central Limit Theorem</a></p>
 </div>
 
 ---
@@ -133,6 +133,7 @@ When Simple Random Sampling is too difficult, we use other methods:
 ---
 ## 🔜 Up Next
 
-In the next post, we’ll explore the **Sampling Distribution of the Sample Mean** — how sample averages behave and why they form the foundation of many statistical procedures.
+In the next post, we’ll explore the **Sampling Distribution of the Sample Mean** — how sample averages behave, the **Central Limit Theorem**, and why these concepts form the foundation of many statistical procedures
+
 
 Stay curious! 📊
