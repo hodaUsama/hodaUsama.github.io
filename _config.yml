@@ -106,19 +106,27 @@ social_preview_image: # string, local or CORS resources
 # boolean type, the global switch for TOC in posts.
 toc: true
 
+# comments:
+#   active: giscus
+#   giscus:
+#     repo: hodaUsama/hodaUsama.github.io
+#     repo_id: R_kgDON1ghcg
+#     category: Announcements
+#     category_id: DIC_kwDON1ghcs4CrUHx
+#     mapping: pathname
+#     strict: 0
+#     input_position: bottom
+#     theme: dark
+#     lang: en
+#     reactions_enabled: 1
+
 comments:
-  active: giscus
-  giscus:
+  provider: utterances
+  utterances:
     repo: hodaUsama/hodaUsama.github.io
-    repo_id: R_kgDON1ghcg
-    category: Announcements
-    category_id: DIC_kwDON1ghcs4CrUHx
-    mapping: pathname
-    strict: 0
-    input_position: bottom
-    theme: dark
-    lang: en
-    reactions_enabled: 1
+    issue_term: pathname
+    theme: github-light
+
 
 # Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
 assets:
