@@ -116,7 +116,7 @@ comments:
     mapping: pathname
     strict: 0
     input_position: bottom
-    theme: light
+    theme: dark
     lang: en
     reactions_enabled: 1
 
@@ -178,7 +178,7 @@ defaults:
   - scope:
       path: _drafts
     values:
-      comments: true
+      comments: false
   - scope:
       path: ""
       type: tabs # see `site.collections`
