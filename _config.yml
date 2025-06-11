@@ -115,11 +115,11 @@ comments:
     issue_term:
   giscus:
     repo: hodaUsama/hodaUsama.github.io
-    repo_id: R_kgDON1ghcg
+    repo_id: 24658976
     category: Announcements
     category_id: DIC_kwDON1ghcs4CrUHx
     mapping: pathname
-    strict: 1
+    strict: 0
     input_position: bottom
     theme: light
     lang: en
