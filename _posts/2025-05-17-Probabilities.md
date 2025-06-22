@@ -5,14 +5,12 @@ date: 2025-05-17
 categories: [statistics, beginner]
 tags: [random-variable, pmf, pdf, cdf, discrete, continuous, quantile]
 math: true
+description: Learn how to understand and visualize random variables using PMF, PDF, and CDF. Covers discrete vs continuous distributions with real examples and intuitive plots.
+
 ---
 
-How can we model the outcome of a random process?  
-What’s the difference between discrete and continuous probability?  
-And how do we **visualize** all of that?
-
-This post answers these questions — with intuitive charts and real-world examples.
-
+What’s the difference between **a PMF, PDF, and CDF** — and how do they relate to **random variables?**
+In this post, we’ll break down the key types of random variables (discrete vs continuous), show you how to visualize them, and explain how these concepts power real-world applications in statistics and machine learning.
 ---
 
 <div class="series-nav">
@@ -154,11 +152,22 @@ A **quantile** tells us the value at a certain cumulative probability.
 > If the 90th percentile is 8.1, then \\( P(X \le 8.1) = 0.90 \\)
 
 ---
+## 🤖 Why It Matters for Machine Learning
 
-<details class="border rounded p-3 bg-light my-4">
-  <summary class="fw-bold text-primary">🧠 Level Up: Why CDFs Are Powerful</summary>
-  <div class="mt-2">
+In machine learning, understanding random variables and their distributions is essential for:
 
+- Modeling prediction uncertainty (e.g., probabilistic classifiers)
+- Evaluating models (e.g., CDFs in ROC analysis)
+- Data generation (e.g., sampling from PDFs or PMFs)
+- Feature engineering (quantile normalization, log transformations)
+
+Mastering these basics helps you build better models with interpretable results.
+
+---
+
+<details class="level-up-box">
+    <summary class="level-up-title">🧠 Level Up: Why CDFs Are Powerful</summary>
+<div class="level-up-content">
 CDFs help you <b>answer questions in reverse</b>:
 <li> “What’s the probability of X being below a threshold?” (➡️ read from CDF) </li>
 <li> <span class="katex">“What value corresponds to 75% of cases?” (➡️ find the x-value for \( P(X) = 0.75 \))</span></li>
@@ -175,15 +184,34 @@ CDFs are especially useful in:
   </div>
 </details>
 
+---
+<details class="custom-box custom-best">
+  <summary><strong>✅ Best Practices</strong></summary>
+  <ul>
+    <li>Use CDFs when comparing distributions or setting thresholds.</li>
+    <li>Choose PMF for count data and PDF for continuous measurements.</li>
+    <li>Use visualizations to detect skewness or outliers in distributions.</li>
+    <li>Verify the total probability sums to 1 in your PMF/PDF.</li>
+  </ul>
+</details>
+
+---
+
+<details class="custom-box custom-warning">
+  <summary><strong>⚠️ Common Pitfalls</strong></summary>
+  <ul>
+    <li>❌ Misinterpreting PDF height as probability — area matters.</li>
+    <li>❌ Forgetting that continuous variables can't have P(X = a) > 0.</li>
+    <li>❌ Confusing quantiles with raw values or assuming symmetry.</li>
+    <li>❌ Using PMF formulas on continuous data or vice versa.</li>
+  </ul>
+</details>
 
 ---
 
 {% include quiz/cummulative-prob.html %}
 
 ---
-
-
-
 ## ✅ Summary
 
 | Concept             | Description                                      |
@@ -196,7 +224,11 @@ CDFs are especially useful in:
 | Quantile            | Inverse of CDF — get x for a given probability   |
 
 ---
+## 💬 Got a question or suggestion?
 
+Leave a comment below — I’d love to hear your thoughts or help if something was unclear.
+
+---
 ## 🔜 Up Next
 
 In the next post, we’ll explore **summary statistics** like:

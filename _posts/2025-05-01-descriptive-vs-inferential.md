@@ -3,12 +3,13 @@ layout: post
 title: "Descriptive vs Inferential Statistics – A Simple Start"
 date: 2025-05-01
 categories: [statistics, beginner]
-tags: [descriptive, inferential, machine-learning, foundation]
+tags: [descriptive, inferential, machine-learning, foundation,data science]
 comments: true
----
+description: "Understand the difference between descriptive and inferential statistics with simple examples, Python code, and machine learning context."
+toc: true
 
-Before we teach a computer how to “learn,” we first need to understand our data.  
-That’s where <strong>statistics</strong> comes in — not the scary kind with symbols and proofs, but the <strong>practical kind</strong> that helps us:
+---
+Before building any machine learning model, it's essential to understand your data. That’s where <strong>statistics</strong> — especially <strong> descriptive and inferential statistics</strong> — come in. In this post, you’ll learn the difference between the two and why both are crucial for data science and ML success.
 
 ✔️ Understand the data we have  
 ✔️ Ask the right questions  
@@ -40,7 +41,9 @@ Imagine you have a list of exam scores for a class of students. Descriptive stat
 import numpy as np
 import matplotlib.pyplot as plt
 
-scores = [75,nt("Mean:", np.mean(scores))
+scores = [75, 88, 92, 60, 79, 85, 90, 70]
+
+print("Mean:", np.mean(scores))
 print("Standard Deviation:", np.std(scores))
 print("Minimum:", np.min(scores))
 print("Maximum:", np.max(scores))
@@ -50,7 +53,6 @@ plt.title('Exam Score Distribution')
 plt.xlabel('Score')
 plt.ylabel('Frequency')
 plt.show()
-
 ```
 ---
 
@@ -116,9 +118,9 @@ Even if you haven’t learned ML yet — this is your <strong>foundation</strong
 
 ---
 
-<details class="border rounded p-3 bg-light my-4">
-  <summary class="fw-bold text-primary">🧠 Level Up: Why Inferential Statistics Matter in Machine Learning</summary>
-  <div class="mt-2">
+<details class="level-up-box">
+  <summary class="level-up-title">🧠 Level Up: Why Inferential Statistics Matter in Machine Learning</summary>
+  <div class="level-up-content">
     <p>While <strong>descriptive statistics</strong> summarize the data you have, <strong>inferential statistics</strong> let you:</p>
     <ul>
       <li>🔮 Make predictions or decisions based on sample data</li>
@@ -165,6 +167,10 @@ This is the same logic used when evaluating how well a machine learning model wi
 | Uses full data                | Often uses samples                 |
 
 ---
+💬 **Got a question or suggestion?**  
+Feel free to leave a comment in the section below — I’d love to hear your thoughts or help with your dataset!
+
+---
 
 ## 🚀 What’s Next?
 
@@ -172,6 +178,6 @@ In the next post, we’ll explore two tools that help us work with data:
 - <strong>Data Matrix</strong>: a simple way to organize information
 - <strong>Frequency Tables</strong>: to see how often things appear
 
-**Have questions or want to share your own examples? Drop a comment below or suggest a topic you’d like to see next!**
+
 
 Stay tuned!

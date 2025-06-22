@@ -4,10 +4,12 @@ title: "Bringing It All Together: A Real-World Stats Example"
 date: 2025-05-09
 categories: [statistics, beginner]
 tags: [summary, z-score, mean, median, boxplot, variability]
-math: true
+math: true,
+description: "Walk through a complete real-world statistics example using test scores: calculate mean, median, range, IQR, standard deviation, z-scores, and visualize it with dot and box plots."
+
 ---
 
-Sometimes the best way to learn is to walk through a full example — one that applies **everything we've learned** so far.
+In this post, we’ll walk through a **real-world case study** that uses core statistical tools: mean, median, standard deviation, box plots, and z-scores. Whether you're prepping data for machine learning or analyzing student scores, these skills are essential for interpreting numbers with confidence.
 
 ---
 
@@ -114,13 +116,36 @@ z = \frac{90 - 59.3}{17.0} \approx 1.8
 🟢 A z-score of **1.8** means this student scored **1.8 standard deviations above the mean** — a strong performance.
 
 ---
+## 🧪 Try It in Python
+
+Here’s how to compute some of the same stats using Python:
+
+```python
+import numpy as np
+
+scores = [44, 47, 49, 51, 52, 53, 55, 57, 90, 95]
+
+mean = np.mean(scores)
+median = np.median(scores)
+std_dev = np.std(scores)
+z_score = (90 - mean) / std_dev
+
+print("Mean:", mean)
+print("Median:", median)
+print("Std Dev:", std_dev)
+print("Z-score for 90:", z_score)
+```
+
+> 🧠 Tip: Use ddof=1 if you're calculating sample standard deviation.
+
+---
 {% include quiz/case-study.html %}
 
 ---
 
-<details class="border rounded p-3 bg-light my-4">
-  <summary class="fw-bold text-primary">🧠 Level Up: Interpreting Outliers and Variability in Real Data</summary>
-  <div class="mt-2">
+<details class="level-up-box">
+  <summary class="level-up-title">🧠 Level Up: Interpreting Outliers and Variability in Real Data</summary>
+  <div class="level-up-content">
     <p>This example highlights important concepts in real-world data analysis:</p>
     <ul>
       <li>📉 <strong>Outliers</strong> can dramatically affect the mean but have less influence on the median and IQR.</li>
@@ -140,6 +165,11 @@ The teacher’s intuition was right:
 Most students scored between 44–57, but **two students** (90, 95) scored **exceptionally high**, pulling the mean up.
 
 The **median and IQR** give a better picture of the typical student’s performance, while the **box plot and z-scores** confirm the presence and magnitude of outliers.
+
+---
+
+💬 **Have a question, feedback, or a similar example from your own data?**  
+Feel free to share it in the comment section below — I'd love to hear your thoughts or help if something’s unclear!
 
 ---
 

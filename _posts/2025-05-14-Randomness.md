@@ -7,9 +7,9 @@ tags: [randomness, probability, events, venn-diagram, sample-space, tree-diagram
 math: true
 ---
 
-Ever flipped a coin and wondered: *Shouldn’t it be 50/50? Then why did I get 3 heads in a row?*
+Ever flipped a coin and wondered why you got heads three times in a row? Welcome to the world of **randomness and probability** — where short-term surprises often give way to long-term patterns.
 
-Welcome to the world of **randomness** — where short-term surprises often give way to long-term predictability.
+In this post, you'll explore what randomness really means, how we use **probability theory** to measure uncertainty, and how concepts like **sample space**, **mutual exclusivity**, and **tree diagrams** help us model real-world randomness — from games to machine learning.
 
 ---
 
@@ -41,7 +41,7 @@ But here’s the twist:
 
 ---
 
-## 🔍 <span style="color:#1E90FF;">To Measure Randomness, We Use Probability</span>
+## 🔍 <span style="color:#1E90FF;">Measuring Randomness with Probability</span>
 
 Probability is a number between 0 and 1 that describes the **likelihood** of an event.
 
@@ -91,7 +91,7 @@ The **cumulative proportion** is the running total of relative frequencies as tr
 
 ---
 
-## 🌳 <span style="color:#9370DB;">Tree Diagram Example</span>
+## 🌳 <span style="color:#9370DB;">Using Tree Diagrams to Visualize Outcomes</span>
 
 Let’s say you toss a coin and then roll a die.
 
@@ -109,7 +109,7 @@ Each **branch** represents a possible compound outcome (e.g. H-2), and we can **
 
 ---
 
-## 🧩 <span style="color:#8A2BE2;">Types of Events</span>
+## 🧩 <span style="color:#8A2BE2;">Event Types in Probability</span>
 
 ### Mutually Exclusive  
 Events that **cannot happen at the same time**  
@@ -150,11 +150,25 @@ P(A^c) = 1 - P(A)
 
 - **Disjoint events** → no overlap  
 - **Independent events** → can overlap, but still multiply their probabilities
+---
+## 🤖 Why This Matters in Machine Learning
+
+Probability and randomness aren’t just academic ideas — they power real-world machine learning.
+
+- Algorithms like Naive Bayes and Hidden Markov Models rely on **probabilistic logic**.
+- Concepts like **independence** and **conditional probability** are fundamental in model design.
+- Randomness underlies **cross-validation**, **bootstrapping**, and even **neural network weight initialization**.
+
+Understanding these foundations helps you avoid black-box thinking — and build better models.
 
 ---
-<details class="border rounded p-3 bg-light my-4">
-  <summary class="fw-bold text-primary">🧠 Level Up: Why This Matters</summary>
-  <div class="mt-2">
+{% include quiz/randomness.html %}
+
+---
+
+<details class="level-up-box">
+  <summary class="level-up-title">🧠 Level Up: Why This Matters</summary>
+  <div class="level-up-content">
     <p>Understanding randomness and events helps you:</p>
     <ul>
       <li>🎯 Build simulations for decision-making</li>
@@ -165,27 +179,89 @@ P(A^c) = 1 - P(A)
   </div>
 </details>
 ---
-{% include quiz/randomness.html %}
+<details class="custom-box custom-best">
+  <summary><strong>✅ Best Practices for Probability & Randomness</strong></summary>
+  <ul>
+    <li>Visualize compound events with <strong>tree diagrams</strong> to map all outcomes clearly.</li>
+    <li>Use <strong>cumulative relative frequencies</strong> to estimate long-term probabilities.</li>
+    <li>Differentiate between <strong>disjoint</strong> and <strong>independent</strong> events before applying rules.</li>
+    <li>Always define your <strong>sample space</strong> explicitly — it frames every calculation.</li>
+  </ul>
+</details>
+
+---
+<details class="custom-box custom-warning">
+  <summary><strong>⚠️ Common Pitfalls</strong></summary>
+  <ul>
+    <li>❌ Assuming disjoint events are also independent — they’re not.</li>
+    <li>❌ Forgetting that probabilities must sum to <strong>1</strong> for all possible outcomes.</li>
+    <li>❌ Expecting short-term outcomes to always balance — this <strong>Gambler’s Fallacy</strong> is misleading.</li>
+    <li>❌ Misinterpreting randomness as lack of pattern — patterns can emerge from chance!</li>
+  </ul>
+</details>
 
 ---
 
 ## 🧠 Summary
 
-| Concept | Meaning |
-|--------|---------|
-| Randomness | Unpredictable short-term, predictable long-term |
-| Probability | Likelihood of an event (between 0 and 1) |
-| Relative Frequency | Estimate based on observed trials |
-| Sample Space | All possible outcomes |
-| Mutually Exclusive | Can’t happen together |
-| Collectively Exhaustive | Together cover all possibilities |
-| Complement | All other outcomes |
-| Independent | One event doesn’t affect the other |
-| Tree Diagram | Shows compound outcomes |
-| Venn Diagram | Visualize event relationships |
+<table style="width:100%; border-collapse: collapse;">
+  <thead>
+    <tr style="background-color: #f0f8ff;">
+      <th style="padding: 8px; border: 1px solid #ccc;">🎯 <strong>Concept</strong></th>
+      <th style="padding: 8px; border: 1px solid #ccc;">💡 <strong>Meaning</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="background-color: #ffffff;">
+      <td style="padding: 8px; border: 1px solid #ddd;">Randomness</td>
+      <td style="padding: 8px; border: 1px solid #ddd;">Unpredictable short-term, predictable long-term</td>
+    </tr>
+    <tr style="background-color: #f9f9f9;">
+      <td style="padding: 8px; border: 1px solid #ddd;">Probability</td>
+      <td style="padding: 8px; border: 1px solid #ddd;">Likelihood of an event (between 0 and 1)</td>
+    </tr>
+    <tr style="background-color: #ffffff;">
+      <td style="padding: 8px; border: 1px solid #ddd;">Relative Frequency</td>
+      <td style="padding: 8px; border: 1px solid #ddd;">Estimate based on observed trials</td>
+    </tr>
+    <tr style="background-color: #f9f9f9;">
+      <td style="padding: 8px; border: 1px solid #ddd;">Sample Space</td>
+      <td style="padding: 8px; border: 1px solid #ddd;">All possible outcomes</td>
+    </tr>
+    <tr style="background-color: #ffffff;">
+      <td style="padding: 8px; border: 1px solid #ddd;">Mutually Exclusive</td>
+      <td style="padding: 8px; border: 1px solid #ddd;">Can’t happen together</td>
+    </tr>
+    <tr style="background-color: #f9f9f9;">
+      <td style="padding: 8px; border: 1px solid #ddd;">Collectively Exhaustive</td>
+      <td style="padding: 8px; border: 1px solid #ddd;">Together cover all possibilities</td>
+    </tr>
+    <tr style="background-color: #ffffff;">
+      <td style="padding: 8px; border: 1px solid #ddd;">Complement</td>
+      <td style="padding: 8px; border: 1px solid #ddd;">All other outcomes</td>
+    </tr>
+    <tr style="background-color: #f9f9f9;">
+      <td style="padding: 8px; border: 1px solid #ddd;">Independent</td>
+      <td style="padding: 8px; border: 1px solid #ddd;">One event doesn’t affect the other</td>
+    </tr>
+    <tr style="background-color: #ffffff;">
+      <td style="padding: 8px; border: 1px solid #ddd;">Tree Diagram</td>
+      <td style="padding: 8px; border: 1px solid #ddd;">Shows compound outcomes</td>
+    </tr>
+    <tr style="background-color: #f9f9f9;">
+      <td style="padding: 8px; border: 1px solid #ddd;">Venn Diagram</td>
+      <td style="padding: 8px; border: 1px solid #ddd;">Visualize event relationships</td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
+## 💬 Got a question or suggestion?
+
+Leave a comment below — I’d love to hear your thoughts or help if something was unclear.
+
+---
 ## ✅ Up Next
 
 In the next post, we’ll explore:

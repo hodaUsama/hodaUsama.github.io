@@ -53,7 +53,7 @@ E(X) = 1 \\times 0.1 + 2 \\times 0.3 + 3 \\times 0.4 + 4 \\times 0.2 = 0.1 + 0.6
 
 ---
 
-### 📐 Mean of a Continuous Random Variable
+### 📐<span style="color:#228B22; font-weight:bold;">  Mean of a Continuous Random Variable </span>
 
 \\[
 \\mu_X = E(X) = \\int_{-\\infty}^{\\infty} x f(x) \\, dx
@@ -97,7 +97,7 @@ E(Y) = a + b E(X)
 
 ---
 
-#### Example (Using discrete mean above):
+#### <span style="color:#FFA500; font-weight:bold;"> Example (Using discrete mean above): </span>
 
 \\[
 E(Y) = 3 + 2 \times 2.7 = 3 + 5.4 = 8.4
@@ -254,10 +254,22 @@ For any two variables \\( X \\) and \\( Y \\):
 \\]
 
 ---
-
-<details class="border rounded p-3 bg-light my-4">
-  <summary class="fw-bold text-primary">🧠 Level Up: Understanding Variance Properties</summary>
+## 🤖 Why It Matters for Machine Learning
   <div class="mt-2">
+    <p>Understanding <strong>expected value</strong> and <strong>variance</strong> is foundational to many machine learning algorithms:</p>
+    <ul>
+      <li>📊 <strong>Feature Scaling:</strong> When features are transformed (e.g., using <em>standardization</em> or <em>min-max scaling</em>), you're applying <em>linear transformations</em> — and knowing how these affect mean and variance helps you avoid introducing bias.</li>
+      <li>🧠 <strong>Loss Functions:</strong> Common losses like <code>MSE</code> rely on variance concepts — minimizing variance between predicted and actual values improves model performance.</li>
+      <li>📈 <strong>Model Interpretation:</strong> Many models assume data has constant variance (homoscedasticity). Violating this can lead to poor generalization.</li>
+    </ul>
+    <p class="mt-3">💡 Mastering these statistical fundamentals makes it easier to debug models, improve feature engineering, and better understand algorithm behavior under the hood.</p>
+  </div>
+
+
+---
+<details class="level-up-box">
+  <summary class="level-up-title">🧠 Level Up: Understanding Variance Properties</summary>
+<div class="level-up-content">
 
 <li> Adding a constant \( a \) to a random variable shifts the mean but leaves variance unchanged.  </li>
 <li> Multiplying by \( b \) scales the variance by \( b^2 \).  </li>
@@ -268,7 +280,27 @@ For any two variables \\( X \\) and \\( Y \\):
 </details>
 
 ---
+<details class="custom-box custom-best">
+  <summary><strong>✅ Best Practices for Working with Random Variable Metrics</strong></summary>
+  <ul>
+    <li>Always check whether your variable is <strong>discrete or continuous</strong> before choosing formulas.</li>
+    <li>Use <strong>linear transformation rules</strong> to simplify calculations and scaling checks.</li>
+    <li>Understand that <strong>standard deviation</strong> is more interpretable in the context of units.</li>
+    <li>Apply variance rules carefully when dealing with <strong>sums of variables</strong>.</li>
+  </ul>
+</details>
+---
+<details class="custom-box custom-warning">
+  <summary><strong>⚠️ Common Pitfalls to Avoid</strong></summary>
+  <ul>
+    <li>❌ Confusing the formula for variance between <strong>sample vs. population</strong>.</li>
+    <li>❌ Forgetting to square the scaling factor when applying transformations to variance.</li>
+    <li>❌ Assuming that adding constants affects the variance (it doesn’t).</li>
+    <li>❌ Neglecting <strong>covariance</strong> when computing variance of sums.</li>
+  </ul>
+</details>
 
+---
 {% include quiz/random-var-mean.html %}
 
 ---
@@ -287,7 +319,11 @@ For any two variables \\( X \\) and \\( Y \\):
 | Std Deviation            | \\( \sigma = \sqrt{\text{Var}(X)} \\)                  |
 
 ---
+## 💬 Got a question or suggestion?
 
+Leave a comment below — I’d love to hear your thoughts or help if something was unclear.
+
+---
 ## 🔜 Up Next
 
 Next, we’ll explore the **Normal Distribution** — a fundamental continuous distribution that appears everywhere in statistics and data science.

@@ -1,17 +1,53 @@
-<details class="border rounded p-3 bg-light my-4">
-  <summary class="fw-bold text-primary">🧠 Try It Yourself: Independence & Bayes</summary>
-  <div class="mt-2">
+<h2 id="quiz" class="mt-5">📌 Try It Yourself: Independence & Bayes</h2>
 
-    <p><strong>Q1:</strong> If \( P(A \mid B) = P(A) \), what does this imply?</p>
-    <details class="my-2"><summary><strong>💡 Show Answer</strong></summary><p>A and B are independent.</p></details>
+<p><strong>Q1:</strong> If \( P(A \mid B) = P(A) \), what does this imply?</p>
 
-    <p><strong>Q2:</strong> Can disjoint events be independent?</p>
-    <details class="my-2"><summary><strong>💡 Show Answer</strong></summary><p>No — disjoint events are always dependent.</p></details>
+<details class="my-2">
+  <summary><strong>💡 Show Answer</strong></summary>
+  <p>
+    ✅ <strong>Independence</strong> — it means that knowing B occurred does not change the probability of A.  
+    <br><br>
+    So A and B are <strong>independent</strong> events.
+  </p>
+</details>
 
-    <p><strong>Q3:</strong> What is the formula for Bayes’ Theorem?</p>
-    <details class="my-2"><summary><strong>💡 Show Answer</strong></summary>
-      <p><span class="katex">\( P(A \mid B) = \frac{P(A \cap B)}{P(B)} \)</span></p>
-    </details>
+<hr class="my-4">
 
-  </div>
+<p><strong>Q2:</strong> Can disjoint events be independent?</p>
+
+<details class="my-2">
+  <summary><strong>💡 Show Answer</strong></summary>
+  <p>
+    ❌ <strong>No</strong> — disjoint events cannot both happen together, so the occurrence of one means the other definitely didn’t happen.  
+    <br><br>
+    That makes them <strong>dependent</strong> by definition.
+  </p>
+</details>
+
+<hr class="my-4">
+
+<p><strong>Q3:</strong> What is the formula for <strong>Bayes’ Theorem</strong>?</p>
+
+<details class="my-2">
+  <summary><strong>💡 Show Answer</strong></summary>
+  <p>
+    ✅ <strong>Bayes’ Rule:</strong>  
+    <br><br>
+    <code>P(A | B) = [P(B | A) × P(A)] ÷ P(B)</code>  
+    <br><br>
+    It allows us to reverse conditional probabilities based on observed evidence.
+  </p>
+</details>
+
+<hr class="my-4">
+
+<p><strong>Bonus:</strong> Why is Bayes’ Rule so powerful in real-world applications?</p>
+
+<details class="my-2">
+  <summary><strong>💡 Show Answer</strong></summary>
+  <p>
+    ✅ It helps update probabilities when new evidence appears.  
+    <br><br>
+    Whether in <strong>medical tests</strong>, <strong>spam filters</strong>, or <strong>AI predictions</strong>, Bayes’ Rule allows smart decision-making based on prior knowledge.
+  </p>
 </details>

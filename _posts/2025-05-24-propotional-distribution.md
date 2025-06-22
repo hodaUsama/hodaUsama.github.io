@@ -18,6 +18,13 @@ For a **sample**, the proportion is represented by \\( p \\), which is an estima
 
 ---
 
+<div class="series-nav">
+  <p>📚 <strong>This post is part of the "Intro to Statistics" series</strong></p>
+  <p>🔙 <strong>Previously:</strong> <a href="/posts/distribution-types/" style="color:#FF6F61;">Population, Sample, and Sampling Distributions Explained</a></p>
+</div>
+
+---
+
 ## 🔍 <span style="color:#1E90FF; font-weight:bold;"> Example: Proportion of Voters Supporting a Candidate </span>
 
 Imagine you're conducting a poll to determine the proportion of voters supporting a political candidate in a city. Out of a sample of 1000 people:
@@ -97,10 +104,9 @@ When dealing with binary categorical variables (like success/failure, yes/no), *
 Use the formula to find the standard error for further analysis.
 
 ---
-
-<details class="border rounded p-3 bg-light my-4">
-  <summary class="fw-bold text-primary">🧠 Level Up: Advanced Insights on Sampling Proportions</summary>
-  <div class="mt-2" style="line-height:1.5; font-size: 0.95rem;">
+<details class="level-up-box">
+  <summary class="level-up-title">🧠 Level Up: Advanced Insights on Sampling Proportions</summary>
+   <div class="level-up-content">
     <ul>
       <li>The <b>Central Limit Theorem</b> ensures that as the sample size increases, the sampling distribution of the sample proportion becomes approximately normal, allowing for easier statistical inference.</li>
       <li>When <b>sample size</b> \( n \) is large enough (usually \( n \geq 30 \)) and both \( n\beta \geq 15 \) and \( n(1-\beta) \geq 15 \) hold, the sampling distribution of the sample proportion will follow a normal distribution.</li>
@@ -108,6 +114,28 @@ Use the formula to find the standard error for further analysis.
       <li>If the sample size is small or the conditions for normality aren’t met, other techniques like <b>binomial approximation</b> or <b>bootstrapping</b> can be used for more reliable results.</li>
     </ul>
   </div>
+</details>
+
+---
+<details class="custom-box custom-best">
+  <summary><strong>✅ Best Practices for Proportional Sampling</strong></summary>
+  <ul>
+    <li>Ensure your sample size is large enough so that <code>n × β ≥ 15</code> and <code>n × (1 - β) ≥ 15</code>.</li>
+    <li>Use random and representative sampling to reduce bias in estimating <code>p</code>.</li>
+    <li>Report a confidence interval with your sample proportion for better interpretation.</li>
+    <li>Verify that your variable is binary (success/failure) before applying this model.</li>
+  </ul>
+</details>
+
+---
+<details class="custom-box custom-warning">
+  <summary><strong>⚠️ Common Pitfalls to Avoid</strong></summary>
+  <ul>
+    <li>❌ Applying the normal approximation when <code>n × β</code> or <code>n × (1 - β)</code> is less than 15.</li>
+    <li>❌ Misinterpreting <code>p</code> as a fixed value — it's a random variable.</li>
+    <li>❌ Forgetting that standard deviation decreases with larger samples.</li>
+    <li>❌ Confusing the population proportion <code>β</code> with the sample proportion <code>p</code>.</li>
+  </ul>
 </details>
 
 
@@ -127,6 +155,10 @@ Use the formula to find the standard error for further analysis.
 | <span style="color:#DC143C;">Standard Error (\\( \sigma_p \\))</span>            | \\( \sigma_p = \sqrt{\frac{\beta(1 - \beta)}{n}} \\), variability of sample proportions     |
 | <span style="color:#4682B4;">Conditions for Normality</span> | \\( n \times \beta \geq 15 \\) and \\( n \times (1 - \beta) \geq 15 \\) for bell-shaped curve. |
 
+---
+## 💬 Got a question or suggestion?
+
+Leave a comment below — I’d love to hear your thoughts or help if something was unclear.
 
 ---
 

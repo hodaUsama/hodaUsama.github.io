@@ -5,12 +5,12 @@ date: 2025-05-16
 categories: [statistics, beginner]
 tags: [independence, bayes, conditional, tree-diagram, posterior, prior, likelihood]
 math: true
+description: Learn how Bayes’ Theorem works, when to apply it, and how it connects to independence and conditional probability. This post breaks down key concepts with clear examples and practical relevance in real-world applications like spam detection and medical testing.
+
 ---
 
-How can we tell if two events are independent?  
-What does it mean to update our beliefs when new data comes in?  
-This post unpacks these ideas — and ends with a walkthrough of **Bayes’ Rule**.
-
+Understanding uncertainty is at the heart of statistics — and **Bayes’ Rule** is one of the most powerful tools to deal with it.
+This post will show you how Bayes' Theorem helps us update probabilities with new information, and how it connects to **independence, conditional probability,** and real-world reasoning — from medical diagnoses to machine learning models.
 ---
 
 <div class="series-nav">
@@ -194,39 +194,56 @@ P(D \mid +) = \frac{0.00099}{0.01098} \approx 0.09
 Despite a positive result, there's only a **~9% chance** the employee actually uses the drug — because the condition is rare, and **false positives dominate** the denominator.
 
 ---
+![Bayes Formula Flow](/assets/images/bayes_formula_flow.png)
+*Figure: Flow of belief update — from prior and likelihood to posterior*
 
-<details class="border rounded p-3 bg-light my-4">
-  <summary class="fw-bold text-primary">🧠 Level Up: Mastering Bayes — What’s Really Going On?</summary>
-  <div class="mt-2">
 
-  <p>Bayes’ Theorem might look like a formula — but it’s actually a way of <strong>reversing conditional logic</strong>.</p>
+---
 
-  <ul>
-    <li>🎯 The <strong>numerator</strong> is the probability that <em>both the hypothesis and evidence</em> are true (joint probability).</li>
-    <li>🧪 The <strong>denominator</strong> is the <em>total probability</em> of the observed evidence — from all possible sources.</li>
-  </ul>
+<details class="level-up-box">
+   <summary class="level-up-title"><strong>🧠 Level Up: Mastering Bayes — What’s Really Going On?</strong></summary>
+<div class="level-up-content">
+    <p>Bayes’ Theorem might look like a formula — but it’s actually a way of <strong>reversing conditional logic</strong>.</p>
 
-  <p>So Bayes’ Theorem simply asks:</p>
-  <blockquote class="blockquote">
-    If this result just happened, how likely was it caused by what I suspected?
-  </blockquote>
+    <ul>
+      <li>🎯 The <strong>numerator</strong> is the probability that <em>both the hypothesis and evidence</em> are true (joint probability).</li>
+      <li>🧪 The <strong>denominator</strong> is the <em>total probability</em> of the observed evidence — from all possible sources.</li>
+    </ul>
 
-  <p>🧠 You’re updating your belief (the prior) based on what you just saw (the evidence), and how likely that evidence is under each possible explanation (likelihood).</p>
+    <p>So Bayes’ Theorem simply asks:</p>
+    <blockquote class="blockquote">
+      If this result just happened, how likely was it caused by what I suspected?
+    </blockquote>
 
-  <p><strong>Bayes is not just math — it’s decision logic under uncertainty.</strong></p>
+    <p>🧠 You’re updating your belief (the prior) based on what you just saw (the evidence), and how likely that evidence is under each possible explanation (likelihood).</p>
 
+    <p><strong>Bayes is not just math — it’s decision logic under uncertainty.</strong></p>
   </div>
 </details>
 
+---
+<details class="custom-box custom-best">
+  <summary><strong>✅ Best Practices for Bayes’ Rule</strong></summary>
+  <ul>
+    <li>Understand the difference between prior, likelihood, and posterior before applying the formula.</li>
+    <li>Use tree diagrams or tables to break down problems clearly.</li>
+    <li>Double-check that your events are independent when assuming so.</li>
+    <li>Always compute total probability in the denominator correctly.</li>
+  </ul>
+</details>
+---
+<details class="custom-box custom-warning">
+  <summary><strong>⚠️ Common Pitfalls</strong></summary>
+  <ul>
+    <li>❌ Confusing <strong>P(A | B)</strong> with <strong>P(B | A)</strong>.</li>
+    <li>❌ Ignoring base rates (priors), especially when they are very small.</li>
+    <li>❌ Mislabeling dependent events as independent.</li>
+    <li>❌ Forgetting to normalize with the full evidence probability in the denominator.</li>
+  </ul>
+</details>
 
 ---
-
 {% include quiz/Bayes.html %}
-
----
-
-![Bayes Formula Flow](/assets/images/bayes_formula_flow.png)
-*Figure: Flow of belief update — from prior and likelihood to posterior*
 
 ---
 
@@ -245,6 +262,11 @@ Despite a positive result, there's only a **~9% chance** the employee actually u
 
 ---
 
+## 💬 Got a question or suggestion?
+
+Leave a comment below — I’d love to hear your thoughts or help if something was unclear.
+
+---
 ## ✅ Up Next
 
 Next, we’ll dive into **probability distributions** and how cumulative distributions help us model real-world events over time.

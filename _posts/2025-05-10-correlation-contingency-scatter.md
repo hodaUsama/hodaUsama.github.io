@@ -5,11 +5,13 @@ date: 2025-05-10
 categories: [statistics, beginner]
 tags: [correlation, contingency-table, scatter-plot, categorical, quantitative]
 math: true
+description: Learn how to analyze relationships between variables using correlation techniques like contingency tables and scatter plots, based on whether your data is categorical or quantitative.
+
 ---
 
-To understand the relationship between two variables, we use **correlation**.
+Understanding how two variables relate is a core step in data analysis — and that's where **correlation** comes in.
 
-But how we analyze that relationship depends on the type of data we’re working with — **categorical or quantitative**.
+But choosing the right correlation method depends on your data type: are your variables **categorical** or **quantitative**? In this post, we’ll break down the key approaches — from contingency tables to scatter plots — so you can analyze relationships with confidence.
 
 ---
 
@@ -117,16 +119,44 @@ It helps us visually assess correlation:
 - X-axis: Hours studied  
 - Y-axis: Quiz score
 
-![Scatter Plot – Study Hours vs Quiz Score](/assets/images/scatter_study_scores.png)
+![Scatter plot showing positive correlation](/assets/images/scatter_study_scores.png)
 
 
 You’ll notice: the more hours students study, the higher their scores.  
 This is a **strong positive relationship**.
 
 ---
-<details class="border rounded p-3 bg-light my-4">
-  <summary class="fw-bold text-primary">🧠 Level Up: Choosing the Right Correlation Approach Based on Data Types</summary>
-  <div class="mt-2">
+
+<details class="custom-box custom-best">
+  <summary><strong>✅ Best Practices When Exploring Variable Relationships</strong></summary>
+  <ul>
+    <li>Start with <strong>simple visuals</strong> like scatter plots or tables before jumping into modeling.</li>
+    <li>Use <strong>scatter plots</strong> to spot linear or curved patterns between numeric variables.</li>
+    <li>For <strong>categorical data</strong>, contingency tables show how categories relate.</li>
+    <li>Always ask: “Can this help my model make better predictions?”</li>
+    <li>Use a <strong>correlation metric</strong> (like Pearson’s r) for numerical comparisons.</li>
+  </ul>
+</details>
+
+
+---
+
+<details class="custom-box custom-warning">
+  <summary><strong>⚠ Common Pitfalls to Avoid</strong></summary>
+  <ul>
+    <li><strong>Assuming correlation means causation</strong> — just because two variables move together doesn’t mean one causes the other.</li>
+    <li><strong>Ignoring outliers</strong> — one extreme value can distort your scatter plot or correlation result.</li>
+    <li><strong>Overlooking non-linear patterns</strong> — not all relationships are straight lines. Try other visuals or transformations.</li>
+    <li><strong>Using the wrong chart</strong> — don’t use a scatter plot for categorical data; use a contingency table instead.</li>
+    <li><strong>Forgetting to check variable types</strong> — always know what kind of data you're working with before analyzing relationships.</li>
+  </ul>
+</details>
+
+---
+
+<details class="level-up-box">
+  <summary class="level-up-title">🧠 Level Up: Choosing the Right Correlation Approach Based on Data Types</summary>
+  <div class="level-up-content">
     <p>Correlation analysis isn’t one-size-fits-all — the type of variables determines the best method:</p>
     <ul>
       <li>📊 For two <strong>quantitative variables</strong>, measures like <em>Pearson's r</em> capture linear relationships.</li>
@@ -136,13 +166,26 @@ This is a **strong positive relationship**.
     <p>Understanding your data types ensures you pick the most powerful and appropriate analysis technique.</p>
   </div>
 </details>
-
-
 ---
 
 {% include quiz/case-study.html %}
 
 ---
+
+## 🤖 Why It Matters in Machine Learning
+
+In machine learning, understanding **relationships between variables** helps you:
+
+- 📊 Choose the right features for your model (feature selection).
+- 📉 Detect multicollinearity — too much correlation between features can hurt model accuracy.
+- 🧪 Engineer new features based on strong associations (e.g., combining study time and pass rate).
+- 📈 Pick the right models — strong linear correlation? Consider regression. Categorical outcomes? Try classification.
+
+Learning how to interpret contingency tables and scatter plots builds your **EDA skills**, a core part of every data science pipeline.
+
+
+---
+
 ## ✅ Conclusion
 
 | Type of Data        | Tool to Use          | Example                     |
@@ -153,7 +196,11 @@ This is a **strong positive relationship**.
 🧠 Choose the right tool based on your variable types.
 
 ---
+## 💬 Got a question or suggestion?
 
+Leave a comment below — I’d love to hear your thoughts or help if something was unclear.
+
+---
 ## 🔜 Up Next
 
 Next, we’ll calculate the **Pearson correlation coefficient (r)** — a number that tells us **how strong** a linear relationship really is.

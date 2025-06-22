@@ -5,19 +5,16 @@ date: 2025-05-11
 categories: [statistics, beginner,concepts]
 tags: [proportions, conditional, marginal, contingency-table, categorical]
 math: true
----
-
-Have you ever looked at a data table and wondered:
-
-> ❓ *What’s the difference between marginal and conditional proportions?*  
-> ❓ *When do I use each one?*
-
-You’re not alone! These two terms come up a lot in **categorical data analysis**, especially when working with **contingency tables**.
-
-Let’s break it all down with examples and visuals.
+description: Understand the difference between marginal and conditional proportions using examples and contingency tables. A must-know concept for analyzing categorical data and preparing ML datasets.
 
 ---
 
+When working with categorical data, two key concepts often confuse beginners: **marginal proportions** and **conditional proportions**. These show up everywhere — from surveys to machine learning datasets.
+
+In this post, you’ll learn how to tell them apart, how to calculate each one, and when to use them.
+
+
+---
 ## 🧮 Let’s Start with a Contingency Table
 
 A school counselor surveys students about their study habits and quiz results.
@@ -147,14 +144,34 @@ Here’s a comparison to clarify:
 
 ---
 
-## 🚫 Common Mistakes
+<details class="custom-box custom-best">
+  <summary><strong>✅ Best Practices for Proportions Analysis</strong></summary>
+  <ul>
+    <li>Use <strong>conditional proportions</strong> to compare group behavior (e.g., % who subscribe within each gender).</li>
+    <li>Use <strong>marginal proportions</strong> to analyze overall distributions across the whole dataset.</li>
+    <li>Make sure your conditional proportions add up to <strong>100%</strong> across the condition variable.</li>
+    <li>Visualize proportions using <strong>segmented bar charts</strong> or <strong>stacked bar plots</strong>.</li>
+  </ul>
+</details>
 
-- Confusing marginal % (overall) with conditional % (within group)
-- Forgetting that conditional proportions **always add to 100%** across the row/column
-- Assuming patterns in conditionals **prove causation** (they don’t!)
+<details class="custom-box custom-warning">
+  <summary><strong>⚠ Common Pitfalls to Avoid</strong></summary>
+  <ul>
+    <li>🔁 <strong>Confusing marginal with conditional proportions</strong> — always check what the % is conditioned on.</li>
+    <li>❗ <strong>Misinterpreting conditional results</strong> as causal relationships — remember, these are descriptive!</li>
+    <li>📉 <strong>Ignoring totals</strong> — small subgroup sizes can make conditional percentages misleading.</li>
+    <li>📊 <strong>Visualizing incorrectly</strong> — don’t use pie charts to compare conditional percentages across groups.</li>
+  </ul>
+</details>
+
 
 ---
 {% include quiz/conditional-vs-marginal.html %}
+
+---
+## 🧠 Why It Matters in Machine Learning
+
+Understanding conditional and marginal proportions is essential in data preprocessing and feature evaluation. Whether you're analyzing **target distributions** in classification tasks or evaluating **categorical splits** in decision trees, knowing how to interpret these proportions helps you avoid misleading patterns and build better models.
 
 ---
 ## 🧠 Summary

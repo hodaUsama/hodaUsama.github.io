@@ -16,7 +16,7 @@ The **normal distribution** (or **Gaussian distribution**) is a type of continuo
 <div class="series-nav">
   <p>📚 <strong>This post is part of the "Intro to Statistics" series</strong></p>
   <p>🔙 <strong>Previously:</strong> <a href="/posts/random-var-mean/">Mean, Variance, and Standard Deviation of Random Variables</a></p>
-  <p>🔜 <strong>Next:</strong> <a href="/posts/z-distribution/">Z Distribution</a></p>
+  <p>🔜 <strong>Next:</strong> <a href="/posts/z-distribution/">Understanding Z-Distribution and Using the Z-Table</a></p>
 </div>
 
 ---
@@ -76,10 +76,20 @@ To calculate the probability that a variable \\( X \\) lies within a specific ra
 - We use the **Cumulative Distribution Function (CDF)**, which gives the area under the curve from \\( -\infty \\) to a specified \\( x \\).
 
 ---
+## 🤖 Why It Matters for Machine Learning
+<div class="mt-2">
+ <ul>
+    <li>In <strong>Linear Regression</strong>, residuals are ideally normally distributed — this ensures valid confidence intervals and hypothesis tests.</li>
+    <li><strong>Gaussian Naive Bayes</strong> classifier assumes features are normally distributed within each class.</li>
+    <li>Many <strong>statistical tests</strong> (like t-tests or ANOVA) assume normality — often used in feature selection.</li>
+    <li>The <strong>Central Limit Theorem</strong> justifies normal approximations in ensemble learning, bootstrapping, and model evaluation.</li>
+  </ul>
+</div>
+---
 
-<details class="border rounded p-3 bg-light my-4">
-  <summary class="fw-bold text-primary">🧠 Level Up: Understanding the Normal Distribution in Detail</summary>
-  <div class="mt-2">
+<details class="level-up-box">
+ <summary class="level-up-title">🧠 Level Up: Understanding the Normal Distribution in Detail</summary>
+  <div class="level-up-content">
     <ul>
       <li>The <b>normal distribution</b> is foundational in statistics. It is used in hypothesis testing, confidence intervals, and in many natural and social sciences.</li>
       <li><b>The 68-95-99.7 rule</b>: This empirical rule highlights the percentage of data that falls within 1, 2, and 3 standard deviations from the mean.</li>
@@ -87,6 +97,27 @@ To calculate the probability that a variable \\( X \\) lies within a specific ra
       <li>In practice, many natural phenomena and errors in measurement follow a normal distribution because of the <b>law of large numbers</b>.</li>
     </ul>
   </div>
+</details>
+
+---
+<details class="custom-box custom-best">
+  <summary><strong>✅ Best Practices for Normal Distribution</strong></summary>
+  <ul>
+    <li>Check if your data is approximately symmetric before assuming normality.</li>
+    <li>Use <strong>Q-Q plots</strong> or <strong>histograms</strong> to assess normality visually.</li>
+    <li>Apply normal distribution when dealing with large samples (thanks to CLT).</li>
+    <li>Understand when standardizing (Z-scores) is appropriate.</li>
+  </ul>
+</details>
+---
+<details class="custom-box custom-warning">
+  <summary><strong>⚠️ Common Pitfalls</strong></summary>
+  <ul>
+    <li>❌ Assuming data is normal without checking (especially for small samples).</li>
+    <li>❌ Using normal distribution with categorical or non-continuous data.</li>
+    <li>❌ Confusing the <strong>normal distribution</strong> with the <strong>uniform distribution</strong>.</li>
+    <li>❌ Misinterpreting the standard deviation as covering 100% of data.</li>
+  </ul>
 </details>
 
 ---
@@ -106,6 +137,11 @@ To calculate the probability that a variable \\( X \\) lies within a specific ra
 
 ---
 
+## 💬 Got a question or suggestion?
+
+Leave a comment below — I’d love to hear your thoughts or help if something was unclear.
+
+---
 ## 🔜 Up Next
 
 Next, we’ll explore the **Z-Distribution** — a standardized version of the normal distribution that is used to calculate probabilities and percentiles.
