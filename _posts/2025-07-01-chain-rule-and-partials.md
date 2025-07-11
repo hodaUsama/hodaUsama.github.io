@@ -22,6 +22,7 @@ In this post, you'll learn:
 <div class="series-nav">
   <p>📚 <strong>This post is part of the "Intro to Calculus" series</strong></p>
   <p>🔙 <strong>Previously:</strong> <a href="/posts/what-is-dervative/" style="color:#FF6F61;">What is a Derivative? (Beginner’s Guide to Calculus for ML)</a></p> 
+   <p>🔜 <strong>Next:</strong> <a href="/posts/jacobian-calculus/" style="color:#1E90FF;">Understanding the Jacobian – A Beginner’s Guide with 2D & 3D Examples</a></p>
 </div>
 
 ---
@@ -350,7 +351,7 @@ Group \( \frac{dy}{dx} \) terms:
 Leave a comment below — I’d love to hear your thoughts or help if something was unclear.
 
 ---
----
+
 
 ## 🧭 <span style="color:#9370DB;">Next Up</span>
 
