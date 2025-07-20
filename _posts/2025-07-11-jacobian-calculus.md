@@ -51,7 +51,6 @@ So, the **Jacobian vector** is:
 \mathbf{J} = [2xy,\ x^2,\ 3]
 \\]
 
-🎨 Visual Description Prompt:
 
 A 3D plot showing the function \( f(x,y,z) = x^2 y + 3z \), with arrows (vectors) drawn at a few points, pointing in the direction of the gradient. Use one red arrow labeled “Jacobian” pointing toward a steeper slope.
 
