@@ -230,9 +230,7 @@ Chain rule applied to the exponent!
 
 
 ---
-![3D surface plot of f(x, y) = sin(x) · eʸ showing how the function changes with x and y — useful for partial derivatives.](/assets/images/partial_surface.png)
 
----
 
 ### 🧮 Python: Symbolic Partial Derivatives
 
