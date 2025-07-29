@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "🧮 Understanding Functions: The Foundation of Calculus (and Machine Learning!)"
-date: 2025-06-29
+date: 2025-06-15
 categories: [calculus, beginner]
 tags: [calculus, functions, machine-learning, statistics, math, beginners]
 description: "Learn the fundamentals of functions in calculus, including scalar and vector-valued functions, domain, range, examples, and best practices. Perfect for beginners in math, statistics, and machine learning."
@@ -9,6 +9,13 @@ math: true
 ---
 
 Functions are the foundation of calculus and the language of data science and machine learning. In this lesson, you'll learn what a function is, the different types of functions, and how to avoid common mistakes when starting out.
+
+---
+
+<div class="series-nav">
+  <p>📚 <strong>This post is part of the "Intro to Calculus" series</strong></p> 
+   <p>🔜 <strong>Next:</strong> <a href="/posts/visualizing-multivariable-functions/" style="color:#1E90FF;">Visualizing Multivariable Functions: Contour Plots, Vector-Valued Functions & Vector Fields (Beginner's Guide)</a></p>
+</div>
 
 ---
 ## 🎯 <span style="color:#1E90FF;">What is a Function</span>

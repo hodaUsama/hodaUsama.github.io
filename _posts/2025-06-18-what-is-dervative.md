@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "🔍 What is a Derivative? (Beginner’s Guide to Calculus for ML)"
-date: 2025-06-30
+date: 2025-06-18
 categories: [calculus, beginner]
 tags: [derivative, differentiation, gradient, calculus, machine-learning]
 description: "Understand what a derivative means in simple terms. Learn about gradient, slope, and how derivatives apply to linear and non-linear functions, with visuals and examples."
@@ -25,7 +25,8 @@ Let’s break it down step-by-step with visuals, formulas, and real-world intuit
 
 <div class="series-nav">
   <p>📚 <strong>This post is part of the "Intro to Calculus" series</strong></p>
-  <p>🔜 <strong>Next:</strong> <a href="/posts/chain-rule-and-partials/" style="color:#1E90FF;">Chain Rule, Implicit Differentiation, and Partial Derivatives (Calculus for ML)</a></p>
+   <p>🔙 <strong>Previously:</strong> <a href="/posts/transformations-limits/" style="color:#FF6F61;">From Limits to Smoothness: Transformations, Limits, Continuity & Differentiability</a></p> 
+  <p>🔜 <strong>Next:</strong> <a href="/posts/what-is-gradient/" style="color:#1E90FF;">Understanding Gradients and Partial Derivatives (Multivariable Calculus for Machine Learning)</a></p>
 </div>
 
 ---
@@ -94,6 +95,10 @@ This represents the **instantaneous rate of change** — the slope of the curve 
 <div style="background-color:#f8faff; border-left: 4px solid #1E90FF; padding: 1em; margin: 1em 0;">
   <strong>💡 Tip:</strong> You can think of the derivative as the speed of change — like how fast a car moves!
 </div>
+
+---
+![Secant lines approaching tangent at \( x = 1 \) for \( f(x) = x^2 \)](/assets/images/limit_definition_tangent.png)
+
 
 ---
 ## 🔁 <span style="color:#FF8C00;"> Example: Derivative Using the Limit Definition </span>
@@ -311,6 +316,11 @@ Example:
 \\]
 
 ---
+
+![Table of common derivative rules: constant, power, exponential, logarithmic, trig, sum, product, quotient](/assets/images/derivative_rules_table.png)
+
+
+---
 <details class="level-up-box">
   <summary class="level-up-title"><strong>🚀 Level Up</strong></summary>
   <div class="level-up-content">
@@ -398,9 +408,15 @@ Understanding the basics of slope, rules, and limit-based derivatives sets the s
 Leave a comment below — I’d love to hear your thoughts or help if something was unclear.
 
 ---
-
 ## 🧭 <span style="color:#9370DB;">Next Up: </span>
 
-In the next post, we'll explore one of the most powerful tools in calculus — the **Chain Rule**.
+In the next post, we'll dive into one of the most powerful ideas in multivariable calculus — the **Gradient**.
 
-Stay curious!
+You’ll learn:
+- What the **gradient vector** means geometrically and computationally
+- How to compute **partial derivatives** for multivariable functions
+- Why the gradient shows the **steepest direction of change**
+- How it powers **optimization** in machine learning (like gradient descent!)
+
+Stay curious — the world of higher dimensions is about to open up.
+

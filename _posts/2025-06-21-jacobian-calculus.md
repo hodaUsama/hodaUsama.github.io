@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Understanding the Jacobian – A Beginner’s Guide with 2D & 3D Examples"
-date: 2025-07-11
+date: 2025-06-21
 categories: [calculus, beginner]
 tags: [jacobian, partial derivatives, multivariable calculus, vector calculus, machine learning]
 description: "Understand the Jacobian matrix and vector through step-by-step examples, visuals, Python code, and how it powers optimization and machine learning."
@@ -23,7 +23,7 @@ It tells us:
 <div class="series-nav">
   <p>📚 <strong>This post is part of the "Intro to Calculus" series</strong></p>
   <p>🔙 <strong>Previously:</strong> <a href="/posts/chain-rule-and-partials/" style="color:#FF6F61;">Chain Rule, Implicit Differentiation, and Partial Derivatives (Calculus for ML)</a></p> 
-   <!-- <p>🔜 <strong>Next:</strong> <a href="/posts/jacobian-calculus/" style="color:#1E90FF;">x</a></p> -->
+    <p>🔜 <strong>Next:</strong> <a href="/posts/hessien-optimization/" style="color:#1E90FF;">What is the Hessian? Understanding Curvature and Optimization in Machine Learning</a></p> 
 </div>
 
 ---
@@ -45,7 +45,7 @@ To find the **Jacobian vector**, you take the partial derivative of \\( f \\) wi
 \frac{\partial f}{\partial z} = 3
 \\]
 
-So, the **Jacobian vector** is:
+So, the **Jacobian vector** (i.e., the gradient of f) is:
 
 \\[
 \mathbf{J} = [2xy,\ x^2,\ 3]

@@ -2,7 +2,7 @@
 
 layout: post
 title: "🔗 Chain Rule, Implicit Differentiation, and Partial Derivatives (Calculus for ML)"
-date: 2025-07-01
+date: 2025-06-20
 categories: [calculus, intermediate]
 tags: [chain-rule, partial-derivatives, implicit-differentiation, calculus, machine-learning]
 description: "Understand the Chain Rule, Implicit Differentiation, and Partial Derivatives with simple examples. Learn how to differentiate composite and multivariable functions step by step — a must for machine learning."
@@ -21,7 +21,7 @@ In this post, you'll learn:
 
 <div class="series-nav">
   <p>📚 <strong>This post is part of the "Intro to Calculus" series</strong></p>
-  <p>🔙 <strong>Previously:</strong> <a href="/posts/what-is-dervative/" style="color:#FF6F61;">What is a Derivative? (Beginner’s Guide to Calculus for ML)</a></p> 
+  <p>🔙 <strong>Previously:</strong> <a href="/posts/what-is-gradient/" style="color:#FF6F61;">Understanding Gradients and Partial Derivatives (Multivariable Calculus for Machine Learning)</a></p> 
    <p>🔜 <strong>Next:</strong> <a href="/posts/jacobian-calculus/" style="color:#1E90FF;">Understanding the Jacobian – A Beginner’s Guide with 2D & 3D Examples</a></p>
 </div>
 
@@ -47,6 +47,19 @@ f'(x) = h'(p(x)) \cdot p'(x)
 \\]
 
 ✅ So, the derivative of \\( \sin(x^2) \\) is \\( 2x \cdot \cos(x^2) \\)
+
+---
+
+### 🧮 Python: Symbolic Chain Rule
+
+```python
+import sympy as sp
+
+x = sp.symbols('x')
+f = sp.sin(x**2)
+dfdx = sp.diff(f, x)
+dfdx = 2*x*cos(x**2)
+```
 
 ---
 ![Plot showing sin(x²) and its derivative 2x·cos(x²) — a visual demonstration of the Chain Rule in action.](/assets/images/chain_rule_plot.png)
@@ -197,10 +210,7 @@ Only \\( \sin(x) \\) is affected:
 
 ✅ Here, \\( y \\) and \\( z \\) are treated as constants.
 
----
-![3D surface plot of f(x, y) = sin(x) · eʸ showing how the function changes with x and y — useful for partial derivatives.](/assets/images/partial_surface.png)
 
----
 
 ### 🔹 Differentiate with respect to \( y \):
 
@@ -218,7 +228,66 @@ Chain rule applied to the exponent!
 \frac{\partial f}{\partial z} = \sin(x) \cdot e^{yz^2} \cdot 2yz
 \\]
 
+
 ---
+![3D surface plot of f(x, y) = sin(x) · eʸ showing how the function changes with x and y — useful for partial derivatives.](/assets/images/partial_surface.png)
+
+---
+
+### 🧮 Python: Symbolic Partial Derivatives
+
+```python
+import sympy as sp
+
+x, y, z = sp.symbols('x y z')
+f = sp.sin(x) * sp.exp(y * z**2)
+
+df_dx = sp.diff(f, x)
+df_dy = sp.diff(f, y)
+df_dz = sp.diff(f, z)
+
+df_dx, df_dy, df_dz
+
+```
+Output:
+
+
+```python
+(exp(y*z**2)*cos(x),
+ z**2*exp(y*z**2)*sin(x),
+ 2*y*z*exp(y*z**2)*sin(x))
+
+```
+This confirms our analytical work.
+
+
+## ✅ 3. Visualizing f(x, y) = sin(x) · e^y in 3D
+
+
+![3D surface plot of f(x, y) = sin(x) · eʸ ...](/assets/images/partial_surface_3d.png)`
+
+---
+
+### 📊 Python: 3D Surface Plot
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+X, Y = np.meshgrid(np.linspace(-2*np.pi, 2*np.pi, 100), np.linspace(-2, 2, 100))
+Z = np.sin(X) * np.exp(Y)
+
+fig = plt.figure(figsize=(8, 6))
+ax = fig.add_subplot(111, projection='3d')
+ax.plot_surface(X, Y, Z, cmap='viridis')
+ax.set_title(r'$f(x, y) = \sin(x) \cdot e^y$')
+ax.set_xlabel('x')
+ax.set_ylabel('y')
+ax.set_zlabel('f(x, y)')
+plt.show()
+
+```
+
 ### 🤖 Relevance to Machine Learning
 
 Understanding these differentiation tools is essential for anyone working in machine learning:
