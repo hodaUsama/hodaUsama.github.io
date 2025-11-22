@@ -1,0 +1,115 @@
+/* Base styles (light mode by default) */
+.series-nav {
+  background-color: #e9ecef;
+  border-left: 4px solid #1E90FF;
+  padding: 1em 1.2em;
+  margin: 1.5em 0;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.series-nav a {
+  color: #1E90FF;
+  text-decoration: none;
+}
+
+.series-nav a:hover {
+  text-decoration: underline;
+}
+#post-list .card .card-body .card-title {
+ color: #1E90FF !important; /* Blue color for title */
+  font-weight: 700;
+}
+
+
+/* Dark mode override */
+html[data-mode="dark"] .series-nav {
+  background-color: #2b2f33;
+  border-left-color: #00bfff;
+}
+
+html[data-mode="dark"] .series-nav a {
+  color: #66ccff;
+}
+
+html[data-mode="dark"] .card-body-header {
+    background-color: #2b2f33 !important;
+}
+
+html[data-mode="dark"] .header-title {
+    color: white;
+}
+/* Optional: Dark Theme */
+@media (data-mode="dark") {
+  #post-list .card .card-body .card-title{
+    color: #87CEFA !important; /* Lighter blue color for dark mode */
+  }
+}
+
+/* Shared styles for both boxes */
+.custom-box {
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid;
+}
+
+/* Best Practices (light mode) */
+.custom-best {
+  background-color: #f5f9ff;
+  border-color: #c9e1ff;
+}
+
+/* Common Pitfalls (light mode) */
+.custom-warning {
+  background-color: #fff8e1;
+  border-color: #ffd980;
+}
+/* Best Practices (dark mode) */
+html[data-mode="dark"] .custom-best {
+  background-color: #1e2a38;
+  border-color: #5b9bd5;
+}
+
+/* Common Pitfalls (dark mode) */
+html[data-mode="dark"] .custom-warning {
+  background-color: #352f1b;
+  border-color: #d9b651;
+}
+
+/* ========== Level Up Box ========== */
+.level-up-box {
+  background-color: #f1f9f6;
+  border: 1px solid #34d399;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin: 2rem 0;
+  font-size: 1rem;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.level-up-box[open] {
+  box-shadow: 0 0 0 2px #a7f3d0 inset;
+}
+
+.level-up-title {
+  color: #047857;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.level-up-content {
+  margin-top: 1rem;
+}
+
+/* ========== Dark Mode Adjustments ========== */
+html[data-mode="dark"] .level-up-box {
+  background-color: #0f1e1a;
+  border-color: #10b981;
+}
+
+html[data-mode="dark"] .level-up-title {
+  color: #6ee7b7;
+}
