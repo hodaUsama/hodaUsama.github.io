@@ -142,6 +142,122 @@ Important notes:
 
 ---
 
+## 🎯 <span style="color:#FFA500; font-weight:bold;">Z scores, probabilities, and percentiles</span>
+
+When a variable is approximately **normally distributed**, Z scores connect directly to probabilities and percentiles.
+
+### From Z score to probability
+
+If a standardized variable follows a standard normal distribution \\( N(0, 1) \\):
+
+- A given Z score \\( z \\) tells you how far the value is from the mean in standard deviations  
+- The **cumulative probability** \\( P(Z \le z) \\) is the area under the curve to the left of \\( z \\)
+
+Typical reference values:
+
+- \\( z = 0 \\)  → about 50 percent of values are below the mean  
+- \\( z = 1 \\)  → about 84 percent of values are below  
+- \\( z = 1.96 \\)  → about 97.5 percent of values are below  
+- \\( z = 2 \\)  → about 97.7 percent of values are below  
+
+These probabilities come from the standard normal table or from statistical software.
+
+### Z scores and percentiles
+
+A **percentile** tells you the percentage of observations that fall at or below a value.
+
+- If a value has \\( z = 0 \\), it is at the 50th percentile  
+- If a value has \\( z \approx 1.64 \\), it is around the 95th percentile  
+- If a value has \\( z \approx -1.64 \\), it is around the 5th percentile  
+
+Example:
+
+If exam scores are approximately normal and a student has \\( z = 1.2 \\), then their score is higher than about 89 percent of students. In other words, they are roughly at the 89th percentile.
+
+### Why this matters in ML
+
+When model outputs or performance metrics are roughly normal, Z scores allow you to:
+
+- Translate a raw value into a percentile (how extreme is this compared to typical behavior)  
+- Build approximate confidence intervals using cutoffs like \\( z = 1.96 \\) for 95 percent  
+- Compare how unusual different metrics are on a common scale
+
+## 🧪 <span style="color:#1E90FF; font-weight:bold;"> ML example: standardizing a feature before modeling</span>
+
+Imagine you are building a model to predict whether a patient has high cardiovascular risk using features like:
+
+- Age (years)
+- Systolic blood pressure (mmHg)
+- Cholesterol level (mg/dL)
+
+Suppose in your training data the cholesterol feature has:
+
+- Sample mean \\( \bar{x} = 200 \\) mg/dL  
+- Sample standard deviation \\( s = 40 \\) mg/dL  
+
+For a new patient in the training set with cholesterol \\( x = 260 \\) mg/dL, the Z score is:
+
+\\[
+z = \frac{x - \bar{x}}{s} = \frac{260 - 200}{40} = \frac{60}{40} = 1.5
+\\]
+
+Interpretation:
+
+- The patient's cholesterol is 1.5 standard deviations above the training mean.  
+- In standardized form, the raw value 260 becomes a feature value of 1.5.
+
+If you also standardize age and blood pressure, each feature will have:
+
+- Mean close to 0  
+- Standard deviation close to 1  
+
+This helps many models, such as logistic regression, SVM, KNN, and neural networks, because:
+
+- Features are on a comparable scale  
+- Gradient based optimization can converge more reliably  
+- Distance based models do not get dominated by features with large numeric ranges
+
+---
+
+## 🧪 <span style="color:#8A2BE2; font-weight:bold;">ML example: standardizing a feature before modeling</span>
+
+Imagine you are building a model to predict whether a patient has high cardiovascular risk using features like:
+
+- Age (years)
+- Systolic blood pressure (mmHg)
+- Cholesterol level (mg/dL)
+
+Suppose in your training data the cholesterol feature has:
+
+- Sample mean 
+  \\( \bar{x} = 200 \\) mg/dL  
+- Sample standard deviation \\( s = 40 \\) mg/dL  
+
+For a new patient in the training set with cholesterol \\( x = 260 \\) mg/dL, the Z score is:
+
+\\[
+z = \frac{x - \bar{x}}{s} = \frac{260 - 200}{40} = \frac{60}{40} = 1.5
+\\]
+
+Interpretation:
+
+- The patient's cholesterol is 1.5 standard deviations above the training mean.  
+- In standardized form, the raw value 260 becomes a feature value of 1.5.
+
+If you also standardize age and blood pressure, each feature will have:
+
+- Mean close to 0  
+- Standard deviation close to 1  
+
+This helps many models, such as logistic regression, SVM, KNN, and neural networks, because:
+
+- Features are on a comparable scale  
+- Gradient based optimization can converge more reliably  
+- Distance based models do not get dominated by features with large numeric ranges
+
+
+---
+
 ## 🧮 <span style="color:#FFA500;">Z-Score Formula</span>
 
 \\[
@@ -173,7 +289,8 @@ z = \frac{x - \mu}{\sigma}
 
 In practice, we almost never know the population parameters, so we estimate them from a **sample**:
 
-- Sample mean: \\( \bar{x} \\)  
+- Sample mean: 
+  \\( \bar{x} \\)  
 - Sample standard deviation: \\( s \\)
 
 Then each Z-score is computed as:

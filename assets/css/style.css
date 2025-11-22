@@ -113,3 +113,12 @@ html[data-mode="dark"] .level-up-box {
 html[data-mode="dark"] .level-up-title {
   color: #6ee7b7;
 }
+
+
+
+
+
+.post-desc
+{
+     display: none;
+}
