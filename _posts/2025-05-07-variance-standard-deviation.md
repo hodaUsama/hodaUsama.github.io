@@ -171,7 +171,7 @@ So the **average distance from the mean** is about **3.63 units** — in the sam
 📌 In most statistical studies, **standard deviation is the preferred measure of variability**.
 
 ---
-## 🖼️ Visual Insight: Same Mean, Different Spread
+## 🖼️  <span style="color:#2E8B57; font-weight:bold;">Visual Insight: Same Mean, Different Spread</span>
 
 Two datasets can have the same mean but behave very differently.
 
@@ -187,13 +187,13 @@ Two datasets can have the same mean but behave very differently.
 
 ---
 
-## 🖼️ Visual: Squared Deviations Around the Mean
+## 🖼️ <span style="color:#FFA500; font-weight:bold;">Visual: Squared Deviations Around the Mean</span>
 
 ![Variance – Mean as Balance Point](/assets/images/MeanAsBalancePoint.png)
 
 ---
 
-## 📊 Comparison of Spread Measures
+## 📊 <span style="color:#1E90FF; font-weight:bold;">Comparison of Spread Measures</span>
 
 | Method             | Uses All Data? | Affected by Outliers? | Units?        |
 | ------------------ | -------------- | --------------------- | ------------- |
@@ -277,7 +277,7 @@ Two datasets can have the same mean but behave very differently.
 </details>
 
 ---
-## 🤖 Why variance and standard deviation matter in Machine Learning
+## 🤖 <span style="color:#8A2BE2; font-weight:bold;">Why variance and standard deviation matter in Machine Learning</span>
 
 Variance and standard deviation are not only statistics concepts. They appear everywhere in machine learning.
 

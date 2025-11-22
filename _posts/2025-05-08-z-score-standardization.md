@@ -39,8 +39,7 @@ It answers:
 
 ---
 
-
-## 🤖 Why Z-Scores Matter in Machine Learning
+## 🤖 <span style="color:#FFA500; font-weight:bold;"> Why Z-Scores Matter in Machine Learning</span>
 
 Z-scores are used to:
 - **Standardize features** (essential for models like KNN, SVM, logistic regression)
@@ -49,6 +48,97 @@ Z-scores are used to:
 - Improve **feature scaling** and **model convergence**
 
 Z-scores make raw values comparable across features and distributions.
+
+---
+
+## 🧠 <span style="color:#1E90FF; font-weight:bold;">How Z score standardization fits into an ML pipeline</span>
+
+In machine learning, Z score standardization is usually applied as one step in the preprocessing pipeline.
+
+The idea is:
+
+1. Use the **training data only** to estimate:
+   - Mean of each numeric feature \\( \bar{x}_j \\)
+   - Standard deviation of each numeric feature \\( s_j \\)
+2. Transform the training features:
+   \\[
+   z_{ij} = \frac{x_{ij} - \bar{x}_j}{s_j}
+   \\]
+3. When you get validation or test data, use the **same** \\( \bar{x}_j \\) and \\( s_j \\) from the training set to transform them.
+
+This is very important to avoid **data leakage**. If you compute the mean and standard deviation on the full dataset before splitting, information from the test set leaks into the training process.
+
+In code, a typical pattern looks like:
+
+```python
+# 1. Fit on training data
+mu = X_train.mean(axis=0)
+sigma = X_train.std(axis=0)
+
+# 2. Transform training data
+X_train_std = (X_train - mu) / sigma
+
+# 3. Transform validation or test data with the same parameters
+X_test_std = (X_test - mu) / sigma
+```
+---
+
+## ⚖️ <span style="color:#8A2BE2; font-weight:bold;">Z score vs other scaling methods</span>
+
+Z score standardization is not the only way to scale features. Here is how it compares to two common alternatives.
+
+| Method          | Formula (idea)                                         | Good for                                                | Limitations                       |
+| --------------- | ------------------------------------------------------ | ------------------------------------------------------- | --------------------------------- |
+| Z score         | \\( z = \dfrac{x - \bar{x}}{s} \\)                     | Most numeric features that are roughly symmetric        | Sensitive to strong outliers      |
+| Min max scaling | \\( x' = \dfrac{x - x_{\min}}{x_{\max} - x_{\min}} \\) | Features that must stay in a fixed range such as [0, 1] | Very sensitive to extreme values  |
+| Robust scaling  | \\( x' = \dfrac{x - \text{median}}{\text{IQR}} \\)     | Features with heavy outliers or very skewed data        | Harder to interpret than Z scores |
+
+Practical guidance in ML:
+
+- Use **Z score standardization** when features are numeric and not extremely skewed. It works well with KNN, SVM, linear and logistic regression, and neural networks.  
+- Use **min max scaling** when a model or activation function expects inputs in a bounded range, such as [0, 1] or [minus 1, 1]. This is common in some neural network setups and image processing.  
+- Use **robust scaling** when you have strong outliers that would distort the mean and standard deviation. It is useful before models that are sensitive to outliers.
+
+The key idea is to choose a scaling method that matches the shape of your data and the requirements of your model, rather than applying Z score standardization automatically in every situation.
+
+---
+
+## 🚨 <span style="color:#2E8B57; font-weight:bold;">Using Z scores for outlier detection</span>
+
+Z scores are often used as a simple tool for spotting unusual values.
+
+If the data are approximately normal:
+
+- Values with 
+  \\(|z| \le 2\\) are usually considered typical  
+- Values with 
+  \\(2 < |z| \le 3\\) are possible outliers that deserve a closer look  
+- Values with 
+  \\(|z| > 3\\) are strong candidates for outliers  
+
+In practice:
+
+- A **large positive Z score** means the value is far above the mean  
+- A **large negative Z score** means the value is far below the mean  
+
+### Outliers in machine learning
+
+In a machine learning context, you can use Z scores to:
+
+- Detect suspicious data points that may be **data entry errors**  
+- Flag extreme values before training a model that is sensitive to outliers  
+- Decide whether to remove, cap, or transform extreme observations  
+
+Common strategies:
+
+- **Remove** obvious data errors after verification  
+- **Cap** extreme Z scores at a chosen threshold (for example clip all values with \(|z| > 3\))  
+- **Transform** skewed features (for example with log or square root) before standardization  
+
+Important notes:
+
+- Z score outlier rules work best when the distribution is roughly normal  
+- In high dimensional feature spaces, seeing some large Z scores is normal, so always combine Z scores with domain knowledge and plots instead of removing points blindly
 
 ---
 
@@ -68,6 +158,38 @@ Where:
 - \\( x \\): the observation  
 - \\( \bar{x} \\): the mean  
 - \\( \sigma \\): the standard deviation
+
+(In practice, we usually use the sample standard deviation \( s \) computed from the data, as explained in the next section.)
+
+---
+
+### 📊 <span style="color:#1E90FF; font-weight:bold;">Population vs sample Z-scores</span>
+
+In theory, the Z-score is defined using the **population** mean and standard deviation:
+
+\\[
+z = \frac{x - \mu}{\sigma}
+\\]
+
+In practice, we almost never know the population parameters, so we estimate them from a **sample**:
+
+- Sample mean: \\( \bar{x} \\)  
+- Sample standard deviation: \\( s \\)
+
+Then each Z-score is computed as:
+
+\\[
+z_i = \frac{x_i - \bar{x}}{s}
+\\]
+
+Key idea:
+
+- If you compute Z-scores for a dataset using its **own** sample mean \\( \bar{x} \\) and sample standard deviation \\( s \\), the positive and negative deviations balance and the Z-scores have:
+  - Sum equal to zero  
+  - Mean equal to zero  
+
+In machine learning preprocessing, you are almost always using this **sample based version**. You estimate \\( \bar{x} \\) and \\( s \\) from your training data, then use those same values to standardize both training and test sets.
+
 
 ---
 
@@ -108,6 +230,14 @@ Z-scores show where a value lies **on the distribution curve**.
 - Right-skewed → Large z-scores occur more often in the tail  
 - Left-skewed → Negative z-scores dominate the lower tail
 
+> 🔎 **Important:**  
+> You can compute a Z-score for any numeric distribution, not only normal ones.  
+> 
+> - When the data are **approximately normal**, Z-scores line up nicely with the empirical rule (about 68% within \\(-1\\) to \\(+1\\), 95% within \\(-2\\) to \\(+2\\), 99.7% within \\(-3\\) to \\(+3\\)).  
+> - When the distribution is **strongly skewed or has heavy tails**, a Z-score still tells you how many standard deviations a value is from the mean, but the usual "unusual if 
+\\(|z| > 2\\) or \\(|z| > 3\\)" rule might not match the true probabilities.
+
+
 ---
 
 ## 📉 <span style="color:#20B2AA;">Empirical Rules and Z-Score Ranges</span>
@@ -115,15 +245,15 @@ Z-scores show where a value lies **on the distribution curve**.
 There’s a general understanding of how much data falls in certain z-score ranges:
 
 | Z-Score Range | Approx. % of Data |
-|---------------|-------------------|
+| ------------- | ----------------- |
 | -1 to +1      | ~68%              |
-| -2 to +2      | ~75%              |
-| -3 to +3      | ~89%              |
+| -2 to +2      | ~95%              |
+| -3 to +3      | ~99.7%            |
 
 ✅ So most values (especially in bell-shaped distributions) lie between -2 and +2.
 
 ---
-## 🖼️ Visual Insight: Z-Scores and the Normal Distribution
+## 🖼️ <span style="color:#8A2BE2; font-weight:bold;">Visual Insight: Z-Scores and the Normal Distribution</span>
 
 The Z-score works best with **normally distributed data**. Here's how the values are typically spread:
 
@@ -139,13 +269,17 @@ The Z-score works best with **normally distributed data**. Here's how the values
 
 ## 🔁 <span style="color:#FF6347;">Z-Score Always Balances</span>
 
-If you compute z-scores for a full dataset, their **sum is always zero**:
+If you compute z-scores for a dataset using its **own sample mean and sample standard deviation**, their **sum is zero**:
 
 \\[
 \sum z = 0
 \\]
 
-That’s because the deviations above and below the mean **cancel out**.
+Here is the important detail:
+
+- Suppose you have values \\(x_1, x_2, \dots, x_n\\) with sample mean \\(\bar{x}\\) and sample standard deviation \\(s\\).
+- If you define each z-score as \\(z_i = \dfrac{x_i - \bar{x}}{s}\\), then the positive and negative deviations cancel and \\(\sum_{i=1}^{n} z_i = 0\\).
+- If you use **any other** mean or standard deviation (for example population values or parameters from another dataset), the sum of z-scores will **not** usually be zero.
 
 ---
 
@@ -156,26 +290,27 @@ Let’s say we have a dataset of exam scores:
 
 **Step 1** — Find the mean and standard deviation:  
 - Mean = \\( \bar{x} = 80 \\)  
-- Standard deviation =  
+- Sample standard deviation =  
   \\[
-  \sigma = \sqrt{\frac{(70-80)^2 + (80-80)^2 + (90-80)^2}{3}} = \sqrt{66.67} \approx 8.16
+  s = \sqrt{\frac{(70-80)^2 + (80-80)^2 + (90-80)^2}{3 - 1}} 
+    = \sqrt{\frac{100 + 0 + 100}{2}} 
+    = \sqrt{100} 
+    = 10
   \\]
 
 **Step 2** — Compute z-scores for each value:
 
 \\[
-z_{70} = \frac{70 - 80}{8.16} \approx -1.22
+z_{70} = \frac{70 - 80}{10} = -1
 \\]
 
 \\[
-z_{80} = \frac{80 - 80}{8.16} = 0
+z_{80} = \frac{80 - 80}{10} = 0
 \\]
 
 \\[
-z_{90} = \frac{90 - 80}{8.16} \approx 1.22
+z_{90} = \frac{90 - 80}{10} = 1
 \\]
-
-
 
 
 These scores tell us:
@@ -221,6 +356,62 @@ It lets us:
 
 ---
 
+<details class="custom-box custom-best">
+  <summary><strong>✅ Best practices when using Z scores</strong></summary>
+  <ul>
+    <li>
+      <strong>Standardize numeric features for sensitive models.</strong>
+      Use Z score standardization for models that rely on distances or gradients, such as KNN, SVM, linear and logistic regression, and neural networks.
+    </li>
+    <li>
+      <strong>Fit scaling on the training set only.</strong>
+      Always compute the mean and standard deviation using the training data, then apply those same parameters to validation and test sets to avoid data leakage.
+    </li>
+    <li>
+      <strong>Inspect distributions before scaling.</strong>
+      Look at histograms or summary statistics to see if features are roughly symmetric or heavily skewed before deciding how to scale them.
+    </li>
+    <li>
+      <strong>Use Z scores to compare different variables.</strong>
+      When features are on very different scales, convert them to Z scores to compare how extreme an individual value is across variables.
+    </li>
+    <li>
+      <strong>Combine Z scores with domain knowledge.</strong>
+      Treat unusually large or small Z scores as signals to investigate, not automatic reasons to delete data.
+    </li>
+  </ul>
+</details>
+
+---
+
+<details class="custom-box custom-warning">
+  <summary><strong>⚠️ Common pitfalls with Z scores</strong></summary>
+  <ul>
+    <li>
+      <strong>Computing Z scores on the full dataset before splitting.</strong>
+      This leaks information from the test set into the training process and can give overly optimistic performance estimates.
+    </li>
+    <li>
+      <strong>Interpreting Z as probability.</strong>
+      A Z score is a distance in standard deviation units, not a probability. Probabilities come from the normal distribution using that Z value.
+    </li>
+    <li>
+      <strong>Assuming normality when the data are strongly skewed.</strong>
+      The usual ideas about typical and unusual Z scores (like 68, 95, 99.7 percent) only hold well when the distribution is close to normal.
+    </li>
+    <li>
+      <strong>Applying Z scores to inappropriate variables.</strong>
+      Do not standardize arbitrary category codes or identifiers where numeric distances have no real meaning.
+    </li>
+    <li>
+      <strong>Removing all points with large Z scores automatically.</strong>
+      Many real data sets naturally contain extreme but valid values. Always check context before dropping or capping them.
+    </li>
+  </ul>
+</details>
+
+---
+
 <details class="level-up-box">
   <summary class="level-up-title">🧠 Level Up: How Z-Scores Power Real Analysis</summary>
   <div class="level-up-content">
@@ -241,13 +432,14 @@ It lets us:
 
 ## 🧠 Summary
 
-| Concept           | What It Means                                | Practical Use                         |
-|-------------------|-----------------------------------------------|----------------------------------------|
-| Z-score           | Distance from mean in standard deviations     | Normalization, outlier detection       |
-| Positive z        | Above average                                 | High-performing observation            |
-| Negative z        | Below average                                 | Underperformance or anomaly            |
-| z = 0             | Exactly average                               | Benchmark reference point              |
-| Sum of all z      | Zero in a complete dataset                    | Confirms correct standardization       |
+| Concept      | What It Means                                                 | Practical Use                                    |
+| ------------ | ------------------------------------------------------------- | ------------------------------------------------ |
+| Z-score      | Distance from mean in standard deviations                     | Normalization, outlier detection                 |
+| Positive z   | Above average                                                 | High-performing observation                      |
+| Negative z   | Below average                                                 | Underperformance or anomaly                      |
+| z = 0        | Exactly average                                               | Benchmark reference point                        |
+| Sum of all z | Zero when using the dataset’s own mean and standard deviation | Confirms correct standardization on that dataset |
+
 
 ---
 
