@@ -51,6 +51,30 @@ Where:
 
 ---
 
+### 📊 <span style="color:#1E90FF;">Population vs sample variance</span>
+
+In theory, the formula above describes the **population variance**, using the true population mean \\( \mu \\) and the population size \\( N \\):
+
+\\[
+\sigma^2 = \frac{1}{N} \sum_{i=1}^{N} (x_i - \mu)^2
+\\]
+
+In practice, we usually work with a **sample** of size \\( n \\). We estimate variance with the sample mean \\( \bar{x} \\) and divide by \\( n - 1 \\):
+
+\\[
+s^2 = \frac{1}{n - 1} \sum_{i=1}^{n} (x_i - \bar{x})^2
+\\]
+
+- \\( \mu, \sigma^2 \\): population mean and population variance  
+- \\( \bar{x}, s^2 \\): sample mean and sample variance  
+
+In the example below, the sum of squared deviations is 66.  
+- Dividing by \\( 5 \\) gives the **population variance** \\( 66 / 5 = 13.2 \\).  
+- Dividing by \\( 5 - 1 \\) gives the **sample variance** \\( 66 / 4 = 16.5 \\).
+
+
+---
+
 ## 🧮 <span style="color:#FFA500;">Why Not Use Raw Deviations?</span>
 
 You might wonder:  
@@ -72,14 +96,28 @@ So we **square each deviation** before averaging them — that gives us the **va
 Let’s say we have these 5 values:  
 **[4, 5, 7, 10, 14]**
 
-| x     | x̄ = 8 | x − x̄ | (x − x̄)² |
-| ----- | ----- | ----- | -------- |
-| 4     |       | -4    | 16       |
-| 5     |       | -3    | 9        |
-| 7     |       | -1    | 1        |
-| 10    |       | +2    | 4        |
-| 14    |       | +6    | 36       |
-| **Σ** |       |       | **66**   |
+First compute the mean:
+
+\\[
+\bar{x} = \frac{4 + 5 + 7 + 10 + 14}{5} = 8
+\\]
+
+Now build the table:
+
+| x   | \\(\bar{x}\\) | x - \\(\bar{x}\\) | (x - \\(\bar{x}\\))² |
+| --- | ------------- | ----------------- | -------------------- |
+| 4   | 8             | -4                | 16                   |
+| 5   | 8             | -3                | 9                    |
+| 7   | 8             | -1                | 1                    |
+| 10  | 8             | 2                 | 4                    |
+| 14  | 8             | 6                 | 36                   |
+
+The sum of squared deviations is:
+
+\\[
+16 + 9 + 1 + 4 + 36 = 66
+\\]
+
 
 - **Mean (\\( \bar{x} \\))** = (4 + 5 + 7 + 10 + 14) / 5 = 8  
 - **Variance** = 66 / 5 = **13.2**
@@ -165,6 +203,65 @@ Two datasets can have the same mean but behave very differently.
 | Standard Deviation | ✅ Yes          | ✅ Yes                 | Same as data  |
 
 ---
+<details class="custom-box custom-best">
+  <summary><strong>✅ Best practices for variance and standard deviation</strong></summary>
+
+  <ul>
+    <li>
+      <strong>Always look at the context.</strong>
+      Interpret variance and standard deviation together with the mean and the units of the data, not in isolation.
+    </li>
+    <li>
+      <strong>Check for outliers first.</strong>
+      Strong outliers can inflate variance and standard deviation, so inspect the data before drawing conclusions.
+    </li>
+    <li>
+      <strong>Distinguish population and sample.</strong>
+      Use the population formulas when you have the full population and the sample formulas (divide by \(n - 1\)) when you estimate from a sample.
+    </li>
+    <li>
+      <strong>Use standard deviation for interpretation.</strong>
+      Variance is useful in formulas, but standard deviation is usually easier to interpret because it is in the same units as the original data.
+    </li>
+    <li>
+      <strong>Combine with graphics.</strong>
+      Support variance and standard deviation with plots such as histograms and boxplots to see the full shape of the distribution.
+    </li>
+  </ul>
+</details>
+
+
+---
+
+<details class="custom-box custom-warning">
+  <summary><strong>⚠️ Common pitfalls with variance and standard deviation</strong></summary>
+
+  <ul>
+    <li>
+      <strong>Applying variance to categorical data.</strong>
+      Avoid using variance or standard deviation for purely categorical variables where numeric codes do not represent real distances.
+    </li>
+    <li>
+      <strong>Ignoring skewness and heavy tails.</strong>
+      For highly skewed or heavy tailed data, a few extreme values can dominate variance and standard deviation, so always check the shape of the distribution.
+    </li>
+    <li>
+      <strong>Assuming normality without checking.</strong>
+      Treat rules like "within two standard deviations is typical" as approximate and use them only after confirming that the distribution is roughly symmetric and unimodal.
+    </li>
+    <li>
+      <strong>Comparing spread without considering scale.</strong>
+      A standard deviation value is large or small only relative to the units and the mean of the variable, so never interpret it without that context.
+    </li>
+    <li>
+      <strong>Relying only on variance to judge features.</strong>
+      High variance does not always mean a feature is informative and low variance does not always mean it is useless, so combine variance checks with domain knowledge and model performance.
+    </li>
+  </ul>
+</details>
+
+
+---
 <details class="level-up-box">
   <summary class="level-up-title">🧠 Level Up: Why Variance and Standard Deviation Matter in Data Analysis</summary>
   <div class="level-up-content">
@@ -180,34 +277,49 @@ Two datasets can have the same mean but behave very differently.
 </details>
 
 ---
-## 🤖 Why Variance and Standard Deviation Matter in Machine Learning
+## 🤖 Why variance and standard deviation matter in Machine Learning
 
-In machine learning, understanding the **spread of your data** is just as important as knowing its center. Here's why these two measures play a crucial role:
+Variance and standard deviation are not only statistics concepts. They appear everywhere in machine learning.
 
-### 🔍 1. Data Preprocessing (Normalization & Standardization)
-- Many machine learning algorithms (like logistic regression, KNN, and SVM) assume features are on a similar scale.
-- **Standard deviation** is essential in **Z-score normalization**, which standardizes data using:
-  \\[
-  z = \frac{x - \mu}{\sigma}
-  \\]
+### 1. Loss functions and error metrics
 
-### 🧹 2. Outlier Detection
-- Outliers can distort training and predictions.
-- A value lying more than **2 or 3 standard deviations** from the mean is often flagged as an outlier.
+Many core metrics in ML are based on squared deviations:
 
-### 🧠 3. Loss Function Interpretation
-- Several models use **Mean Squared Error (MSE)** as a loss function — which is directly based on **variance**:
-  \\[
-  MSE = \frac{1}{n} \sum (y - \hat{y})^2
-  \\]
+- **Mean Squared Error (MSE)** measures the average of squared differences between predictions and true values.
+- **Root Mean Squared Error (RMSE)** is the square root of MSE and is directly comparable to a standard deviation.
 
-### 📊 4. Feature Importance & Variability
-- Features with **very low variance** may carry little useful information and are often dropped.
-- Features with high variance may indicate informative patterns — or possible noise.
+Both MSE and RMSE play a similar role to variance and standard deviation. They describe how spread out prediction errors are around zero.
 
-### ⚖️ 5. Algorithm Assumptions
-- Algorithms like **Linear Regression** and **Naive Bayes** often assume **homoscedasticity** (constant variance).
-- If variance is not constant across the data (heteroscedasticity), this can affect model performance and may require transformation or specialized models.
+### 2. Model stability and noise
+
+A high variance in the target variable can indicate:
+
+- Data that is naturally very spread out.
+- Strong noise that may limit how well any model can perform.
+
+Looking at the variance and standard deviation of the target before modeling helps you understand if a certain error level is realistic or not.
+
+### 3. Feature variability and usefulness
+
+For input features:
+
+- Features with **almost zero variance** are nearly constant and often add very little information to the model.
+- Features with **very high variance** may dominate distance based algorithms or indicate strong noise.
+
+Checking feature variances is a simple way to:
+
+- Remove near constant features.
+- Detect suspicious or badly scaled features before training.
+
+### 4. Outliers and data quality
+
+Values that lie several standard deviations away from the mean are potential outliers.
+
+In a machine learning workflow, variance and standard deviation help you:
+
+- Flag unusual data points that may be errors.
+- Decide when to investigate, transform, or cap extreme values before training.
+- Prepare the ground for using Z scores and other standardized measures in later steps of the pipeline.
 
 ---
 
@@ -218,6 +330,14 @@ In machine learning, understanding the **spread of your data** is just as import
 {% include quiz/variance-std-dev.html %}
 
 ---
+
+> 🔎 **Remember**
+> - Variance and standard deviation are highly sensitive to extreme outliers.  
+> - For very skewed or heavy tailed data, also look at robust measures such as the median and interquartile range (IQR).  
+> - Do not use variance or standard deviation for purely categorical variables where numeric distances do not make sense.
+
+---
+
 ## 🔁 <span style="color:#1E90FF;">Summary</span>
 
 | Measure            | What it Tells Us                    | Notes                            |
