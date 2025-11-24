@@ -47,9 +47,9 @@ If data = [5, 6, 6, 7, 95] →
 To handle outliers, we use the **IQR**, which is based on **quartiles**:
 
 | Quartile | Meaning                         |
-|----------|--------------------------------|
+| -------- | ------------------------------- |
 | Q1       | 25% of data is below this point |
-| Q2       | 50% (median)                   |
+| Q2       | 50% (median)                    |
 | Q3       | 75% of data is below this point |
 
 ### 🧮 Formula:
@@ -66,14 +66,16 @@ To handle outliers, we use the **IQR**, which is based on **quartiles**:
 Given ordered data:  
 [2, 4, 5, 7, 8, 10, 12, 15, 20, 22]
 
-- \( Q_1 = 5 \) (25th percentile)  
-- \( Q_3 = 15 \) (75th percentile)
+- There are 10 values in total.  
+- \\( Q_1 \\) is the median of the lower half \\([2, 4, 5, 7, 8]\\), which is 5.  
+- \\( Q_3 \\) is the median of the upper half \\([10, 12, 15, 20, 22]\\), which is 15.  
 
 \\[
 \text{IQR} = 15 - 5 = 10
 \\]
 
-This means the middle half of data spans 10 units.
+This means the middle half of the data spans 10 units.
+
 
 ---
 
@@ -104,6 +106,14 @@ It’s one of the best visual tools to understand:
 - Points outside the whiskers are **outliers**
 
 ---
+To flag outliers, a common rule uses the IQR:
+
+- Lower fence = \\( Q_1 - 1.5 \times \text{IQR} \\)  
+- Upper fence = \\( Q_3 + 1.5 \times \text{IQR} \\)
+
+Values below the lower fence or above the upper fence are plotted as outliers in the box plot.
+
+---
 
 ## 🎯 Why Not Just Use the Mean?
 
@@ -116,15 +126,73 @@ We need to know how **spread out** the data is — especially when comparing gro
 ## 🤖 Why Dispersion Matters in Machine Learning
 
 - **Outlier Detection:** IQR and box plots help identify outliers, which can strongly affect model performance.
-- **Feature Selection:** Features with very low or very high dispersion may be less useful or require special handling.
+- **Feature Selection:** Features with almost no dispersion (nearly constant) often add little information, while features with extremely high dispersion may need transformation or robust scaling.
 - **Comparing Groups:** Box plots make it easy to compare distributions across classes or experimental groups.
 - **Data Preprocessing:** Understanding spread helps guide normalization, scaling, and robust imputation strategies.
 
 > In machine learning, understanding and visualizing data dispersion is essential for building reliable, interpretable models and for effective data cleaning.
 
+> For example, comparing box plots of a numeric feature across classes can show if that feature separates the classes well or if their distributions almost overlap.
+
 ---
 
 {% include quiz/dispersion-boxplot.html %}
+
+---
+<details class="custom-box custom-best">
+  <summary><strong>✅ Best practices for range, IQR, and box plots</strong></summary>
+
+  <ul>
+    <li>
+      <strong>Start simple, then go robust.</strong>
+      Use the range for a quick first look at spread, then move to IQR and box plots when outliers are present.
+    </li>
+    <li>
+      <strong>Always work with ordered data for quartiles.</strong>
+      Sort the data before computing quartiles and IQR so the positions of Q1, Q2, and Q3 are correct.
+    </li>
+    <li>
+      <strong>Use IQR and box plots when outliers matter.</strong>
+      Prefer IQR and box plots over the range whenever extreme values could distort your view of typical variability.
+    </li>
+    <li>
+      <strong>Compare groups visually.</strong>
+      Use side by side box plots to compare the center, spread, and skewness of a feature across different classes or groups.
+    </li>
+    <li>
+      <strong>Combine with numeric measures.</strong>
+      Interpret range and IQR together with mean, median, and standard deviation to get a complete picture of the distribution.
+    </li>
+  </ul>
+</details>
+
+---
+<details class="custom-box custom-warning">
+  <summary><strong>⚠️ Common pitfalls with range, IQR, and box plots</strong></summary>
+
+  <ul>
+    <li>
+      <strong>Relying only on the range.</strong>
+      The range depends only on the two most extreme values and can be very misleading when outliers are present.
+    </li>
+    <li>
+      <strong>Forgetting how quartiles are defined.</strong>
+      Different software can use slightly different rules for quartiles, so small differences in Q1, Q3, or IQR are normal across tools.
+    </li>
+    <li>
+      <strong>Misreading box plots.</strong>
+      The whiskers do not always reach the absolute minimum and maximum; they usually stop at the most extreme non outlier values inside the fences.
+    </li>
+    <li>
+      <strong>Treating every outlier as an error.</strong>
+      Points outside the fences are not always mistakes; they can be real and important values that carry useful information.
+    </li>
+    <li>
+      <strong>Ignoring sample size.</strong>
+      For very small samples, box plots and quartiles can be unstable, so always consider how many observations are behind the plot.
+    </li>
+  </ul>
+</details>
 
 ---
 
@@ -149,11 +217,11 @@ Feel free to leave a comment below — I’d love to hear your thoughts or help 
 
 ## 🔁 <span style="color:#1E90FF;">Summary</span>
 
-| Measure  | What it tells us             | Sensitive to outliers? |
-|----------|-----------------------------|-----------------------|
-| Range    | Max − Min                   | ✅ Yes                |
-| IQR      | Spread of middle 50%        | ❌ No                 |
-| Box Plot | Visual of quartiles & outliers | ❌ No              |
+| Measure  | What it tells us               | Sensitive to outliers? |
+| -------- | ------------------------------ | ---------------------- |
+| Range    | Max − Min                      | ✅ Yes                  |
+| IQR      | Spread of middle 50%           | ❌ No                   |
+| Box Plot | Visual of quartiles & outliers | ❌ No                   |
 
 ---
 

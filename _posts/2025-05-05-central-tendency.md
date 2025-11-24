@@ -46,7 +46,10 @@ If most students choose “Math” as their favorite subject, then:
 🛑 You can't calculate a **mean** or **median** for categories like “Math” or “History” — but you can find the mode.
 
 > **Tip:**  
-> A dataset can have more than one mode (bi-modal or multi-modal), or no mode at all if all values occur with the same frequency.
+> A dataset can have more than one mode (bi modal or multi modal), or no mode at all if all values occur with the same frequency.  
+> For continuous numeric data, the mode often refers to the peak of the distribution in a histogram or density plot rather than a single exact value.
+
+
 
 
 ```python
@@ -63,17 +66,20 @@ print("Mode:", mode.mode[0])
 - Best used when data is **skewed or has outliers**  
 - Only works with **ordinal, interval, or ratio** variables
 
+Always sort the data first, then pick the middle value (or the average of the two middle values if there is an even number of observations).
+
 💡 Example:  
 For ages: [16, 17, 18, 40, 90]  
 > Median = 18
 
-✅ Median is **not affected by extreme values** — that's why it's preferred when there are outliers.
+✅ Median is **not affected by extreme values** because it ignores the size of extreme values at the ends of the distribution.
 
 ```python
 import numpy as np
 data = [16, 17, 18, 40, 90]
 median = np.median(data)
 print("Median:", median)
+
 ```
 ---
 
@@ -126,10 +132,10 @@ Here’s a quick visual to help you compare the three measures:
 ## 📌 <span style="color:#9370DB;">Choosing the Right Measure</span>
 
 | Measurement Level | Mode | Median | Mean |
-|-------------------|------|--------|------|
-| Nominal           | ✅   | ❌     | ❌   |
-| Ordinal           | ✅   | ✅     | ❌   |
-| Interval/Ratio    | ✅   | ✅     | ✅   |
+| ----------------- | ---- | ------ | ---- |
+| Nominal           | ✅    | ❌      | ❌    |
+| Ordinal           | ✅    | ✅      | ❌    |
+| Interval/Ratio    | ✅    | ✅      | ✅    |
 
 ⚠️ **Outliers** = values that are much higher or lower than the rest  
 👉 When outliers exist, **median** is often more reliable than mean.
@@ -147,12 +153,12 @@ Here’s a quick visual to help you compare the three measures:
 ---
 ## 👉 Real-World ML Example Table
 
-| Scenario                              | Best Measure | Why                                 |
-|----------------------------------------|--------------|-------------------------------------|
-| Filling missing values in income data  | Median       | Robust to outliers                  |
-| Most common class in classification    | Mode         | Identifies class imbalance          |
-| Average pixel value in images          | Mean         | Used in normalization               |
-| Skewed housing prices                  | Median       | Not distorted by high outliers      |
+| Scenario                              | Best Measure | Why                            |
+| ------------------------------------- | ------------ | ------------------------------ |
+| Filling missing values in income data | Median       | Robust to outliers             |
+| Most common class in classification   | Mode         | Identifies class imbalance     |
+| Average pixel value in images         | Mean         | Used in normalization          |
+| Skewed housing prices                 | Median       | Not distorted by high outliers |
 
 
 ---
@@ -161,13 +167,63 @@ Here’s a quick visual to help you compare the three measures:
 
 ---
 
-## ⚠️ Common Pitfalls
+<details class="custom-box custom-best">
+  <summary><strong>✅ Best practices for central tendency</strong></summary>
 
-- Using mean with skewed or outlier-heavy data (use median instead).
-- Using mean or median for categorical data (use mode).
-- Forgetting that multi-modal data can have more than one mode.
-- Not sorting data before finding the median.
-- Assuming the mean always represents the “typical” value, even when the data is skewed.
+  <ul>
+    <li>
+      <strong>Match the measure to the data type.</strong>
+      Use mode for nominal data, median for ordinal or skewed data, and mean when the variable is numeric and reasonably symmetric.
+    </li>
+    <li>
+      <strong>Check for outliers and skewness.</strong>
+      Inspect the distribution before choosing the mean; if data are heavily skewed or have extreme values, prefer the median.
+    </li>
+    <li>
+      <strong>Use the mode for class imbalance.</strong>
+      In classification tasks, use the mode to detect the majority class and quantify class imbalance.
+    </li>
+    <li>
+      <strong>Combine measures for deeper insight.</strong>
+      Compare mean and median together to detect skewness or outliers instead of relying on a single measure.
+    </li>
+    <li>
+      <strong>Keep measurement levels in mind.</strong>
+      Do not compute the mean on purely categorical labels and be cautious when averaging arbitrary codes or ranks.
+    </li>
+  </ul>
+</details>
+
+
+---
+
+<details class="custom-box custom-warning">
+  <summary><strong>⚠️ Common pitfalls with central tendency</strong></summary>
+
+  <ul>
+    <li>
+      <strong>Using mean with skewed or outlier heavy data.</strong>
+      When the distribution is strongly skewed or has extreme values, the mean can be pulled away from the bulk of the data; in such cases the median is usually more robust.
+    </li>
+    <li>
+      <strong>Using mean or median for categorical data.</strong>
+      For purely nominal categories, neither mean nor median is meaningful; use the mode instead.
+    </li>
+    <li>
+      <strong>Ignoring multiple modes.</strong>
+      Multi modal data can have more than one mode, so reporting a single "most common" value can be misleading.
+    </li>
+    <li>
+      <strong>Forgetting to sort before finding the median.</strong>
+      If the data are not sorted, the "middle" element in the list is not the statistical median.
+    </li>
+    <li>
+      <strong>Assuming the mean is always typical.</strong>
+      In skewed distributions, the mean can lie in a region where few observations actually occur, so it may not represent a typical case.
+    </li>
+  </ul>
+</details>
+
 
 ---
 <details class="level-up-box">
@@ -188,10 +244,10 @@ Here’s a quick visual to help you compare the three measures:
 ## 🔁 <span style="color:#1E90FF;">Summary</span>
 
 | Measure | Best For              | Sensitive to Outliers? |
-|---------|-----------------------|-----------------------|
-| Mode    | Nominal, any variable  | ❌ No                 |
-| Median  | Skewed/Ordinal data   | ❌ No                 |
-| Mean    | Symmetrical data only | ✅ Yes                |
+| ------- | --------------------- | ---------------------- |
+| Mode    | Nominal, any variable | ❌ No                   |
+| Median  | Skewed/Ordinal data   | ❌ No                   |
+| Mean    | Symmetrical data only | ✅ Yes                  |
 
 ---
 💬 **Got a question or suggestion?**  

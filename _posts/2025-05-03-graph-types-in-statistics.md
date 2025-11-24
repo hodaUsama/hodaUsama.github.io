@@ -46,12 +46,11 @@ There are two types:
 import matplotlib.pyplot as plt
 
 labels = ['A', 'B', 'C', 'D', 'E']
-values = [10, 15, 7, 12, 9]
-plt.bar(labels, values, color='skyblue', edgecolor='black')
-plt.xlabel('Category')
-plt.ylabel('Frequency')
-plt.title('Bar Chart Example')
+sizes = [10, 15, 7, 12, 9]
+plt.pie(sizes, labels=labels, autopct='%1.1f%%', startangle=90)
+plt.title('Pie Chart Example')
 plt.show()
+
 ```
 ---
 
@@ -86,8 +85,8 @@ This includes:
 ### 🔸 Best graph for quantitative data:
 
 ### <span style="color:#FF8C00;">Histogram</span>
-- Bins or intervals group data (e.g., ages 10–19, 20–29, etc.)
-- Bars are <strong>connected</strong> to show continuous data
+- Bins or intervals group data (for example, ages 10-19, 20-29, and so on)  
+- Bars are adjacent to represent continuous intervals on the x axis
 
 #### **Python Example: Histogram**
 ```python
@@ -151,6 +150,63 @@ For example, a histogram of your target variable can reveal if you have enough p
 🔍 **ML Tip**: Use bar charts to compare the number of samples in each class label (like 0s and 1s in classification problems).
 
 ---
+<details class="custom-box custom-best">
+  <summary><strong>✅ Best practices for choosing and designing graphs</strong></summary>
+
+  <ul>
+    <li>
+      <strong>Match the graph to the data type.</strong>
+      Use bar charts or pie charts for categorical data and histograms for quantitative data.
+    </li>
+    <li>
+      <strong>Use high contrast and clear labels.</strong>
+      Choose colors with good contrast and always label axes, categories, and titles clearly.
+    </li>
+    <li>
+      <strong>Sort categories in a meaningful order.</strong>
+      For bar charts, sort categories alphabetically or by frequency to make patterns easier to see.
+    </li>
+    <li>
+      <strong>Show proportions when the total matters.</strong>
+      Use pie charts or relative frequencies when you care about parts of a whole, and keep the number of slices small.
+    </li>
+    <li>
+      <strong>Combine numbers and visuals.</strong>
+      Use graphs together with simple tables or summary statistics to tell a complete story about the data.
+    </li>
+  </ul>
+</details>
+
+---
+
+<details class="custom-box custom-warning">
+  <summary><strong>⚠️ Common pitfalls with graphs</strong></summary>
+
+  <ul>
+    <li>
+      <strong>Using pie charts with too many categories.</strong>
+      Too many slices make it hard to compare sizes; use a bar chart instead when there are many categories.
+    </li>
+    <li>
+      <strong>Mixing up bar charts and histograms.</strong>
+      Bar charts are for separate categories with gaps between bars, histograms are for continuous intervals and use adjacent bars.
+    </li>
+    <li>
+      <strong>Manipulating axes in a misleading way.</strong>
+      Starting the y axis at a high value or using inconsistent scales can exaggerate or hide differences.
+    </li>
+    <li>
+      <strong>Ignoring missing or zero values.</strong>
+      If you drop missing or zero categories from the graph, the picture of the data can become misleading.
+    </li>
+    <li>
+      <strong>Overloading graphs with decorations.</strong>
+      Heavy gridlines, 3D effects, or too many colors can distract from the actual message of the data.
+    </li>
+  </ul>
+</details>
+
+---
 <details class="level-up-box">
   <summary class="level-up-title">🧠 Level Up: Why Choosing the Right Graph Matters in Data Science</summary>
  <div class="level-up-content">
@@ -165,14 +221,6 @@ For example, a histogram of your target variable can reveal if you have enough p
   </div>
 </details>
 
----
-
-**⚠️ Best Practices and Pitfalls:**  
- - Use high-contrast colors for readability and accessibility.  
- - Avoid pie charts with too many categories.  
- - Always label your axes and provide a clear title.  
- - Don’t manipulate axes in a way that distorts the data story.  
- - Check for missing data before plotting.
 
 ---
 
@@ -197,11 +245,11 @@ Feel free to leave a comment in the section below — I’d love to hear your th
 
 ## 🧾 Summary Table
 
-| <span style="color:#1E90FF;">Data Type</span>     | <span style="color:#228B22;">Graph Type</span>     | Use When…                            |
-|------------------|--------------------|--------------------------------------|
-| Nominal          | Bar, Pie           | Categories with no order             |
-| Ordinal          | Bar                | Ordered categories                   |
-| Interval/Ratio   | Histogram          | Numeric data (continuous)            |
+| <span style="color:#1E90FF;">Data Type</span> | <span style="color:#228B22;">Graph Type</span> | Use When…                 |
+| --------------------------------------------- | ---------------------------------------------- | ------------------------- |
+| Nominal                                       | Bar, Pie                                       | Categories with no order  |
+| Ordinal                                       | Bar                                            | Ordered categories        |
+| Interval/Ratio                                | Histogram                                      | Numeric data (continuous) |
 
 ---
 

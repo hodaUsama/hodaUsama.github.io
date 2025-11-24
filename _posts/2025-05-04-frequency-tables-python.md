@@ -68,42 +68,103 @@ Counter({'banana': 9, 'apple': 7, 'orange': 4})
 - 4 people chose orange 🍊
 
 ---
+### 🐼 Alternative: Using pandas for frequency tables
 
-### 🐼 Alternative: Using pandas for Frequency Tables
-
-If your data is in a pandas DataFrame (which is common in real projects), you can use `value_counts()` for one column or `pd.crosstab()` for two-way tables:
-
+If your data is in a pandas DataFrame, you can use `value_counts()` for one way tables and `pd.crosstab()` for two way tables.
 
 ```python
 import pandas as pd
 
 df = pd.DataFrame({'fruit': fruits})
 
-```
-One-way frequency table
-```python
+# One way frequency table
 print(df['fruit'].value_counts())
 ```
-Two-way frequency table (example with another variable)
+Example output:
 
 ```python
-df['color'] = ['red', 'yellow', ...] # Add another column if you have one
-print(pd.crosstab(df['fruit'], df['color']))
-undefined
-
+banana    9
+apple     7
+orange    4
+Name: fruit, dtype: int64
 ```
 ### 🔄 Two-Way Frequency Tables (Contingency Tables)
 
-To examine the relationship between two categorical variables, use `pd.crosstab()`:
 ```python
-Example: Suppose you have 'fruit' and 'color' columns
 df = pd.DataFrame({
-'fruit': ['apple', 'banana', 'apple', 'orange', 'banana', 'banana'],
-'color': ['red', 'yellow', 'green', 'orange', 'yellow', 'green']
+    'fruit': ['apple', 'banana', 'apple', 'orange', 'banana', 'banana'],
+    'color': ['red', 'yellow', 'green', 'orange', 'yellow', 'green']
 })
-print(pd.crosstab(df['fruit'], df['color']))
-undefined
+
+table = pd.crosstab(df['fruit'], df['color'])
+print(table)
 ```
+
+Example output:
+
+```python
+color   green  orange  red  yellow
+fruit                            
+apple       1       0    1       0
+banana      1       0    0       2
+orange      0       1    0       0
+
+```
+
+### 📈 Relative and cumulative frequency
+
+So far we counted how many times each value appears. You can also look at:
+
+- **Relative frequency** - the proportion or percentage of the total  
+- **Cumulative frequency** - the running total as you move through ordered values
+
+Using pandas, relative frequency is easy:
+
+```python
+import pandas as pd
+
+df = pd.DataFrame({'fruit': fruits})
+
+freq = df['fruit'].value_counts()
+rel_freq = df['fruit'].value_counts(normalize=True)
+
+print("Frequency:")
+print(freq)
+print("\nRelative frequency:")
+print(rel_freq)
+
+```
+Example output:
+
+```python
+Frequency:
+banana    9
+apple     7
+orange    4
+Name: fruit, dtype: int64
+
+Relative frequency:
+banana    0.45
+apple     0.35
+orange    0.20
+Name: fruit, dtype: float64
+
+```
+For ordered numerical data, you can also compute cumulative frequency:
+```python
+scores = pd.Series([85, 90, 85, 88, 92, 85, 90])
+
+freq = scores.value_counts().sort_index()
+cum_freq = freq.cumsum()
+
+print("Frequency:")
+print(freq)
+print("\nCumulative frequency:")
+print(cum_freq)
+
+
+```
+
 
 ## 📊 <span style="color:#FFA500;">Step 2: Visualize It with a Bar Chart</span>
 
@@ -187,21 +248,75 @@ pd.Series(scores).value_counts().sort_index()
 > - Use a consistent y-axis scale when comparing multiple histograms.  
 > - Start the y-axis at zero unless there is a strong reason not to, and indicate clearly if you do otherwise.
 
-
+---
 
 ## 🧠 <span style="color:#FF6347;">Why Frequency Tables Matter</span>
 
-- They help you <strong>understand distributions</strong> at a glance  
-- Let you <strong>detect outliers</strong> or unexpected values  
-- Help in preparing datasets for machine learning (e.g., binning or encoding)
+- They help you <strong>understand distributions</strong> at a glance.  
+- Let you <strong>detect outliers, rare categories, or unexpected values</strong>.  
+- Support <strong>data preparation for machine learning</strong>, for example:
+  - Choosing how to encode categorical variables.  
+  - Deciding how to group continuous values into bins.  
+  - Detecting strong class imbalance before training a classifier.  
 
-They’re also a first step toward more advanced tools: descriptive statistics, histograms, boxplots, and beyond.
+Frequency tables are also a first step toward more advanced tools such as descriptive statistics, histograms, box plots, and probability distributions.
 
 ---
-## ⚠️ Common Pitfalls 
- - Forgetting to sort frequency tables by value or category.  
- - Using too many or too few bins in histograms, which can hide patterns or create noise.  
- - Not handling missing values before counting frequencies.
+<details class="custom-box custom-best">
+  <summary><strong>✅ Best practices for frequency tables and histograms</strong></summary>
+
+  <ul>
+    <li>
+      <strong>Start with simple counts.</strong>
+      Build a basic frequency table to see which categories or values are common and which are rare before doing more complex analysis.
+    </li>
+    <li>
+      <strong>Sort tables in a meaningful way.</strong>
+      For categorical data, sort by category or by frequency depending on what you want to highlight. For numeric values, sort by value to match the natural order.
+    </li>
+    <li>
+      <strong>Use relative frequency when comparing groups.</strong>
+      Convert counts to proportions or percentages when sample sizes differ between groups or datasets.
+    </li>
+    <li>
+      <strong>Choose bins thoughtfully for numerical data.</strong>
+      Pick bin edges that are easy to interpret and that match the scale of the data, rather than relying only on automatic binning.
+    </li>
+    <li>
+      <strong>Combine tables with visualizations.</strong>
+      Use bar charts and histograms alongside frequency tables so that patterns are visible both numerically and visually.
+    </li>
+  </ul>
+</details>
+
+
+---
+<details class="custom-box custom-warning">
+  <summary><strong>⚠️ Common pitfalls with frequency tables and histograms</strong></summary>
+
+  <ul>
+    <li>
+      <strong>Using too many or too few bins.</strong>
+      Very few bins can hide important structure, while too many bins can create noisy patterns that are hard to interpret.
+    </li>
+    <li>
+      <strong>Ignoring missing values.</strong>
+      If you do not handle missing values explicitly, frequency tables and histograms can give a misleading picture of the data.
+    </li>
+    <li>
+      <strong>Not sorting numerical frequencies.</strong>
+      For ordered or numeric data, leaving the index unsorted can make tables and bar charts harder to read.
+    </li>
+    <li>
+      <strong>Mixing up bar charts and histograms.</strong>
+      Bar charts are for categories, histograms are for continuous intervals. Using the wrong one can confuse the message.
+    </li>
+    <li>
+      <strong>Reading counts without context.</strong>
+      Large counts or bars can look impressive, but always interpret them relative to the total sample size and to other categories.
+    </li>
+  </ul>
+</details>
 
 ---
 
@@ -226,12 +341,12 @@ They’re also a first step toward more advanced tools: descriptive statistics, 
 ---
 ## ✅ Summary
 
-| Task                             | Tool                |
-|----------------------------------|---------------------|
-| Count categories                 | `Counter()`         |
-| Visualize categories             | Bar chart           |
-| Group continuous data            | `numpy.histogram()` |
-| Visualize continuous data        | Histogram           |
+| Task                      | Tool                |
+| ------------------------- | ------------------- |
+| Count categories          | `Counter()`         |
+| Visualize categories      | Bar chart           |
+| Group continuous data     | `numpy.histogram()` |
+| Visualize continuous data | Histogram           |
 
 ---
 💬 **Got a question or suggestion?**  
