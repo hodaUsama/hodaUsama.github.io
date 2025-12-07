@@ -17,8 +17,8 @@ This branch of statistics allows you to take a small slice of data (a sample) an
 
 <div class="series-nav">
   <p>📚 <strong>This post is part of the "Intro to Statistics" series</strong></p>
-  <p>🔙 <strong>Previously:</strong> <a href="/posts/correlation-contingency-scatter/">Correlation Between Variables</a></p>
-  <p>🔜 <strong>Next:</strong> <a href="/posts/hypothesis-testing/">Introduction to Hypothesis Testing</a></p>
+  
+  <p>🔜 <strong>Next:</strong> <a href="/#">Introduction to Hypothesis Testing</a></p>
 </div>
 
 ---
