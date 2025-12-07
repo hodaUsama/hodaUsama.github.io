@@ -2,7 +2,7 @@
 layout: post
 title: "How to Build Frequency Tables in Python (With Charts)"
 date: 2025-05-04
-categories: [statistics, beginner]
+categories: [statistics,Descriptive statistics, beginner]
 tags: [frequency-table, python, bar-chart, histogram]
 description: "Learn how to create frequency tables in Python for both categorical and numerical data using Counter, pandas, and numpy — and visualize them with bar charts and histograms."
 

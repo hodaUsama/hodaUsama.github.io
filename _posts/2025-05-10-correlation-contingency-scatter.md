@@ -2,7 +2,7 @@
 layout: post
 title: "Correlation Between Variables: Contingency Tables and Scatter Plots"
 date: 2025-05-10
-categories: [statistics, beginner]
+categories: [statistics,Descriptive statistics, beginner]
 tags: [correlation, contingency-table, scatter-plot, categorical, quantitative]
 math: true
 description: Learn how to analyze relationships between variables using correlation techniques like contingency tables and scatter plots, based on whether your data is categorical or quantitative.
@@ -38,7 +38,7 @@ She surveys 30 students and records two things:
 This type of table is used for **categorical variables**. It shows how often combinations of categories occur.
 
 | Study Frequency \ Quiz Result | Pass | Fail | Total |
-|-------------------------------|------|------|-------|
+| ----------------------------- | ---- | ---- | ----- |
 | Rarely                        | 3    | 7    | 10    |
 | Sometimes                     | 6    | 4    | 10    |
 | Often                         | 9    | 1    | 10    |
@@ -55,7 +55,7 @@ For example:
 - Among those who study **Often**, 9/10 passed = **90%**
 
 | Study Frequency | % Passed | % Failed |
-|-----------------|----------|----------|
+| --------------- | -------- | -------- |
 | Rarely          | 30%      | 70%      |
 | Sometimes       | 60%      | 40%      |
 | Often           | 90%      | 10%      |
@@ -99,7 +99,7 @@ The counselor asks students for their **exact number of study hours per week** a
 Here’s a sample:
 
 | Hours Studied | Quiz Score |
-|---------------|------------|
+| ------------- | ---------- |
 | 2             | 50         |
 | 3             | 55         |
 | 5             | 65         |
@@ -188,10 +188,10 @@ Learning how to interpret contingency tables and scatter plots builds your **EDA
 
 ## ✅ Conclusion
 
-| Type of Data        | Tool to Use          | Example                     |
-|---------------------|----------------------|-----------------------------|
-| Categorical (Nominal/Ordinal) | Contingency Table     | Study Frequency vs Pass/Fail |
-| Quantitative         | Scatter Plot          | Hours Studied vs Quiz Score |
+| Type of Data                  | Tool to Use       | Example                      |
+| ----------------------------- | ----------------- | ---------------------------- |
+| Categorical (Nominal/Ordinal) | Contingency Table | Study Frequency vs Pass/Fail |
+| Quantitative                  | Scatter Plot      | Hours Studied vs Quiz Score  |
 
 🧠 Choose the right tool based on your variable types.
 

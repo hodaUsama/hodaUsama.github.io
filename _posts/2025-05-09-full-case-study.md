@@ -2,7 +2,7 @@
 layout: post
 title: "Bringing It All Together: A Real-World Stats Example"
 date: 2025-05-09
-categories: [statistics, beginner]
+categories: [statistics,Descriptive statistics, beginner]
 tags: [summary, z-score, mean, median, boxplot, variability]
 math: true,
 description: "Walk through a complete real-world statistics example using test scores: calculate mean, median, range, IQR, standard deviation, z-scores, and visualize it with dot and box plots."

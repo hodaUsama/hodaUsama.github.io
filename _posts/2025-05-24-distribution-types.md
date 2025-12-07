@@ -2,7 +2,7 @@
 layout: post
 title: "Population, Sample, and Sampling Distributions Explained"
 date: 2025-05-24
-categories: [statistics, beginner]
+categories: [statistics,Descriptive statistics, beginner]
 tags: [population-distribution, sample-distribution, sampling-distribution, standardization]
 math: true
 ---
@@ -156,14 +156,14 @@ Another example: In A/B testing for user interface design, comparing average cli
 
 ## ✅ <span style="color:#228B22; font-weight:bold;">Summary</span>
 
-| <span style="color:#1E90FF; font-weight:bold;">Concept</span>                  | <span style="color:#1E90FF; font-weight:bold;">Description</span>                           |
-|----------------------------|----------------------------------------------------------|
-| <span style="color:#228B22;">Population Distribution</span>  | Distribution of all members in the population                                     |
-| <span style="color:#DA70D6;">Sample Distribution</span>      | Distribution of data in a single sample                                          |
-| <span style="color:#FFA500;">Sampling Distribution</span>    | Theoretical distribution of sample means from many samples                        |
-| <span style="color:#8A2BE2;">Mean of Sampling Distribution</span> | Equals the population mean \\( \mu \\)                                              |
-| <span style="color:#DC143C;">Standard Error</span>            | \\( \sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}} \\), variability of sample means     |
-| <span style="color:#4682B4;">Standardization (Z-score)</span>| Converting values to standard normal scores for probability calculations          |
+| <span style="color:#1E90FF; font-weight:bold;">Concept</span>     | <span style="color:#1E90FF; font-weight:bold;">Description</span>               |
+| ----------------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| <span style="color:#228B22;">Population Distribution</span>       | Distribution of all members in the population                                   |
+| <span style="color:#DA70D6;">Sample Distribution</span>           | Distribution of data in a single sample                                         |
+| <span style="color:#FFA500;">Sampling Distribution</span>         | Theoretical distribution of sample means from many samples                      |
+| <span style="color:#8A2BE2;">Mean of Sampling Distribution</span> | Equals the population mean \\( \mu \\)                                          |
+| <span style="color:#DC143C;">Standard Error</span>                | \\( \sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}} \\), variability of sample means |
+| <span style="color:#4682B4;">Standardization (Z-score)</span>     | Converting values to standard normal scores for probability calculations        |
 
 ---
 ## 💬 Got a question or suggestion?

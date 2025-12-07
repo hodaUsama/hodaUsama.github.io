@@ -2,7 +2,7 @@
 layout: post
 title: "Understanding Binomial Distribution"
 date: 2025-05-21
-categories: [statistics, beginner]
+categories: [statistics,Descriptive statistics, beginner]
 tags: [binomial-distribution, probability, discrete, statistics]
 math: true
 description: Learn how the binomial distribution works in statistics and machine learning. Explore real-world examples, formulas, and how to calculate success probabilities in binary events.
@@ -225,14 +225,14 @@ So, you expect on average **2 sixes**, with a standard deviation of **about 1.29
 
 ## ✅ <span style="color:#228B22; font-weight:bold;">Summary</span>
 
-| <span style="color:#1E90FF; font-weight:bold;">Concept</span> | <span style="color:#1E90FF; font-weight:bold;">Description</span> |
-|--------|-------------|
-| <span style="color:#228B22;">Binary Outcome</span> | Each trial has two outcomes: <span style="color:#228B22;">success</span> or <span style="color:#DC143C;">failure</span> |
-| <span style="color:#DA70D6;">Bernoulli Trial</span> | A single trial with constant \\( p \\) |
-| <span style="color:#8A2BE2;">PMF</span> | Formula: \\( \\binom{n}{x} p^x (1 - p)^{n - x} \\) |
-| <span style="color:#FFA500;">Cumulative Probability</span> | \\( P(X \\leq x) = \\sum_{k=0}^x \\binom{n}{k} p^k (1-p)^{n-k} \\) |
-| <span style="color:#FF6347;">Symmetry & Skewness</span> | Depends on \\( p \\): symmetric if \\( p=0.5 \\), right-skewed if \\( p < 0.5 \\), left-skewed if \\( p > 0.5 \\) |
-| <span style="color:#2E8B57;">Mean & Std. Dev.</span> | \\( \\mu = np \\), \\( \\sigma = \\sqrt{np(1-p)} \\) |
+| <span style="color:#1E90FF; font-weight:bold;">Concept</span> | <span style="color:#1E90FF; font-weight:bold;">Description</span>                                                       |
+| ------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| <span style="color:#228B22;">Binary Outcome</span>            | Each trial has two outcomes: <span style="color:#228B22;">success</span> or <span style="color:#DC143C;">failure</span> |
+| <span style="color:#DA70D6;">Bernoulli Trial</span>           | A single trial with constant \\( p \\)                                                                                  |
+| <span style="color:#8A2BE2;">PMF</span>                       | Formula: \\( \\binom{n}{x} p^x (1 - p)^{n - x} \\)                                                                      |
+| <span style="color:#FFA500;">Cumulative Probability</span>    | \\( P(X \\leq x) = \\sum_{k=0}^x \\binom{n}{k} p^k (1-p)^{n-k} \\)                                                      |
+| <span style="color:#FF6347;">Symmetry & Skewness</span>       | Depends on \\( p \\): symmetric if \\( p=0.5 \\), right-skewed if \\( p < 0.5 \\), left-skewed if \\( p > 0.5 \\)       |
+| <span style="color:#2E8B57;">Mean & Std. Dev.</span>          | \\( \\mu = np \\), \\( \\sigma = \\sqrt{np(1-p)} \\)                                                                    |
 
 ---
 ## 💬 Got a question or suggestion?

@@ -2,7 +2,7 @@
 layout: post
 title: "Understanding Independence and Bayes’ Rule"
 date: 2025-05-16
-categories: [statistics, beginner]
+categories: [statistics,Descriptive statistics, beginner]
 tags: [independence, bayes, conditional, tree-diagram, posterior, prior, likelihood]
 math: true
 description: Learn how Bayes’ Theorem works, when to apply it, and how it connects to independence and conditional probability. This post breaks down key concepts with clear examples and practical relevance in real-world applications like spam detection and medical testing.
@@ -45,10 +45,10 @@ If **any** of these holds, the events are independent.
 
 ## 🔄 <span style="color:#FFA500;">Independence vs Disjoint</span>
 
-| Concept             | Description                                           |
-|---------------------|-------------------------------------------------------|
+| Concept                           | Description                                       |
+| --------------------------------- | ------------------------------------------------- |
 | **Disjoint (Mutually Exclusive)** | Events can’t both happen. \\( P(A \cap B) = 0 \\) |
-| **Independent**     | One event doesn’t affect the other’s probability       |
+| **Independent**                   | One event doesn’t affect the other’s probability  |
 
 ### ✅ Key Insight:
 - If A and B are **disjoint**, then \\( P(A \cap B) = 0 \\)
@@ -97,12 +97,12 @@ P(S \mid F) = \frac{P(S \cap F)}{P(F)} = \frac{0.32}{0.38} \approx 0.842
 
 ## 🧠 <span style="color:#9370DB;">Understanding Bayes' Rule: Components</span>
 
-| Term             | Meaning                                                              |
-|------------------|----------------------------------------------------------------------|
-| **Prior**        | What you believe before seeing the evidence → \\( P(S) = 0.4 \\)     |
-| **Likelihood**   | Probability of the evidence given the hypothesis → \\( P(F \mid S) \\) |
-| **Evidence**     | Total probability of seeing “free” → \\( P(F) = 0.38 \\)             |
-| **Posterior**    | Updated belief → \\( P(S \mid F) = 0.842 \\)                         |
+| Term           | Meaning                                                                |
+| -------------- | ---------------------------------------------------------------------- |
+| **Prior**      | What you believe before seeing the evidence → \\( P(S) = 0.4 \\)       |
+| **Likelihood** | Probability of the evidence given the hypothesis → \\( P(F \mid S) \\) |
+| **Evidence**   | Total probability of seeing “free” → \\( P(F) = 0.38 \\)               |
+| **Posterior**  | Updated belief → \\( P(S \mid F) = 0.842 \\)                           |
 
 ---
 
@@ -249,16 +249,16 @@ Despite a positive result, there's only a **~9% chance** the employee actually u
 
 ## 🧠 Summary
 
-| Concept             | Meaning                                             |
-|---------------------|-----------------------------------------------------|
-| Independence        | One event does not affect the other                 |
-| Disjoint            | Events can’t happen together                        |
-| Joint from Marginal | Only possible if events are independent             |
-| Bayes' Rule         | Updates belief with new data                        |
-| Prior               | Initial belief                                      |
-| Likelihood          | How likely the data is under a hypothesis           |
-| Posterior           | Updated probability                                 |
-| Evidence            | Total probability of the observed condition         |
+| Concept             | Meaning                                     |
+| ------------------- | ------------------------------------------- |
+| Independence        | One event does not affect the other         |
+| Disjoint            | Events can’t happen together                |
+| Joint from Marginal | Only possible if events are independent     |
+| Bayes' Rule         | Updates belief with new data                |
+| Prior               | Initial belief                              |
+| Likelihood          | How likely the data is under a hypothesis   |
+| Posterior           | Updated probability                         |
+| Evidence            | Total probability of the observed condition |
 
 ---
 

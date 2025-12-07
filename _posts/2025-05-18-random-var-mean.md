@@ -2,7 +2,7 @@
 layout: post
 title: "Mean, Variance, and Standard Deviation of Random Variables"
 date: 2025-05-18
-categories: [statistics, beginner]
+categories: [statistics,Descriptive statistics, beginner]
 tags: [mean, variance, stddev, random-variable, discrete, continuous]
 math: true
 ---
@@ -37,8 +37,8 @@ This means each value \\( x_i \\) is weighted by its probability \\( P(x_i) \\).
 
 #### Example:
 
-| \\(x_i\\) | 1   | 2   | 3   | 4   |
-|---------|-----|-----|-----|-----|
+| \\(x_i\\)    | 1   | 2   | 3   | 4   |
+| ------------ | --- | --- | --- | --- |
 | \\(P(x_i)\\) | 0.1 | 0.3 | 0.4 | 0.2 |
 
 Calculate:
@@ -307,16 +307,16 @@ For any two variables \\( X \\) and \\( Y \\):
 
 ## ✅ Summary
 
-| Concept                 | Formula / Description                                 |
-|-------------------------|-----------------------------------------------------|
-| Mean (Discrete)          | \\( \mu = \sum x_i P(x_i) \\)                          |
-| Mean (Continuous)        | \\( \mu = \int x f(x) dx \\)                           |
-| Variance (Discrete)      | \\( \sigma^2 = \sum (x_i - \mu)^2 P(x_i) \\)          |
-| Variance (Continuous)    | \\( \sigma^2 = \int (x - \mu)^2 f(x) dx \\)           |
-| Linear Transform Mean    | \\( E(a + bX) = a + b E(X) \\)                         |
-| Linear Transform Variance| \\( \text{Var}(a + bX) = b^2 \text{Var}(X) \\)        |
-| Variance of Sum/Diff     | \\( \text{Var}(X \pm Y) = \text{Var}(X) + \text{Var}(Y) \pm 2\text{Cov}(X,Y) \\) |
-| Std Deviation            | \\( \sigma = \sqrt{\text{Var}(X)} \\)                  |
+| Concept                   | Formula / Description                                                            |
+| ------------------------- | -------------------------------------------------------------------------------- |
+| Mean (Discrete)           | \\( \mu = \sum x_i P(x_i) \\)                                                    |
+| Mean (Continuous)         | \\( \mu = \int x f(x) dx \\)                                                     |
+| Variance (Discrete)       | \\( \sigma^2 = \sum (x_i - \mu)^2 P(x_i) \\)                                     |
+| Variance (Continuous)     | \\( \sigma^2 = \int (x - \mu)^2 f(x) dx \\)                                      |
+| Linear Transform Mean     | \\( E(a + bX) = a + b E(X) \\)                                                   |
+| Linear Transform Variance | \\( \text{Var}(a + bX) = b^2 \text{Var}(X) \\)                                   |
+| Variance of Sum/Diff      | \\( \text{Var}(X \pm Y) = \text{Var}(X) + \text{Var}(Y) \pm 2\text{Cov}(X,Y) \\) |
+| Std Deviation             | \\( \sigma = \sqrt{\text{Var}(X)} \\)                                            |
 
 ---
 ## 💬 Got a question or suggestion?

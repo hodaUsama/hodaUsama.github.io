@@ -2,7 +2,7 @@
 layout: post
 title: "Measuring Variability: Variance and Standard Deviation"
 date: 2025-05-07
-categories: [statistics, beginner]
+categories: [statistics,Descriptive statistics, beginner]
 tags: [variance, standard-deviation, spread, dispersion]
 math: true,
 description: "Learn how variance and standard deviation measure the spread of your data — with formulas, worked examples, and relevance to data science and machine learning."

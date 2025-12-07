@@ -2,7 +2,7 @@
 layout: post
 title: "From Sample to Population: Basics of Sampling in Statistics"
 date: 2025-05-22
-categories: [statistics, beginner]
+categories: [statistics,Descriptive statistics, beginner]
 tags: [sampling, population, inferential-statistics, sampling-errors]
 math: true
 description: Learn the difference between population and sample, key sampling techniques, and how sampling impacts data science and machine learning accuracy.
@@ -149,14 +149,14 @@ Understanding sampling is critical for:
 ## ✅ <span style="color:#228B22; font-weight:bold;">Summary</span>
 
 | <span style="color:#1E90FF; font-weight:bold;">Concept</span> | <span style="color:#1E90FF; font-weight:bold;">Description</span> |
-|----------------|-------------|
-| <span style="color:#228B22;">Population</span> | The entire group you're interested in |
-| <span style="color:#DA70D6;">Sample</span> | A subset selected from the population |
-| <span style="color:#8A2BE2;">Parameters</span> | Characteristics of population (\\( \mu, \sigma \\)) |
-| <span style="color:#8A2BE2;">Statistics</span> | Characteristics of sample (\\( \bar{x}, s \\)) |
-| <span style="color:#FFA500;">SRS</span> | Simple Random Sample: equal chance selection |
-| <span style="color:#DC143C;">Bias Types</span> | Undercoverage, Sampling, Non-response, Response |
-| <span style="color:#4682B4;">Other Techniques</span> | Stratified, Cluster sampling |
+| ------------------------------------------------------------- | ----------------------------------------------------------------- |
+| <span style="color:#228B22;">Population</span>                | The entire group you're interested in                             |
+| <span style="color:#DA70D6;">Sample</span>                    | A subset selected from the population                             |
+| <span style="color:#8A2BE2;">Parameters</span>                | Characteristics of population (\\( \mu, \sigma \\))               |
+| <span style="color:#8A2BE2;">Statistics</span>                | Characteristics of sample (\\( \bar{x}, s \\))                    |
+| <span style="color:#FFA500;">SRS</span>                       | Simple Random Sample: equal chance selection                      |
+| <span style="color:#DC143C;">Bias Types</span>                | Undercoverage, Sampling, Non-response, Response                   |
+| <span style="color:#4682B4;">Other Techniques</span>          | Stratified, Cluster sampling                                      |
 
 ---
 ## 💬 Got a question or suggestion?

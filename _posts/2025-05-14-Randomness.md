@@ -2,7 +2,7 @@
 layout: post
 title: "How Random Is Random? Understanding Probability and Events"
 date: 2025-05-14
-categories: [statistics, beginner]
+categories: [statistics,Descriptive statistics, beginner]
 tags: [randomness, probability, events, venn-diagram, sample-space, tree-diagram]
 math: true
 ---
@@ -135,10 +135,10 @@ P(A^c) = 1 - P(A)
 
 ### 🔗 Disjoint vs Independent
 
-| Type | Description | Rule |
-|------|-------------|------|
-| Disjoint (Mutually Exclusive) | Events don’t overlap | \\( P(A \cap B) = 0 \\) |
-| Independent | Events don’t affect each other | \\( P(A \cap B) = P(A) \cdot P(B) \\) |
+| Type                          | Description                    | Rule                                  |
+| ----------------------------- | ------------------------------ | ------------------------------------- |
+| Disjoint (Mutually Exclusive) | Events don’t overlap           | \\( P(A \cap B) = 0 \\)               |
+| Independent                   | Events don’t affect each other | \\( P(A \cap B) = P(A) \cdot P(B) \\) |
 
 ---
 

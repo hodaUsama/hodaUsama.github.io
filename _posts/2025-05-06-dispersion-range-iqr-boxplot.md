@@ -2,7 +2,7 @@
 layout: post
 title: "Understanding Dispersion: Range, IQR, and the Box Plot"
 date: 2025-05-06
-categories: [statistics, beginner]
+categories: [statistics,Descriptive statistics, beginner]
 tags: [dispersion, range, IQR, boxplot, quartiles, outliers]
 math: true
 description: "Understand how data spreads using range, interquartile range (IQR), and box plots — with clear examples and why they matter in machine learning."

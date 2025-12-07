@@ -2,7 +2,7 @@
 layout: post
 title: "From Raw Data to Insight: Cases, Variables, and Frequency Tables"
 date: 2025-05-02
-categories: [statistics, beginner]
+categories: [statistics,Descriptive statistics, beginner]
 tags: [cases, variables, frequency-table, data-matrix, measurement-levels, machine-learning]
 description: "Learn how to organize raw data using cases, variables, data matrices, and frequency tables — the essential building blocks for data analysis and machine learning."
 ---
@@ -28,7 +28,7 @@ Let’s start from the very beginning.
 Think of them as <strong>rows</strong> in your data table — each row is a case.
 
 | Case (row) | Student Name | Age | Grade | Favorite Subject |
-|------------|--------------|-----|-------|------------------|
+| ---------- | ------------ | --- | ----- | ---------------- |
 | 1          | Mariam       | 17  | 88    | Math             |
 | 2          | Youssef      | 16  | 75    | Science          |
 
@@ -57,12 +57,12 @@ If all students are from <em>the same school</em>, then "School" is a <strong>co
 
 Not all variables are created equal. They differ by <strong>what kind of values</strong> they hold.
 
-| Level              | Description                              | Example            |
-|--------------------|------------------------------------------|--------------------|
-| Nominal            | Categories with no order                 | Favorite Subject   |
-| Ordinal            | Categories with order                    | Satisfaction (Low/Med/High) |
-| Interval           | Numbers, but no true zero                | Temperature (°C)   |
-| Ratio              | Numbers with true zero (can divide)      | Age, Grade         |
+| Level    | Description                         | Example                     |
+| -------- | ----------------------------------- | --------------------------- |
+| Nominal  | Categories with no order            | Favorite Subject            |
+| Ordinal  | Categories with order               | Satisfaction (Low/Med/High) |
+| Interval | Numbers, but no true zero           | Temperature (°C)            |
+| Ratio    | Numbers with true zero (can divide) | Age, Grade                  |
 
 📌 <span style="color:#FF6347;">Why it matters</span>: Some statistical methods only work for certain levels!
 
@@ -90,7 +90,7 @@ Let’s say you collected <strong>heights</strong> of 50 students.
 You can group them into <strong>intervals</strong> like this:
 
 | Height Range (cm) | Frequency |
-|-------------------|-----------|
+| ----------------- | --------- |
 | 140–149           | 3         |
 | 150–159           | 10        |
 | 160–169           | 20        |
@@ -158,14 +158,14 @@ Try creating a frequency table yourself!
 
 ## 🔁 <span style="color:#1E90FF;">Summary</span>
 
-| Concept             | Meaning                                      |
-|---------------------|----------------------------------------------|
-| <span style="color:#1E90FF;">Case</span>                | One item/person we study                     |
-| <span style="color:#228B22;">Variable</span>            | A feature that varies across cases           |
-| Constant            | A value that doesn’t change                  |
-| <span style="color:#20B2AA;">Levels of Measurement</span> | Tells us how to handle the data            |
-| <span style="color:#9370DB;">Data Matrix</span>         | A full table of all cases and variables      |
-| <span style="color:#FF8C00;">Frequency Table</span>     | A summary of how often values appear         |
+| Concept                                                   | Meaning                                 |
+| --------------------------------------------------------- | --------------------------------------- |
+| <span style="color:#1E90FF;">Case</span>                  | One item/person we study                |
+| <span style="color:#228B22;">Variable</span>              | A feature that varies across cases      |
+| Constant                                                  | A value that doesn’t change             |
+| <span style="color:#20B2AA;">Levels of Measurement</span> | Tells us how to handle the data         |
+| <span style="color:#9370DB;">Data Matrix</span>           | A full table of all cases and variables |
+| <span style="color:#FF8C00;">Frequency Table</span>       | A summary of how often values appear    |
 
 ---
 💬 **Got a question or suggestion?**  

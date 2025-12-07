@@ -2,7 +2,7 @@
 layout: post
 title: "Understanding Normal Distribution"
 date: 2025-05-19
-categories: [statistics, beginner]
+categories: [statistics,Descriptive statistics, beginner]
 tags: [normal distribution, gaussian, probability, statistics]
 math: true
 ---

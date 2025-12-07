@@ -3,7 +3,7 @@ layout: post
 title: "Choosing the Right Graph: How to Visualize Your Data in Statistics"
 description: "Learn which graph to use for categorical or quantitative data, and how bar charts, pie charts, and histograms help in understanding your data — especially in machine learning."
 date: 2025-05-03
-categories: [statistics, beginner]
+categories: [statistics,Descriptive statistics, beginner]
 tags: [graphs, data-types, histogram, pie-chart, bar-chart]
 ---
 

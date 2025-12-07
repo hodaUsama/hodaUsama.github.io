@@ -2,7 +2,7 @@
 layout: post
 title: "Regression: Predicting Relationships Between Variables with the Best Fit Line"
 date: 2025-05-13
-categories: [statistics, beginner]
+categories: [statistics,Descriptive statistics, beginner]
 tags: [regression, linear-regression, residuals, r-squared, prediction]
 math: true
 description: Learn linear regression step by step — from drawing the best-fit line and calculating residuals to interpreting slope and R², all in a beginner-friendly, ML-oriented guide.
@@ -196,15 +196,15 @@ Even in complex ML systems, understanding linear regression strengthens your int
 
 ## 🔁 <span style="color:#1E90FF;">Summary</span>
 
-| Concept                           | Meaning                                                                                  |
-|---------------------------------|------------------------------------------------------------------------------------------|
-| <span style="color:#1E90FF;">Residual</span>                 | The vertical distance between an observed data point and the regression line             |
-| <span style="color:#228B22;">Sum of Squared Residuals (RSS)</span> | The total of squared residuals minimized in ordinary least squares regression            |
-| <span style="color:#20B2AA;">Regression Equation</span>      | \\( \hat{y} = a + b x \\); predicts \\( y \\) from \\( x \\)                                  |
-| <span style="color:#9370DB;">Slope (\\(b\\))</span>            | Change in predicted \\( y \\) for a one unit increase in \\( x \\)                           |
-| <span style="color:#FF8C00;">Intercept (\\(a\\))</span>        | Predicted value of \\( y \\) when \\( x = 0 \\)                                             |
-| <span style="color:#1E90FF;">Pearson’s \\( r \\)</span>        | Correlation coefficient showing strength and direction of linear relationship            |
-| <span style="color:#228B22;">Coefficient of Determination (\\(R^2\\))</span> | Proportion of variance in \\( y \\) explained by \\( x \\) via the regression model          |
+| Concept                                                                      | Meaning                                                                             |
+| ---------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| <span style="color:#1E90FF;">Residual</span>                                 | The vertical distance between an observed data point and the regression line        |
+| <span style="color:#228B22;">Sum of Squared Residuals (RSS)</span>           | The total of squared residuals minimized in ordinary least squares regression       |
+| <span style="color:#20B2AA;">Regression Equation</span>                      | \\( \hat{y} = a + b x \\); predicts \\( y \\) from \\( x \\)                        |
+| <span style="color:#9370DB;">Slope (\\(b\\))</span>                          | Change in predicted \\( y \\) for a one unit increase in \\( x \\)                  |
+| <span style="color:#FF8C00;">Intercept (\\(a\\))</span>                      | Predicted value of \\( y \\) when \\( x = 0 \\)                                     |
+| <span style="color:#1E90FF;">Pearson’s \\( r \\)</span>                      | Correlation coefficient showing strength and direction of linear relationship       |
+| <span style="color:#228B22;">Coefficient of Determination (\\(R^2\\))</span> | Proportion of variance in \\( y \\) explained by \\( x \\) via the regression model |
 
 ---
 ## 💬 Got a question or suggestion?

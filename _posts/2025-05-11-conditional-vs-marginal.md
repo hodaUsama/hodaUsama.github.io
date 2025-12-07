@@ -2,7 +2,7 @@
 layout: post
 title: "Conditional vs. Marginal Proportions: What’s the Difference?"
 date: 2025-05-11
-categories: [statistics, beginner,concepts]
+categories: [statistics,Descriptive statistics, beginner,concepts]
 tags: [proportions, conditional, marginal, contingency-table, categorical]
 math: true
 description: Understand the difference between marginal and conditional proportions using examples and contingency tables. A must-know concept for analyzing categorical data and preparing ML datasets.
@@ -94,7 +94,7 @@ It’s about looking **within each row** (or column) to compare outcomes **relat
   \\]
 
 | Study Frequency | % Passed | % Failed |
-|-----------------|----------|----------|
+| --------------- | -------- | -------- |
 | Rarely          | 30%      | 70%      |
 | Sometimes       | 60%      | 40%      |
 | Often           | 90%      | 10%      |
@@ -134,10 +134,10 @@ They help answer: "What percent of students passed overall?" or "How many studen
 
 Here’s a comparison to clarify:
 
-| Type                   | What It Tells You                                      | Formula                          |
-|------------------------|--------------------------------------------------------|----------------------------------|
-| **Marginal Proportion**   | Overall percent for a single category                   | Row/Column Total ÷ Grand Total   |
-| **Conditional Proportion** | Outcome percent within a specific group (adds to 100%) | Cell ÷ Row Total (or Column)     |
+| Type                       | What It Tells You                                      | Formula                        |
+| -------------------------- | ------------------------------------------------------ | ------------------------------ |
+| **Marginal Proportion**    | Overall percent for a single category                  | Row/Column Total ÷ Grand Total |
+| **Conditional Proportion** | Outcome percent within a specific group (adds to 100%) | Cell ÷ Row Total (or Column)   |
 
 ✅ Use **marginals** for summarizing one variable  
 ✅ Use **conditionals** to **compare groups** and spot patterns
@@ -176,10 +176,10 @@ Understanding conditional and marginal proportions is essential in data preproce
 ---
 ## 🧠 Summary
 
-| Term                  | Meaning                                               | Use Case                          |
-|-----------------------|-------------------------------------------------------|-----------------------------------|
-| **Marginal Proportion**  | Overall frequency of one category                    | "What % of all students passed?"  |
-| **Conditional Proportion** | % of outcome **within a specific group**            | "What % of Rarely students passed?" |
+| Term                       | Meaning                                  | Use Case                            |
+| -------------------------- | ---------------------------------------- | ----------------------------------- |
+| **Marginal Proportion**    | Overall frequency of one category        | "What % of all students passed?"    |
+| **Conditional Proportion** | % of outcome **within a specific group** | "What % of Rarely students passed?" |
 
 ---
 

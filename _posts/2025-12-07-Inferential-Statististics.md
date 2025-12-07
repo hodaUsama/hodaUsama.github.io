@@ -2,7 +2,7 @@
 layout: post
 title: "Introduction to Inferential Statistics: Point vs. Interval Estimation"
 date: 2025-12-07
-categories: [statistics, beginner]
+categories: [statistics, Inferential Statistics,beginner]
 tags: [inferential-statistics, estimation, confidence-interval, point-estimation, machine-learning]
 math: true
 description: Learn the basics of Inferential Statistics. Discover how to estimate population parameters from samples using Point Estimation and Confidence Intervals to make data-driven decisions.
@@ -274,7 +274,7 @@ Point Estimate: 2.51
 
 ---
 
-## ✅ Conclusion
+## <span style="color:#1E90FF;"> ✅ Summary </span>
 
 | Method                | Definition           | Pros/Cons                         | Example                   |
 | --------------------- | -------------------- | --------------------------------- | ------------------------- |

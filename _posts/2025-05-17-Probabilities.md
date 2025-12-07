@@ -2,7 +2,7 @@
 layout: post
 title: "What Are Random Variables and How Do We Visualize Their Distributions?"
 date: 2025-05-17
-categories: [statistics, beginner]
+categories: [statistics,Descriptive statistics, beginner]
 tags: [random-variable, pmf, pdf, cdf, discrete, continuous, quantile]
 math: true
 description: Learn how to understand and visualize random variables using PMF, PDF, and CDF. Covers discrete vs continuous distributions with real examples and intuitive plots.
@@ -31,10 +31,10 @@ It can take different values depending on the situation — like the result of a
 
 ## 🧱 <span style="color:#FFA500;">Types of Random Variables</span>
 
-| Type        | Description                                                      | Examples                        |
-|-------------|------------------------------------------------------------------|---------------------------------|
-| **Discrete**  | Takes a countable number of values                              | # of calls/day, die roll result |
-| **Continuous**| Takes any value within an interval (infinite possibilities)     | Height, temperature, weight     |
+| Type           | Description                                                 | Examples                        |
+| -------------- | ----------------------------------------------------------- | ------------------------------- |
+| **Discrete**   | Takes a countable number of values                          | # of calls/day, die roll result |
+| **Continuous** | Takes any value within an interval (infinite possibilities) | Height, temperature, weight     |
 
 ---
 
@@ -49,10 +49,10 @@ A probability distribution can be expressed as:
 
 Depending on the variable type, we use:
 
-| Type        | Distribution Function        |
-|-------------|------------------------------|
-| **Discrete**  | **Probability Mass Function (PMF)** |
-| **Continuous**| **Probability Density Function (PDF)** |
+| Type           | Distribution Function                  |
+| -------------- | -------------------------------------- |
+| **Discrete**   | **Probability Mass Function (PMF)**    |
+| **Continuous** | **Probability Density Function (PDF)** |
 
 ---
 
@@ -95,7 +95,7 @@ We can compute CDFs for **both** discrete and continuous variables.
 ### 🧪 Example: CDF (Discrete)
 
 | x   | P(X = x) | P(X ≤ x) |
-|-----|----------|----------|
+| --- | -------- | -------- |
 | 1   | 0.1      | 0.1      |
 | 2   | 0.3      | 0.4      |
 | 3   | 0.2      | 0.6      |
@@ -118,10 +118,10 @@ This curve shows **P(X ≤ x)** for every point — and it **always increases**.
 
 ## 📉 <span style="color:#FF69B4;">Distribution vs Cumulative: Visual Comparison</span>
 
-| View                     | What It Shows                                |
-|--------------------------|-----------------------------------------------|
-| **PDF / PMF**            | Probability of individual values (or areas)   |
-| **CDF**                  | Cumulative probability up to a certain point  |
+| View          | What It Shows                                |
+| ------------- | -------------------------------------------- |
+| **PDF / PMF** | Probability of individual values (or areas)  |
+| **CDF**       | Cumulative probability up to a certain point |
 
 #### 🎨 Visual Comparison
 
@@ -214,14 +214,14 @@ CDFs are especially useful in:
 ---
 ## ✅ Summary
 
-| Concept             | Description                                      |
-|---------------------|--------------------------------------------------|
-| Random Variable     | Represents numeric outcome of a random event     |
-| Discrete            | Countable outcomes (use PMF)                     |
-| Continuous          | Infinite outcomes (use PDF)                      |
-| PMF / PDF           | Describe probability distribution                |
-| CDF                 | Accumulated probability up to x                 |
-| Quantile            | Inverse of CDF — get x for a given probability   |
+| Concept         | Description                                    |
+| --------------- | ---------------------------------------------- |
+| Random Variable | Represents numeric outcome of a random event   |
+| Discrete        | Countable outcomes (use PMF)                   |
+| Continuous      | Infinite outcomes (use PDF)                    |
+| PMF / PDF       | Describe probability distribution              |
+| CDF             | Accumulated probability up to x                |
+| Quantile        | Inverse of CDF — get x for a given probability |
 
 ---
 ## 💬 Got a question or suggestion?

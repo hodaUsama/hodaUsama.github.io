@@ -2,7 +2,7 @@
 layout: post
 title: "Understanding Z-Distribution and Using the Z-Table"
 date: 2025-05-20
-categories: [statistics, beginner]
+categories: [statistics,Descriptive statistics, beginner]
 tags: [z-distribution, standard normal, z-table, statistics]
 math: true
 description: Master the Z-distribution — a key concept in data science that transforms values into z-scores, enabling outlier detection, standardization, and easier comparison across datasets. Essential for statistics and machine learning.
@@ -95,10 +95,10 @@ Z = \frac{X - \mu}{\sigma}
 
 ## 📊 Visual Aid: Sample Z-Table (Partial)
 
-| Z     | .00  | .01  | .02  | .03  | .04  |
-|-------|-------|-------|-------|-------|-------|
-| 1.2   | 0.8849 | 0.8869 | 0.8888 | <span style="color:#FF4500; font-weight:bold;">0.8907</span> | 0.8925 |
-| 1.3   | 0.9032 | 0.9049 | 0.9066 | 0.9082 | 0.9099 |
+| Z   | .00    | .01    | .02    | .03                                                          | .04    |
+| --- | ------ | ------ | ------ | ------------------------------------------------------------ | ------ |
+| 1.2 | 0.8849 | 0.8869 | 0.8888 | <span style="color:#FF4500; font-weight:bold;">0.8907</span> | 0.8925 |
+| 1.3 | 0.9032 | 0.9049 | 0.9066 | 0.9082                                                       | 0.9099 |
 
 *The value for Z=1.23 is highlighted.*
 
@@ -236,13 +236,13 @@ Converting \\( X \\) to \\( Z \\) can be applied to various data types and distr
 
 ## ✅ <span style="color:#228B22; font-weight:bold;">Summary</span>
 
-| Concept                      | Description                                                     |
-|------------------------------|-----------------------------------------------------------------|
-| Z-Distribution               | Standard normal distribution with mean \\( \mu=0 \\), \\( \sigma=1 \\) |
-| Z-Score                     | Measures how many standard deviations a value is from the mean: \\( Z = \\frac{X - \\mu}{\\sigma} \\) |
-| Cumulative Z-Table          | Gives the probability \\( P(Z \leq z) \\), area under the curve to the left of \\( z \\) |
+| Concept                                | Description                                                                                                      |
+| -------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| Z-Distribution                         | Standard normal distribution with mean \\( \mu=0 \\), \\( \sigma=1 \\)                                           |
+| Z-Score                                | Measures how many standard deviations a value is from the mean: \\( Z = \\frac{X - \\mu}{\\sigma} \\)            |
+| Cumulative Z-Table                     | Gives the probability \\( P(Z \leq z) \\), area under the curve to the left of \\( z \\)                         |
 | Finding Probability Between Two Values | Convert \\( X \\) values to Z-scores, look up cumulative probabilities, subtract to find the probability between |
-| Percentiles                 | Use Z-scores from the cumulative table and convert back to \\( X \\) values for interpretation |
+| Percentiles                            | Use Z-scores from the cumulative table and convert back to \\( X \\) values for interpretation                   |
 
 ---
 

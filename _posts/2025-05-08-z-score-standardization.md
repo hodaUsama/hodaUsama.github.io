@@ -2,7 +2,7 @@
 layout: post
 title: "Z-Score: Comparing Values Using Standardization"
 date: 2025-05-08
-categories: [statistics, beginner]
+categories: [statistics,Descriptive statistics, beginner]
 tags: [z-score, standardization, variability, distribution, outliers]
 math: true
 description: "Understand z-scores and standardization — how far a value is from the mean, and why it's a powerful tool in comparing values across distributions and machine learning tasks."

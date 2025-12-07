@@ -2,7 +2,7 @@
 layout: post
 title: "Measuring the Center: Mean, Median, and Mode Explained"
 date: 2025-05-05
-categories: [statistics, beginner]
+categories: [statistics,Descriptive statistics, beginner]
 tags: [central-tendency, mean, median, mode, outliers, measurement-levels]
 math: true
 description: "Learn how to calculate and choose between mean, median, and mode — key measures of central tendency in statistics and machine learning, with Python code and visual examples."

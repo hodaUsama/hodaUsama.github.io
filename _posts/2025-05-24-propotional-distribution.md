@@ -2,7 +2,7 @@
 layout: post
 title: "Sampling Distribution of the Sample Proportion"
 date: 2025-05-24
-categories: [statistics, beginner]
+categories: [statistics,Descriptive statistics, beginner]
 tags: [sampling-distribution, sample-proportion, population-proportion]
 math: true
 ---
@@ -146,14 +146,14 @@ Use the formula to find the standard error for further analysis.
 ---
 ## ✅ <span style="color:#228B22; font-weight:bold;">Summary</span>
 
-| <span style="color:#1E90FF; font-weight:bold;">Concept</span>                  | <span style="color:#1E90FF; font-weight:bold;">Description</span>                           |
-|----------------------------|----------------------------------------------------------|
-| <span style="color:#228B22;">Population Proportion (\\( \beta \\))</span>  | Proportion of successful outcomes in the population.                                     |
-| <span style="color:#DA70D6;">Sample Proportion (\\( p \\))</span>      | Proportion of successful outcomes in a sample.                                          |
-| <span style="color:#FFA500;">Sampling Distribution</span>    | Theoretical distribution of sample proportions from many samples                        |
-| <span style="color:#8A2BE2;">Mean of Sampling Distribution</span> | Equals the population proportion \\( \mu_p = \mu \\)                                              |
-| <span style="color:#DC143C;">Standard Error (\\( \sigma_p \\))</span>            | \\( \sigma_p = \sqrt{\frac{\beta(1 - \beta)}{n}} \\), variability of sample proportions     |
-| <span style="color:#4682B4;">Conditions for Normality</span> | \\( n \times \beta \geq 15 \\) and \\( n \times (1 - \beta) \geq 15 \\) for bell-shaped curve. |
+| <span style="color:#1E90FF; font-weight:bold;">Concept</span>             | <span style="color:#1E90FF; font-weight:bold;">Description</span>                              |
+| ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| <span style="color:#228B22;">Population Proportion (\\( \beta \\))</span> | Proportion of successful outcomes in the population.                                           |
+| <span style="color:#DA70D6;">Sample Proportion (\\( p \\))</span>         | Proportion of successful outcomes in a sample.                                                 |
+| <span style="color:#FFA500;">Sampling Distribution</span>                 | Theoretical distribution of sample proportions from many samples                               |
+| <span style="color:#8A2BE2;">Mean of Sampling Distribution</span>         | Equals the population proportion \\( \mu_p = \mu \\)                                           |
+| <span style="color:#DC143C;">Standard Error (\\( \sigma_p \\))</span>     | \\( \sigma_p = \sqrt{\frac{\beta(1 - \beta)}{n}} \\), variability of sample proportions        |
+| <span style="color:#4682B4;">Conditions for Normality</span>              | \\( n \times \beta \geq 15 \\) and \\( n \times (1 - \beta) \geq 15 \\) for bell-shaped curve. |
 
 ---
 ## 💬 Got a question or suggestion?

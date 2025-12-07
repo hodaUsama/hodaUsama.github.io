@@ -2,7 +2,7 @@
 layout: post
 title: "Making Sense of Probabilities: Union, Tables, and Conditional Thinking"
 date: 2025-05-15
-categories: [statistics, beginner]
+categories: [statistics,Descriptive statistics, beginner]
 tags: [union, marginal, joint, conditional, contingency, probability]
 math: true
 description: "Learn how to calculate the probability of combined events using union rules, contingency tables, and conditional logic. This post walks you through marginal, joint, and conditional probabilities with intuitive visuals, real-world examples, and quiz-based learning."
@@ -49,11 +49,11 @@ P(A \cup B) = P(A) + P(B)
 
 Let’s say we ask 100 people whether they own a dog or a cat:
 
-|                 | Owns Dog | No Dog | Total |
-|-----------------|----------|--------|-------|
-| **Owns Cat**    |   20     |   30   |  50   |
-| **No Cat**      |   25     |   25   |  50   |
-| **Total**       |   45     |   55   | 100   |
+|              | Owns Dog | No Dog | Total |
+| ------------ | -------- | ------ | ----- |
+| **Owns Cat** | 20       | 30     | 50    |
+| **No Cat**   | 25       | 25     | 50    |
+| **Total**    | 45       | 55     | 100   |
 
 ### 🧩 What Are Margins?
 
@@ -67,11 +67,11 @@ Let’s say we ask 100 people whether they own a dog or a cat:
 
 To convert to **probabilities**, divide each cell by total:
 
-|                 | Owns Dog (D) | No Dog | Total |
-|-----------------|-------------|--------|-------|
-| Owns Cat (C)    | 0.20         | 0.30   | 0.50  |
-| No Cat          | 0.25         | 0.25   | 0.50  |
-| **Total**       | 0.45         | 0.55   | 1.00  |
+|              | Owns Dog (D) | No Dog | Total |
+| ------------ | ------------ | ------ | ----- |
+| Owns Cat (C) | 0.20         | 0.30   | 0.50  |
+| No Cat       | 0.25         | 0.25   | 0.50  |
+| **Total**    | 0.45         | 0.55   | 1.00  |
 
 These are **joint probabilities** (each cell shows \\( P(C \cap D) \\), etc).
 
@@ -111,11 +111,11 @@ P(\text{Cat} \mid \text{Dog}) = \frac{P(\text{Cat and Dog})}{P(\text{Dog})} = \f
 
 ### 🧪 Problem 2 — Medical Testing Example
 
-|               | Disease (+) | No Disease (−) | Total |
-|---------------|-------------|----------------|--------|
-| **Test +**    | 40          | 10             | 50     |
-| **Test −**    | 10          | 40             | 50     |
-| **Total**     | 50          | 50             | 100    |
+|            | Disease (+) | No Disease (−) | Total |
+| ---------- | ----------- | -------------- | ----- |
+| **Test +** | 40          | 10             | 50    |
+| **Test −** | 10          | 40             | 50    |
+| **Total**  | 50          | 50             | 100   |
 
 Let’s convert to probabilities:
 
@@ -177,13 +177,13 @@ By mastering unions, intersections, and conditional logic, you're building the i
 ---
 ## 🧠 Summary
 
-| Concept              | Meaning                                                |
-|----------------------|--------------------------------------------------------|
-| Union of A and B     | Add both, subtract intersection                       |
-| Disjoint events      | No overlap: \\( P(A \cup B) = P(A) + P(B) \\)         |
-| Marginal proportion  | Total rows/columns ÷ total cases                      |
-| Joint probability    | Cell ÷ total                                           |
-| Conditional \\( P(A \mid B) \\) | Probability of A given B                    |
+| Concept                         | Meaning                                       |
+| ------------------------------- | --------------------------------------------- |
+| Union of A and B                | Add both, subtract intersection               |
+| Disjoint events                 | No overlap: \\( P(A \cup B) = P(A) + P(B) \\) |
+| Marginal proportion             | Total rows/columns ÷ total cases              |
+| Joint probability               | Cell ÷ total                                  |
+| Conditional \\( P(A \mid B) \\) | Probability of A given B                      |
 
 ---
 ## 💬 Got a question or suggestion?

@@ -2,7 +2,7 @@
 layout: post
 title: "Understanding the Sampling Distribution of the Sample Mean and the Central Limit Theorem"
 date: 2025-05-23
-categories: [statistics, beginner]
+categories: [statistics,Descriptive statistics, beginner]
 tags: [sampling-distribution, central-limit-theorem, inferential-statistics]
 math: true
 description: The Central Limit Theorem (CLT) is a cornerstone of statistics and data science. It states that the distribution of sample means approaches a normal distribution as the sample size grows, regardless of the original population’s distribution. This powerful concept is essential for making statistical inferences, building confidence intervals, and running hypothesis tests. Whether you're analyzing user behavior in A/B testing or validating machine learning metrics, understanding CLT helps you interpret data more reliably and make better predictions.
@@ -139,14 +139,14 @@ This means the average heights of samples of 36 people will vary with a standard
 ---
 ## ✅ <span style="color:#228B22; font-weight:bold;">Summary</span>
 
-| <span style="color:#1E90FF; font-weight:bold;">Concept</span> | <span style="color:#1E90FF; font-weight:bold;">Description</span> |
-|----------------|-------------|
-| <span style="color:#228B22;">Simple Random Sample (SRS)</span> | Every member of the population has an equal chance of being selected. |
-| <span style="color:#DA70D6;">Sampling Distribution</span> | Distribution of sample means taken from many samples. |
-| <span style="color:#FFA500;">Central Limit Theorem (CLT)</span> | For large enough samples, the distribution of sample means approaches normality, regardless of population shape. |
-| <span style="color:#8A2BE2;">Mean of Sampling Distribution</span> | Equal to the population mean \\( \mu \\). |
-| <span style="color:#DC143C;">Standard Error</span> | \\( \sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}} \\), variability of sample means. |
-| <span style="color:#4682B4;">Sample Size Impact</span> | Larger samples yield smaller standard errors and sample means closer to population mean. |
+| <span style="color:#1E90FF; font-weight:bold;">Concept</span>     | <span style="color:#1E90FF; font-weight:bold;">Description</span>                                                |
+| ----------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| <span style="color:#228B22;">Simple Random Sample (SRS)</span>    | Every member of the population has an equal chance of being selected.                                            |
+| <span style="color:#DA70D6;">Sampling Distribution</span>         | Distribution of sample means taken from many samples.                                                            |
+| <span style="color:#FFA500;">Central Limit Theorem (CLT)</span>   | For large enough samples, the distribution of sample means approaches normality, regardless of population shape. |
+| <span style="color:#8A2BE2;">Mean of Sampling Distribution</span> | Equal to the population mean \\( \mu \\).                                                                        |
+| <span style="color:#DC143C;">Standard Error</span>                | \\( \sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}} \\), variability of sample means.                                 |
+| <span style="color:#4682B4;">Sample Size Impact</span>            | Larger samples yield smaller standard errors and sample means closer to population mean.                         |
 
 ---
 ## 💬 Got a question or suggestion?

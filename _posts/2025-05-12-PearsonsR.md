@@ -2,7 +2,7 @@
 layout: post
 title: "Pearson’s r: Measuring the Strength and Direction of Linear Relationships"
 date: 2025-05-12
-categories: [statistics, beginner]
+categories: [statistics,Descriptive statistics, beginner]
 tags: [pearsons-r, correlation, linear-relationship, scatter-plot, data-analysis]
 math: true
 description: Learn how Pearson’s r measures the strength and direction of linear relationships between variables. Includes formula breakdown, Python code, and machine learning relevance.
@@ -113,13 +113,13 @@ Let’s walk through a small example:
 
 Data:
 
-| X  | Y  |
-|----|----|
-| 1  | 3  |
-| 2  | 4  |
-| 3  | 6  |
-| 4  | 8  |
-| 5  | 10 |
+| X   | Y   |
+| --- | --- |
+| 1   | 3   |
+| 2   | 4   |
+| 3   | 6   |
+| 4   | 8   |
+| 5   | 10  |
 
 Now calculate Pearson’s r:
 
@@ -205,12 +205,12 @@ print("Pearson's r:", r)
 
 ## 🔁 <span style="color:#1E90FF;">Summary</span>
 
-| Relationship Type      | Pearson’s r Interpretation  |
-|------------------------|----------------------------|
-| Strong Positive        | \( r = +1 \)                |
-| Weak Positive          | \( 0 < r < 1 \)             |
-| Strong Negative        | \( r = -1 \)                |
-| No Correlation         | \( r = 0 \)                 |
+| Relationship Type | Pearson’s r Interpretation |
+| ----------------- | -------------------------- |
+| Strong Positive   | \( r = +1 \)               |
+| Weak Positive     | \( 0 < r < 1 \)            |
+| Strong Negative   | \( r = -1 \)               |
+| No Correlation    | \( r = 0 \)                |
 
 ---
 ## 💬 Got a question or suggestion?
