@@ -134,7 +134,7 @@ Now calculate Pearson’s r:
 \\]
 
 \\[
-= 4.4 + 2.2 + 0 + 2.2 + 2.4 = 11.2
+= 6.4 + 2.2 + 0 + 1.8 + 7.6 = 18
 \\]
 
 3. Calculate the **denominator** of the formula (the squared deviations for both variables):
@@ -150,10 +150,10 @@ Now calculate Pearson’s r:
 4. Now calculate Pearson’s r:
 
 \\[
-r = \frac{11.2}{\sqrt{10 \times 32.8}} = \frac{11.2}{\sqrt{328}} = \frac{11.2}{18.1} \approx 0.62
+r = \frac{11.2}{\sqrt{10 \times 32.8}} = \frac{11.2}{\sqrt{328}} = \frac{11.2}{18.1} \approx 0.99
 \\]
 
-This means the correlation is **moderately strong positive**, but **not perfect**.
+This means the correlation is **very strong positive (near-perfect)**.
 
 ---
 
