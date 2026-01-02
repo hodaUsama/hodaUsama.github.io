@@ -122,3 +122,33 @@ html[data-mode="dark"] .level-up-title {
 {
      display: none;
 }
+
+/* Infographic Card Dark Mode */
+html[data-mode="dark"] .infographic-card {
+  background-color: #484646;
+  border: 1px solid #333;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+html[data-mode="dark"] .infographic-card h3 {
+  color: #f5f5f5;
+}
+
+/* Make buttons pop in dark mode */
+html[data-mode="dark"] .btn {
+  background-color: #28a745;  /* nice green */
+  color: #fff;
+}
+
+html[data-mode="dark"] .btn:hover {
+  background-color: #218838;
+}
+
+/* Filter buttons dark mode */
+html[data-mode="dark"] .filter-buttons button {
+  background-color: #2e2e2e;
+  color: #f0f0f0;
+}
+html[data-mode="dark"] .filter-buttons button:hover {
+  background-color: #444;
+}
