@@ -20,6 +20,14 @@ This choice — called the **confidence level** — directly affects how **wide 
 
 ---
 
+<div class="series-nav">
+  <p>📚 <strong>This post is part of the "Intro to Calculus" series</strong></p>
+  <p>🔙 <strong>Previously:</strong> <a href="/posts/Confidence-Interval-population-proportion/" style="color:#FF6F61;">Confidence Interval for a Population Proportion — Step-by-Step Guide</a></p> 
+   <p>🔜 <strong>Next:</strong> <a href="/posts/Choose-sample-size/" style="color:#1E90FF;">Choosing the Right Sample Size for Accurate Results</a></p>
+</div>
+
+---
+
 ## ☕ <span style="color:#C0392B;">Real-World Case: Do Students Use Digital Flashcards?</span>
 
 Suppose you survey university students to see whether they regularly use **digital flashcards** for studying.

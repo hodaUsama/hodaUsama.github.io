@@ -18,6 +18,14 @@ This lets you avoid:
 
 ---
 
+<div class="series-nav">
+  <p>📚 <strong>This post is part of the "Intro to Calculus" series</strong></p>
+  <p>🔙 <strong>Previously:</strong> <a href="/posts/Confidence-levels-in-confidence-intervals/" style="color:#FF6F61;">Confidence Levels Explained: 90%, 95%, and 99% Confidence Intervals</a></p> 
+   <p>🔜 <strong>Next:</strong> <a href="/posts/Confidence-intervals-example/" style="color:#1E90FF;">Confidence Intervals: A Full Case Study on Mean vs Proportion</a></p>
+</div>
+
+---
+
 ## 🔑 <span style="color:#C0392B;">The 3 Key Drivers of Sample Size</span>
 
 To compute the needed sample size \\( n \\), you must define these 3 factors:
