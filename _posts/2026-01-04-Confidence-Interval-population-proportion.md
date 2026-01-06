@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Confidence Interval for a Population Proportion — Step-by-Step Guide"
-date: 2026-01-05
+date: 2026-01-04
 categories: [statistics, inferential statistics, beginner]
 tags: [confidence-interval, sample-proportion, binary-data, statistics-for-ml]
 math: true
@@ -13,6 +13,15 @@ When working with binary outcomes — like success/failure, yes/no, or click/no-
 In this guide, you'll learn how to build a confidence interval for a population proportion using step-by-step logic, a relatable real-world example, and Python code you can run yourself.
 
 ---
+
+<div class="series-nav">
+  <p>📚 <strong>This post is part of the "Intro to Calculus" series</strong></p>
+  <p>🔙 <strong>Previously:</strong> <a href="/posts/Confidence-Interval-noSTD/" style="color:#FF6F61;">Confidence Interval for an Unknown Population Standard Deviation</a></p> 
+   <p>🔜 <strong>Next:</strong> <a href="/posts/Confidence-levels-in-confidence-intervals/" style="color:#1E90FF;">Confidence Levels Explained: 90%, 95%, and 99% Confidence Intervals</a></p>
+</div>
+
+---
+
 ## 🎯 <span style="color:#2E8B57;">Goal: Estimating a Population Proportion from a Sample</span>
 
 When you're dealing with **Yes/No data** and want to estimate the **percentage of a population** that has a certain characteristic (like liking a product, using an app, voting a certain way), you’ll likely use a **confidence interval for a proportion**.
@@ -267,6 +276,7 @@ In the next post, we’ll explore **Hypothesis Testing for Proportions** — how
 
 
 ---
+
 ## 📺 Explore the Channel
 
 <div style="max-width: 400px; margin: 30px auto; border: 1px solid #ccc; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center; font-family: sans-serif;">
@@ -281,11 +291,8 @@ In the next post, we’ll explore **Hypothesis Testing for Proportions** — how
       🔔 Subscribe on YouTube
     </button>
   </a>
-
 </div>
-
 ---
-
-## 💬 Got a Question?
+## 💬 <span style="color:#4B0082;"> Got a Question? </span>
 
 Leave a comment or open an issue on GitHub — I love connecting with other learners and builders. 🔁

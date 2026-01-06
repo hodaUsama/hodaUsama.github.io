@@ -16,6 +16,15 @@ This post explains how to calculate a **Confidence Interval** when the **populat
 
 ---
 
+
+<div class="series-nav">
+  <p>📚 <strong>This post is part of the "Intro to Calculus" series</strong></p>
+  <p>🔙 <strong>Previously:</strong> <a href="/posts/Inferential-Statististics/" style="color:#FF6F61;">Introduction to Inferential Statistics: Point vs. Interval Estimation</a></p> 
+   <p>🔜 <strong>Next:</strong> <a href="/posts/Confidence-Interval-noSTD/" style="color:#1E90FF;">Confidence Interval for an Unknown Population Standard Deviation</a></p>
+</div>
+
+---
+
 ## 📱 <span style="color:#C0392B;">Real-World Case: Teenagers' Daily Screen Time</span>
 
 Imagine you're analyzing national survey data on **teenagers' daily screen time** (phones, laptops, TV).
@@ -277,7 +286,7 @@ Stay tuned as we continue building your statistical intuition for data science a
 
 ---
 
-## 💬 Got a Question?
+## 💬 <span style="color:#4B0082;"> Got a Question? </span>
 
 I’d love to hear your thoughts! Drop your questions, corrections, or topic suggestions below.
 

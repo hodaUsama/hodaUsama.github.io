@@ -427,7 +427,7 @@ Now that you’ve mastered derivatives, gradients, and curvature, it’s time to
 
 ---
 
-## 💬 Got a Question?
+## 💬 <span style="color:#4B0082;"> Got a Question? </span>
 
 Leave a comment or open an issue on GitHub — I love connecting with other learners and builders. 🔁
 

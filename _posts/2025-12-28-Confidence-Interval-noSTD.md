@@ -16,6 +16,14 @@ In such cases, we use the **t-distribution**, not the Z-distribution.
 
 ---
 
+<div class="series-nav">
+  <p>📚 <strong>This post is part of the "Intro to Calculus" series</strong></p>
+  <p>🔙 <strong>Previously:</strong> <a href="/posts/Confidence-Interval/" style="color:#FF6F61;">Confidence Interval for a Known Population Standard Deviation</a></p> 
+   <p>🔜 <strong>Next:</strong> <a href="/posts/Confidence-Interval-population-proportion/" style="color:#1E90FF;">Confidence Interval for a Population Proportion — Step-by-Step Guide</a></p>
+</div>
+
+---
+
 ## ☕ <span style="color:#C0392B;">Real-World Case: Coffee Consumption Among Remote Workers</span>
 
 Imagine you’re studying how much coffee remote developers drink daily. You gather data from a **random sample of 25 developers** and calculate:
@@ -259,6 +267,6 @@ In the next post, we’ll explore **how to compare two population means** using 
 
 ---
 
-## 💬 Got a Question?
+## 💬 <span style="color:#4B0082;"> Got a Question? </span>
 
 Leave a comment or open an issue on GitHub — I love connecting with other learners and builders. 🔁

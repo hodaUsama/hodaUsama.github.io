@@ -18,7 +18,7 @@ This branch of statistics allows you to take a small slice of data (a sample) an
 <div class="series-nav">
   <p>📚 <strong>This post is part of the "Intro to Statistics" series</strong></p>
   
-  <p>🔜 <strong>Next:</strong> <a href="/#">Introduction to Hypothesis Testing</a></p>
+  <p>🔜 <strong>Next:</strong> <a href="/posts/Confidence-Interval">Confidence Interval for a Known Population Standard Deviation</a></p>
 </div>
 
 ---
@@ -308,6 +308,7 @@ Next, we’ll dive into the second pillar of Inferential Statistics: **Hypothesi
 </div>
 
 ---
-## 💬 Got a question or suggestion?
+
+## 💬 <span style="color:#4B0082;"> Got a Question? </span>
 
 Leave a comment below — I’d love to hear your thoughts on how you use estimation in your data projects!
