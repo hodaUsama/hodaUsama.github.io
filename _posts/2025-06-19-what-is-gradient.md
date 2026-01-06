@@ -265,21 +265,16 @@ That’s why understanding the gradient — not just using it — gives you an e
 
 ## 🔁 <span style="color:#228B22;">Summary: What You Learned</span>
 
-| Concept               | Description |
-|-----------------------|-------------|
-| **Partial Derivative** | Rate of change w.r.t. one variable, holding others constant |
-| **Gradient Vector**    | Vector of all partial derivatives — shows direction and rate of steepest increase |
-| **Geometric Insight**  | Gradients are perpendicular to level curves in 2D, surfaces in 3D |
-| **Symbolic Gradient**  | Use tools like SymPy to compute gradients analytically |
-| **Contour Visualization** | Helps you see how the gradient behaves spatially |
-| **ML Connection**      | Gradients power learning algorithms like gradient descent and backpropagation |
+| Concept                   | Description                                                                       |
+| ------------------------- | --------------------------------------------------------------------------------- |
+| **Partial Derivative**    | Rate of change w.r.t. one variable, holding others constant                       |
+| **Gradient Vector**       | Vector of all partial derivatives — shows direction and rate of steepest increase |
+| **Geometric Insight**     | Gradients are perpendicular to level curves in 2D, surfaces in 3D                 |
+| **Symbolic Gradient**     | Use tools like SymPy to compute gradients analytically                            |
+| **Contour Visualization** | Helps you see how the gradient behaves spatially                                  |
+| **ML Connection**         | Gradients power learning algorithms like gradient descent and backpropagation     |
 
 Understanding gradients prepares you to tackle the **Chain Rule**, **Jacobian matrices**, and the inner workings of learning in high-dimensional ML models.
-
----
-## 💬 <span style="color:#4B0082;">Got a question or suggestion?</span>
-
-Leave a comment below — I’d love to hear your thoughts or help if something was unclear.
 
 ---
 ## 🧭 <span style="color:#9370DB;">Next Up: </span>
@@ -293,3 +288,23 @@ You’ll learn:
 - Why Jacobians are essential for **coordinate transformations**, **deep learning**, and **backpropagation**
 
 Get ready to climb deeper into the multivariable landscape — things are about to get multidimensional and matrix-powered!
+---
+## 📺 Explore the Channel
+
+<div style="max-width: 400px; margin: 30px auto; border: 1px solid #ccc; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center; font-family: sans-serif;">
+  
+  <img src="../assets/images/Hoda-Osama-Ai.png" alt="Hoda Osama AI Channel" style="width: 100%; border-radius: 8px;">
+
+  <h3 style="margin-top: 16px; color: #333;">🎥 Hoda Osama AI</h3>
+  <p style="color: #555;">Learn statistics and machine learning concepts step by step with visuals and real examples.</p>
+  
+  <a href="https://www.youtube.com/@Hoda_Osama_AI" target="_blank" rel="noopener noreferrer">
+    <button style="margin-top: 12px; padding: 10px 20px; font-size: 16px; background-color: #FF0000; color: white; border: none; border-radius: 6px; cursor: pointer;">
+      🔔 Subscribe on YouTube
+    </button>
+  </a>
+</div>
+---
+## 💬 <span style="color:#4B0082;"> Got a Question? </span>
+
+Leave a comment or open an issue on GitHub — I love connecting with other learners and builders. 🔁

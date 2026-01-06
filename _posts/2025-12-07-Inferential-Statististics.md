@@ -283,12 +283,31 @@ Point Estimate: 2.51
 
 🧠 **Takeaway:** Always prefer the "Safety Net" (Intervals) over the "Bullseye" (Points) when making important decisions.
 
----
-## 💬 Got a question or suggestion?
-
-Leave a comment below — I’d love to hear your thoughts on how you use estimation in your data projects!
 
 ---
 ## 🔜 Up Next
 
 Next, we’ll dive into the second pillar of Inferential Statistics: **Hypothesis Testing** — how to mathematically prove (or disprove) a theory about your data.
+
+---
+## 📺 Explore the Channel
+
+<div style="max-width: 400px; margin: 30px auto; border: 1px solid #ccc; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center; font-family: sans-serif;">
+  
+  <img src="../assets/images/Hoda-Osama-Ai.png" alt="Hoda Osama AI Channel" style="width: 100%; border-radius: 8px;">
+
+  <h3 style="margin-top: 16px; color: #333;">🎥 Hoda Osama AI</h3>
+  <p style="color: #555;">Learn statistics and machine learning concepts step by step with visuals and real examples.</p>
+  
+  <a href="https://www.youtube.com/@Hoda_Osama_AI" target="_blank" rel="noopener noreferrer">
+    <button style="margin-top: 12px; padding: 10px 20px; font-size: 16px; background-color: #FF0000; color: white; border: none; border-radius: 6px; cursor: pointer;">
+      🔔 Subscribe on YouTube
+    </button>
+  </a>
+
+</div>
+
+---
+## 💬 Got a question or suggestion?
+
+Leave a comment below — I’d love to hear your thoughts on how you use estimation in your data projects!

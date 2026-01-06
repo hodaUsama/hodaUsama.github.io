@@ -26,12 +26,12 @@ Descriptive statistics help you <strong>describe and summarize</strong> a set of
 
 Imagine you have a list of exam scores for a class of students. Descriptive stats can tell you:
 
-| Question                        | Descriptive Tool     | Example Answer         |
-|-------------------------------|-----------------------|------------------------|
-| What’s the average score?     | Mean                  | 75 out of 100          |
-| Are most scores similar?      | Standard Deviation    | Yes, they’re close     |
-| What’s the highest/lowest?    | Min / Max             | 98 and 45              |
-| How are scores spread out?    | Range / Histogram     | Most are in the 70s    |
+| Question                   | Descriptive Tool   | Example Answer      |
+| -------------------------- | ------------------ | ------------------- |
+| What’s the average score?  | Mean               | 75 out of 100       |
+| Are most scores similar?   | Standard Deviation | Yes, they’re close  |
+| What’s the highest/lowest? | Min / Max          | 98 and 45           |
+| How are scores spread out? | Range / Histogram  | Most are in the 70s |
 
 🟠 <span style="color:#FF6347;">Think of it as a summary card for your data.</span>
 
@@ -67,11 +67,11 @@ Now imagine you only saw 10 scores out of 100 students. You might want to:
 
 That’s what <strong>inferential statistics</strong> does — it helps us make <strong>educated guesses</strong> about a bigger group based on a smaller sample.
 
-| Situation                                | Inferential Thinking              |
-|------------------------------------------|------------------------------------|
+| Situation                                      | Inferential Thinking              |
+| ---------------------------------------------- | --------------------------------- |
 | You try a new teaching method with 10 students | "Will this help the whole class?" |
-| You test a drug on 50 people             | "Will it work for everyone?"       |
-| You train a model on part of the data    | "Will it work on new data?"        |
+| You test a drug on 50 people                   | "Will it work for everyone?"      |
+| You train a model on part of the data          | "Will it work on new data?"       |
 
 🟢 <span style="color:#2E8B57;">It’s all about prediction and generalization.</span>
 
@@ -109,10 +109,10 @@ Imagine you're tasting soup:
 
 Machine learning uses <span style="color:#FFA500;"><strong>both</strong></span> types:
 
-| Task                      | What It Uses            |
-|---------------------------|--------------------------|
-| Cleaning and exploring data | <span style="color:#1E90FF;">Descriptive stats</span> |
-| Training on sample data     | <span style="color:#228B22;">Inferential stats</span> |
+| Task                        | What It Uses                                             |
+| --------------------------- | -------------------------------------------------------- |
+| Cleaning and exploring data | <span style="color:#1E90FF;">Descriptive stats</span>    |
+| Training on sample data     | <span style="color:#228B22;">Inferential stats</span>    |
 | Making predictions          | <span style="color:#228B22;">Inferential thinking</span> |
 
 Even if you haven’t learned ML yet — this is your <strong>foundation</strong>.
@@ -187,21 +187,14 @@ This is the same logic used when evaluating how well a machine learning model wi
 ## ✅ Summary
 
 
-| 🧠 Concept                        | 🔵 **Descriptive Statistics**                            | 🟢 **Inferential Statistics**                          |
-|----------------------------------|-----------------------------------------------------------|---------------------------------------------------------|
-| ❓ Goal                          | Summarize what you know                                  | Generalize what you don’t                              |
-| 📦 Data Scope                   | Whole population or full dataset                         | Sample representing a larger group                     |
-| 📊 Techniques                   | Mean, median, standard deviation, charts                 | Hypothesis testing, confidence intervals, prediction   |
-| 🔮 Prediction?                  | ❌ No prediction                                          | ✅ Yes — estimation & decision making                   |
-| ⚠️ Assumptions                 | None (purely descriptive)                                | Assumes randomness, independence, sample size          |
-| 🤖 ML Use                       | EDA, feature understanding                               | Model validation, generalization, error estimation     |
-
----
-
-
----
-💬 **Got a question or suggestion?**  
-Feel free to leave a comment in the section below — I’d love to hear your thoughts or help with your dataset!
+| 🧠 Concept     | 🔵 **Descriptive Statistics**             | 🟢 **Inferential Statistics**                         |
+| ------------- | ---------------------------------------- | ---------------------------------------------------- |
+| ❓ Goal        | Summarize what you know                  | Generalize what you don’t                            |
+| 📦 Data Scope  | Whole population or full dataset         | Sample representing a larger group                   |
+| 📊 Techniques  | Mean, median, standard deviation, charts | Hypothesis testing, confidence intervals, prediction |
+| 🔮 Prediction? | ❌ No prediction                          | ✅ Yes — estimation & decision making                 |
+| ⚠️ Assumptions | None (purely descriptive)                | Assumes randomness, independence, sample size        |
+| 🤖 ML Use      | EDA, feature understanding               | Model validation, generalization, error estimation   |
 
 ---
 
@@ -211,6 +204,26 @@ In the next post, we’ll explore two tools that help us work with data:
 - <strong>Data Matrix</strong>: a simple way to organize information
 - <strong>Frequency Tables</strong>: to see how often things appear
 
-
-
 Stay tuned!
+
+---
+## 📺 Explore the Channel
+
+<div style="max-width: 400px; margin: 30px auto; border: 1px solid #ccc; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center; font-family: sans-serif;">
+  
+  <img src="../assets/images/Hoda-Osama-Ai.png" alt="Hoda Osama AI Channel" style="width: 100%; border-radius: 8px;">
+
+  <h3 style="margin-top: 16px; color: #333;">🎥 Hoda Osama AI</h3>
+  <p style="color: #555;">Learn statistics and machine learning concepts step by step with visuals and real examples.</p>
+  
+  <a href="https://www.youtube.com/@Hoda_Osama_AI" target="_blank" rel="noopener noreferrer">
+    <button style="margin-top: 12px; padding: 10px 20px; font-size: 16px; background-color: #FF0000; color: white; border: none; border-radius: 6px; cursor: pointer;">
+      🔔 Subscribe on YouTube
+    </button>
+  </a>
+</div>
+---
+## 💬 <span style="color:#4B0082;"> Got a Question? </span>
+
+Leave a comment or open an issue on GitHub — I love connecting with other learners and builders. 🔁
+

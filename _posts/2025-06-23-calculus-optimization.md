@@ -143,10 +143,10 @@ This 3D surface shows how Newton’s Method uses curvature to jump directly to t
 
 ## ⚖️ Comparing First- and Second-Order Methods
 
-| Method            | Uses            | Pros                        | Cons                        |
-|------------------|------------------|------------------------------|-----------------------------|
-| Gradient Descent | First derivative | Simple, scalable             | Slower convergence          |
-| Newton's Method  | Second derivative| Faster near minimum          | Expensive (Hessian inverse) |
+| Method           | Uses              | Pros                | Cons                        |
+| ---------------- | ----------------- | ------------------- | --------------------------- |
+| Gradient Descent | First derivative  | Simple, scalable    | Slower convergence          |
+| Newton's Method  | Second derivative | Faster near minimum | Expensive (Hessian inverse) |
 
 ---
 ## 🤖 Relevance to Machine Learning
@@ -268,16 +268,34 @@ x_{\text{next}} = 0
 
 ## 🔁 <span style="color:#228B22;">Summary: What You Learned</span>
 
-| 🧠 Concept             | 📌 Description                                                                 |
-|------------------------|-------------------------------------------------------------------------------|
-| **Loss Function**      | Measures model error — optimization tries to minimize it                      |
-| **Gradient Descent**   | First-order method that uses slope to step toward minima                      |
-| **Learning Rate**      | Controls step size — critical for convergence                                 |
-| **Newton’s Method**    | Uses both gradient and Hessian for curvature-aware optimization               |
-| **Hessian Matrix**     | Matrix of second derivatives — shows local curvature                          |
-| **Convex vs Non-Convex** | Optimization behavior changes based on loss surface shape                   |
-| **Optimizer Behavior** | Different optimizers converge at different speeds and directions              |
-| **Python Tools**       | Libraries like NumPy and SymPy can simulate and visualize optimization steps  |
+| 🧠 Concept                | 📌 Description                                                                |
+| ------------------------ | ---------------------------------------------------------------------------- |
+| **Loss Function**        | Measures model error — optimization tries to minimize it                     |
+| **Gradient Descent**     | First-order method that uses slope to step toward minima                     |
+| **Learning Rate**        | Controls step size — critical for convergence                                |
+| **Newton’s Method**      | Uses both gradient and Hessian for curvature-aware optimization              |
+| **Hessian Matrix**       | Matrix of second derivatives — shows local curvature                         |
+| **Convex vs Non-Convex** | Optimization behavior changes based on loss surface shape                    |
+| **Optimizer Behavior**   | Different optimizers converge at different speeds and directions             |
+| **Python Tools**         | Libraries like NumPy and SymPy can simulate and visualize optimization steps |
+
+---
+## 📺 Explore the Channel
+
+<div style="max-width: 400px; margin: 30px auto; border: 1px solid #ccc; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center; font-family: sans-serif;">
+  
+  <img src="../assets/images/Hoda-Osama-Ai.png" alt="Hoda Osama AI Channel" style="width: 100%; border-radius: 8px;">
+
+  <h3 style="margin-top: 16px; color: #333;">🎥 Hoda Osama AI</h3>
+  <p style="color: #555;">Learn statistics and machine learning concepts step by step with visuals and real examples.</p>
+  
+  <a href="https://www.youtube.com/@Hoda_Osama_AI" target="_blank" rel="noopener noreferrer">
+    <button style="margin-top: 12px; padding: 10px 20px; font-size: 16px; background-color: #FF0000; color: white; border: none; border-radius: 6px; cursor: pointer;">
+      🔔 Subscribe on YouTube
+    </button>
+  </a>
+
+</div>
 
 ---
 

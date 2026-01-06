@@ -246,16 +246,12 @@ Closer contour lines indicate a <b>steep</b> gradient — the function changes r
 
 ### 📌  Summary Table
 
-| **🧠 Concept**                  | **🧮 Mathematical Form**                                  | **🎯 Visualization Goal**                                        | **🌍 Real-World Analogy / Use**                                | **🛠️ Python Function Used**             |
-|-------------------------------|-----------------------------------------------------------|------------------------------------------------------------------|----------------------------------------------------------------|----------------------------------------|
-| 🎯 **Contour Plot**           | \\( z = f(x, y) \\)                                         | Show level curves where the function output is constant         | Topographic maps, ML loss surface                              | `plt.contour`, `plt.contourf`          |
-| 🧭 **Vector-Valued Function** | \\( \vec{r}(t) = (x(t), y(t)) \\) or \\( (x(t), y(t), z(t)) \\) | Describe a path or curve in space from a parameter input        | Particle motion, multi-output regression/classification in ML | `plt.plot` (2D), `ax.plot` (3D)        |
-| 🌪️ **Vector Field**           | \\( \vec{F}(x, y) = (P(x, y), Q(x, y)) \\)                 | Show vector direction and magnitude at each point in space      | Wind flow, fluid dynamics, gradient descent in ML             | `plt.quiver`, `plt.streamplot`         |
+| **🧠 Concept**                | **🧮 Mathematical Form**                                         | **🎯 Visualization Goal**                                   | **🌍 Real-World Analogy / Use**                                | **🛠️ Python Function Used**      |
+| ---------------------------- | --------------------------------------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------- |
+| 🎯 **Contour Plot**           | \\( z = f(x, y) \\)                                             | Show level curves where the function output is constant    | Topographic maps, ML loss surface                             | `plt.contour`, `plt.contourf`   |
+| 🧭 **Vector-Valued Function** | \\( \vec{r}(t) = (x(t), y(t)) \\) or \\( (x(t), y(t), z(t)) \\) | Describe a path or curve in space from a parameter input   | Particle motion, multi-output regression/classification in ML | `plt.plot` (2D), `ax.plot` (3D) |
+| 🌪️ **Vector Field**           | \\( \vec{F}(x, y) = (P(x, y), Q(x, y)) \\)                      | Show vector direction and magnitude at each point in space | Wind flow, fluid dynamics, gradient descent in ML             | `plt.quiver`, `plt.streamplot`  |
 
----
-## 💬 <span style="color:#4B0082;">Got a question or suggestion?</span>
-
-Leave a comment below — I’d love to hear your thoughts or help if something was unclear.
 
 ---
 ## 🧭 <span style="color:#9370DB;">Next Up: </span>
@@ -267,3 +263,24 @@ You’ll also build core intuition for **limits**, with visual and code-based ex
 Finally, we’ll tie it all together with a look at **continuity and differentiability**, setting the stage for gradient-based methods and smooth optimization.
 
 Stay sharp — things are about to get even more visual and intuitive!
+
+---
+## 📺 Explore the Channel
+
+<div style="max-width: 400px; margin: 30px auto; border: 1px solid #ccc; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center; font-family: sans-serif;">
+  
+  <img src="../assets/images/Hoda-Osama-Ai.png" alt="Hoda Osama AI Channel" style="width: 100%; border-radius: 8px;">
+
+  <h3 style="margin-top: 16px; color: #333;">🎥 Hoda Osama AI</h3>
+  <p style="color: #555;">Learn statistics and machine learning concepts step by step with visuals and real examples.</p>
+  
+  <a href="https://www.youtube.com/@Hoda_Osama_AI" target="_blank" rel="noopener noreferrer">
+    <button style="margin-top: 12px; padding: 10px 20px; font-size: 16px; background-color: #FF0000; color: white; border: none; border-radius: 6px; cursor: pointer;">
+      🔔 Subscribe on YouTube
+    </button>
+  </a>
+</div>
+---
+## 💬 <span style="color:#4B0082;"> Got a Question? </span>
+
+Leave a comment or open an issue on GitHub — I love connecting with other learners and builders. 🔁

@@ -180,23 +180,18 @@ f(1,2) = 1^2 + 2^2 = 1 + 4 = 5
 ---
 ## 🔁 <span style="color:#228B22;" >Summary: What You Learned </span>
 
-| Concept | Description |
-|--------|-------------|
-| **Function** | A rule that maps each input (from the domain) to one output (in the range) |
-| **Domain** | The set of all possible input values for a function |
-| **Range / Codomain** | The set of all possible outputs a function can produce |
-| **Scalar-Valued Function** | A function whose output is a single number (scalar) |
-| **Vector-Valued Function** | A function whose output is a vector (multiple numbers) |
-| **Univariate Function** | A function with a single input variable (e.g., \( f(x) \)) |
-| **Multivariate Function** | A function with two or more input variables (e.g., \( f(x, y) \)) |
-| **Example** | \( f(x, y) = x^2 + y^2 \) is a multivariate, scalar-valued function |
+| Concept                    | Description                                                                |
+| -------------------------- | -------------------------------------------------------------------------- |
+| **Function**               | A rule that maps each input (from the domain) to one output (in the range) |
+| **Domain**                 | The set of all possible input values for a function                        |
+| **Range / Codomain**       | The set of all possible outputs a function can produce                     |
+| **Scalar-Valued Function** | A function whose output is a single number (scalar)                        |
+| **Vector-Valued Function** | A function whose output is a vector (multiple numbers)                     |
+| **Univariate Function**    | A function with a single input variable (e.g., \( f(x) \))                 |
+| **Multivariate Function**  | A function with two or more input variables (e.g., \( f(x, y) \))          |
+| **Example**                | \( f(x, y) = x^2 + y^2 \) is a multivariate, scalar-valued function        |
 
 Mastering these basics will help you tackle calculus concepts like **derivatives**, **gradients**, and more advanced machine learning models in future lessons!
-
----
-## 💬 <span style="color:#4B0082;">Got a question or suggestion?</span>
-
-Leave a comment below — I’d love to hear your thoughts or help if something was unclear.
 
 ---
 
@@ -208,3 +203,24 @@ You'll also get a deeper dive into **vector-valued functions** with clear defini
 
 Stay curious!
 
+---
+
+## 📺 Explore the Channel
+
+<div style="max-width: 400px; margin: 30px auto; border: 1px solid #ccc; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center; font-family: sans-serif;">
+  
+  <img src="../assets/images/Hoda-Osama-Ai.png" alt="Hoda Osama AI Channel" style="width: 100%; border-radius: 8px;">
+
+  <h3 style="margin-top: 16px; color: #333;">🎥 Hoda Osama AI</h3>
+  <p style="color: #555;">Learn statistics and machine learning concepts step by step with visuals and real examples.</p>
+  
+  <a href="https://www.youtube.com/@Hoda_Osama_AI" target="_blank" rel="noopener noreferrer">
+    <button style="margin-top: 12px; padding: 10px 20px; font-size: 16px; background-color: #FF0000; color: white; border: none; border-radius: 6px; cursor: pointer;">
+      🔔 Subscribe on YouTube
+    </button>
+  </a>
+</div>
+---
+## 💬 <span style="color:#4B0082;"> Got a Question? </span>
+
+Leave a comment or open an issue on GitHub — I love connecting with other learners and builders. 🔁

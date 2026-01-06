@@ -331,12 +331,7 @@ Let’s wrap up the key points about Jacobians:
 ---
 
 🧠 <b>Mastering Jacobians gives you the tools to understand direction, scale, and curvature in multivariable systems — essential for modern ML models.</b>
-
----
-
-## 💬 <span style="color:#4B0082;">Got a question or suggestion?</span>
-
-Leave a comment below — I’d love to hear your thoughts or help if something was unclear.
+ a comment below — I’d love to hear your thoughts or help if something was unclear.
 
 ---
 ## 🧭 <span style="color:#9370DB;">Next Up</span>
@@ -350,3 +345,25 @@ In the upcoming post, we’ll explore:
 - How optimization shapes <b>neural networks, regression, and clustering</b>
 
 Stay sharp — you’re about to enter the engine room of how machines learn.
+
+---
+## 📺 Explore the Channel
+
+<div style="max-width: 400px; margin: 30px auto; border: 1px solid #ccc; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center; font-family: sans-serif;">
+  
+  <img src="../assets/images/Hoda-Osama-Ai.png" alt="Hoda Osama AI Channel" style="width: 100%; border-radius: 8px;">
+
+  <h3 style="margin-top: 16px; color: #333;">🎥 Hoda Osama AI</h3>
+  <p style="color: #555;">Learn statistics and machine learning concepts step by step with visuals and real examples.</p>
+  
+  <a href="https://www.youtube.com/@Hoda_Osama_AI" target="_blank" rel="noopener noreferrer">
+    <button style="margin-top: 12px; padding: 10px 20px; font-size: 16px; background-color: #FF0000; color: white; border: none; border-radius: 6px; cursor: pointer;">
+      🔔 Subscribe on YouTube
+    </button>
+  </a>
+</div>
+---
+
+## 💬 <span style="color:#4B0082;"> Got a Question? </span>
+
+Leave a comment or open an issue on GitHub — I love connecting with other learners and builders. 🔁

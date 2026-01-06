@@ -388,24 +388,18 @@ f'(x) = 0
 ---
 ## 🔁 <span style="color:#228B22;" >Summary: What You Learned </span>
 
-| Concept | Description |
-|--------|-------------|
-| **Derivative** | Measures how a function changes at a point |
-| **Gradient** | Rise over run — visual slope |
-| **Limit Definition** | Foundation of derivatives for curves |
-| **Power Rule** | \\( \frac{d}{dx}(x^n) = nx^{n-1} \\) |
-| **Constant Rule** | \\( \frac{d}{dx}(c) = 0 \\) |
-| **Linear Rule** | Derivative of \\( ax + b \\) is \\( a \\) |
+| Concept                   | Description                                       |
+| ------------------------- | ------------------------------------------------- |
+| **Derivative**            | Measures how a function changes at a point        |
+| **Gradient**              | Rise over run — visual slope                      |
+| **Limit Definition**      | Foundation of derivatives for curves              |
+| **Power Rule**            | \\( \frac{d}{dx}(x^n) = nx^{n-1} \\)              |
+| **Constant Rule**         | \\( \frac{d}{dx}(c) = 0 \\)                       |
+| **Linear Rule**           | Derivative of \\( ax + b \\) is \\( a \\)         |
 | **From First Principles** | You can derive \\( f'(x) \\) using the limit form |
-| **Example Outcome** | \\( \frac{d}{dx}(x^2) = 2x \\) |
+| **Example Outcome**       | \\( \frac{d}{dx}(x^2) = 2x \\)                    |
 
 Understanding the basics of slope, rules, and limit-based derivatives sets the stage for more advanced tools like the **Chain Rule**, which we’ll cover in the next post.
-
-
----
-## 💬 <span style="color:#4B0082;">Got a question or suggestion?</span>
-
-Leave a comment below — I’d love to hear your thoughts or help if something was unclear.
 
 ---
 ## 🧭 <span style="color:#9370DB;">Next Up: </span>
@@ -420,3 +414,23 @@ You’ll learn:
 
 Stay curious — the world of higher dimensions is about to open up.
 
+---
+## 📺 Explore the Channel
+
+<div style="max-width: 400px; margin: 30px auto; border: 1px solid #ccc; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center; font-family: sans-serif;">
+  
+  <img src="../assets/images/Hoda-Osama-Ai.png" alt="Hoda Osama AI Channel" style="width: 100%; border-radius: 8px;">
+
+  <h3 style="margin-top: 16px; color: #333;">🎥 Hoda Osama AI</h3>
+  <p style="color: #555;">Learn statistics and machine learning concepts step by step with visuals and real examples.</p>
+  
+  <a href="https://www.youtube.com/@Hoda_Osama_AI" target="_blank" rel="noopener noreferrer">
+    <button style="margin-top: 12px; padding: 10px 20px; font-size: 16px; background-color: #FF0000; color: white; border: none; border-radius: 6px; cursor: pointer;">
+      🔔 Subscribe on YouTube
+    </button>
+  </a>
+</div>
+---
+## 💬 <span style="color:#4B0082;"> Got a Question? </span>
+
+Leave a comment or open an issue on GitHub — I love connecting with other learners and builders. 🔁
