@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Confidence Levels Explained: 90%, 95%, and 99% Confidence Intervals"
-date: 2026-01-5
+date: 2026-01-4
 categories: [statistics, inferential statistics, beginner]
 tags: [confidence-interval, confidence-level, z-score, margin-of-error, statistics-for-ml]
 math: true
