@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Confidence Intervals: A Full Case Study on Mean vs Proportion"
-date: 2026-01-06
+date: 2025-12-13
 categories: [statistics, confidence-intervals, beginner]
 tags: [confidence-interval, t-distribution, z-distribution, sample-mean, sample-proportion, statistics-for-ml]
 math: true

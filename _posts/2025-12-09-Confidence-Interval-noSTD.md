@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Confidence Interval for an Unknown Population Standard Deviation"
-date: 2025-12-28
+date: 2025-12-09
 categories: [statistics, Inferential Statistics, beginner]
 tags: [confidence-interval, t-distribution, population-mean, statistics-for-ml]
 math: true

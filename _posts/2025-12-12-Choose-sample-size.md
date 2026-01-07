@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Choosing the Right Sample Size for Accurate Results"
-date: 2026-01-05
+date: 2025-12-12
 categories: [statistics, sampling, beginner]
 tags: [sample-size, confidence-level, margin-of-error, statistics-for-ml]
 math: true

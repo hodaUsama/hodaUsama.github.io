@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Confidence Interval for a Population Proportion — Step-by-Step Guide"
-date: 2026-01-03
+date: 2025-12-10
 categories: [statistics, inferential statistics, beginner]
 tags: [confidence-interval, sample-proportion, binary-data, statistics-for-ml]
 math: true
