@@ -2,7 +2,7 @@
 layout: post
 title: "Confidence Levels Explained: 90%, 95%, and 99% Confidence Intervals"
 date: 2025-12-11
-categories: [statistics, inferential statistics, beginner]
+categories: [statistics, Inferential Statistics, beginner]
 tags: [confidence-interval, confidence-level, z-score, margin-of-error, statistics-for-ml]
 math: true
 description: Understand 90%, 95%, and 99% confidence intervals with real-world examples, Python code, and ML use cases. Learn how confidence levels affect interval width and precision.

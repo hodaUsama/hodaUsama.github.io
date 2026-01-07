@@ -2,7 +2,7 @@
 layout: post
 title: "Confidence Interval for a Population Proportion — Step-by-Step Guide"
 date: 2025-12-10
-categories: [statistics, inferential statistics, beginner]
+categories: [statistics, Inferential Statistics, beginner]
 tags: [confidence-interval, sample-proportion, binary-data, statistics-for-ml]
 math: true
 description: Learn how to build a confidence interval for a population proportion step by step. Ideal for binary data, surveys, and evaluating classification accuracy in machine learning. Includes Python examples.

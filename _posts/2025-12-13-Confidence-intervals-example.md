@@ -2,7 +2,7 @@
 layout: post
 title: "Confidence Intervals: A Full Case Study on Mean vs Proportion"
 date: 2025-12-13
-categories: [statistics, confidence-intervals, beginner]
+categories: [statistics, confidence-intervals, beginner, Inferential Statistics]
 tags: [confidence-interval, t-distribution, z-distribution, sample-mean, sample-proportion, statistics-for-ml]
 math: true
 description: Learn to calculate confidence intervals using two fresh examples — one for estimating an average (mean) and one for estimating a percentage (proportion) in real-world data science scenarios.

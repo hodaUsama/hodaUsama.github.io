@@ -4,7 +4,7 @@ title: "Statistical Hypotheses: How to Form and Test Assumptions with Data"
 date: 2025-12-14
 description: "Learn how to formulate null and alternative hypotheses, understand their role in statistical significance testing, and apply them through real-world examples like click-through rates and server response times."
 tags: [statistics, hypothesis testing, inferential statistics, data science, machine learning, significance testing]
-categories: [statistics, confidence-intervals, beginner]
+categories: [statistics, confidence-intervals, beginner,Inferential Statistics]
 math: true
 ---
 

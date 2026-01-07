@@ -2,7 +2,7 @@
 layout: post
 title: "Choosing the Right Sample Size for Accurate Results"
 date: 2025-12-12
-categories: [statistics, sampling, beginner]
+categories: [statistics, sampling, beginner,Inferential Statistics]
 tags: [sample-size, confidence-level, margin-of-error, statistics-for-ml]
 math: true
 description: Learn how to calculate the ideal sample size needed for your survey or experiment using step-by-step examples and formulas. Perfect for means or proportions.
