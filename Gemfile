@@ -2,23 +2,20 @@
 
 source "https://rubygems.org"
 
-# Theme
 gem "jekyll-theme-chirpy", "~> 7.4", ">= 7.4.1"
+
+gem "html-proofer", "~> 5.0", group: :test
+
+platforms :mingw, :x64_mingw, :mswin, :jruby do
+  gem "tzinfo", ">= 1", "< 3"
+  gem "tzinfo-data"
+end
 
 # SEO and feeds
 gem "jekyll-seo-tag"
 gem "jekyll-sitemap"
 gem "jekyll-feed"
 
-# Testing
-group :test do
-  gem "html-proofer", "~> 5.0"
-end
+gem "wdm", "~> 0.2.0", :platforms => [:mingw, :x64_mingw, :mswin]
 
-# Windows support
-platforms :mingw, :x64_mingw, :mswin, :jruby do
-  gem "tzinfo", ">= 1", "< 3"
-  gem "tzinfo-data"
-end
 
-gem "wdm", "~> 0.2.0", platforms: [:mingw, :x64_mingw, :mswin]
