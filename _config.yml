@@ -22,6 +22,7 @@ description: >- # used by seo meta and the atom feed
   Learn Statistics & Machine Learning with clear, animated lessons by Hoda Osama. Dive into Python, data science, and AI concepts step-by-step
 
 plugins:
+  - jekyll-theme-chirpy
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-feed
