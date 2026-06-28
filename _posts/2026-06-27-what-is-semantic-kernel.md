@@ -376,7 +376,10 @@ This will help us understand how Semantic Kernel turns AI models into part of a 
 
 </div>
 
+
 ## <span style="color:#C0392B;">📚 Official Microsoft Resources</span>
 
-- [Microsoft Learn: Semantic Kernel Overview](https://learn.microsoft.com/en-us/semantic-kernel/overview/)
-- [Microsoft Learn: Semantic Kernel Quick Start Guide](https://learn.microsoft.com/en-us/semantic-kernel/get-started/quick-start-guide)
+For deeper technical context and implementation details, refer to the official Microsoft documentation:
+
+- [Semantic Kernel Overview](https://learn.microsoft.com/en-us/semantic-kernel/overview/)
+- [Semantic Kernel Quick Start Guide](https://learn.microsoft.com/en-us/semantic-kernel/get-started/quick-start-guide)
