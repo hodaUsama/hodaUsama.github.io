@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Microsoft Semantic Kernel: Orchestrating AI Workflows"
-date: 2026-07-04
+date: 2026-06-30
 
 categories:
   - AI
