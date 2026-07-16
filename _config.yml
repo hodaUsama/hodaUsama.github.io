@@ -62,6 +62,8 @@ webmaster_verifications:
 analytics:
   google:
     id: G-0M56Y27DGZ
+  clarity:
+    id: xngid5kulq
   goatcounter:
     id: # fill in your GoatCounter ID
   umami:
