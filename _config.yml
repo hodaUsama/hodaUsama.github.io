@@ -16,10 +16,10 @@ timezone:
 
 title: Hoda Osama  # the main title
 
-tagline: Welcome to your ML clarity zone # it will display as the subtitle
+tagline: Technical Leadership • AI • Distributed Systems # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  Learn Statistics & Machine Learning with clear, animated lessons by Hoda Osama. Dive into Python, data science, and AI concepts step-by-step
+  Hoda Osama is a Principal Software Engineer focused on technical leadership, AI, distributed systems, software architecture, and machine learning. Explore practical articles on AI, Semantic Kernel, system design, statistics, and modern software engineering.
 
 plugins:
   - jekyll-sitemap
@@ -31,6 +31,9 @@ url: "https://hodaUsama.github.io"
 github:
   username: hodaUsama # change to your GitHub username
 
+author:
+  name: Hoda Osama
+  url: "https://hodausama.github.io/about/"
 
 social:
   # Change to your full name.
@@ -44,7 +47,9 @@ social:
     - https://hodausama.github.io/about # change to your GitHub homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
+    - https://github.com/hodaUsama
     - https://www.linkedin.com/in/hodaosama
+    - https://www.youtube.com/@Hoda_Osama_AI
 
 # Site Verification Settings
 webmaster_verifications:

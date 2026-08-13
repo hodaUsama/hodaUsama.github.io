@@ -13,3 +13,43 @@
     })(window, document, "clarity", "script", "xngid5kulq");
   </script>
 {% endif %}
+
+
+{% if page.url == '/about/' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "@id": "{{ '/about/' | absolute_url }}#profilepage",
+  "url": "{{ '/about/' | absolute_url }}",
+  "name": "About Hoda Osama",
+  "description": "Hoda Osama is a Principal Software Engineer specializing in technical leadership, AI, distributed systems, software architecture, and machine learning.",
+  "mainEntity": {
+  "@type": "Person",
+  "@id": "{{ '/' | absolute_url }}#hoda-osama",
+  "name": "Hoda Osama",
+  "url": "{{ '/' | absolute_url }}",
+    "image": "{{ '/assets/images/avatar.png' | absolute_url }}",
+    "jobTitle": "Principal Software Engineer",
+    "description": "Principal Software Engineer focused on technical leadership, AI, distributed systems, software architecture, and machine learning.",
+    "sameAs": [
+      "https://www.linkedin.com/in/hodaosama",
+      "https://github.com/hodaUsama",
+      "https://www.youtube.com/@Hoda_Osama_AI"
+    ],
+    "knowsAbout": [
+      "Technical Leadership",
+      "Artificial Intelligence",
+      "Agentic AI",
+      "Microsoft Semantic Kernel",
+      "Distributed Systems",
+      "Software Architecture",
+      "System Design",
+      "Machine Learning",
+      "Statistics",
+      ".NET"
+    ]
+  }
+}
+</script>
+{% endif %}
