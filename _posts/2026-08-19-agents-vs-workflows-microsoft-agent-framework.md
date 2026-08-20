@@ -1,7 +1,7 @@
 ---
 
 title: "Agents vs Workflows in Microsoft Agent Framework: Choosing the Right Abstraction"
-date: 2026-08-18 10:00:00 +0300
+date: 2026-08-19 10:00:00 +0300
 categories: [AI, Microsoft Agent Framework]
 tags: [microsoft agent framework, agentic ai, ai agents, workflows, dotnet, csharp, software architecture, ai engineering]
 description: "Learn when to use an Agent, Workflow, or deterministic function in Microsoft Agent Framework, and how to combine them to build controlled production-grade agentic systems."
