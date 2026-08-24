@@ -17,7 +17,7 @@ mermaid: true
 
 ## <span style="color:#C0392B;"> From AI Components to an Executing System </span>
 
-In the previous article, [Tools and MCP in Microsoft Agent Framework: Connecting AI to Real Systems with C#](/posts/tools-mcp-microsoft-agent-framework-csharp/), we connected our Release Guardian to real operational capabilities.
+In the previous article, [Tools and MCP in Microsoft Agent Framework: Connecting AI to Real Systems with C#](https://hodausama.github.io/posts/tools-mcp-microsoft-agent-framework-csharp/), we connected our Release Guardian to real operational capabilities.
 
 The system can now retrieve:
 
